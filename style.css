@@ -778,6 +778,12 @@ a:hover {
   margin-top: var(--space-2xl);
 }
 
+/* Extra space above CTA when it follows a block (e.g. Important Dates) */
+.cfp-content .cta-box,
+.page-main .info-grid + .cta-box {
+  margin-top: var(--space-3xl);
+}
+
 .cta-box-inline {
   display: flex;
   flex-wrap: wrap;
