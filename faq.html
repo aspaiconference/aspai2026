@@ -30,23 +30,8 @@
     <div class="container">
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
-        <li class="has-dropdown">
-          <a href="key-dates.html">General Info</a>
-          <ul class="dropdown">
-            <li><a href="key-dates.html">Key Dates</a></li>
-            <li><a href="accommodation.html">Accommodation</a></li>
-            <li><a href="committee.html">Committee</a></li>
-            <li><a href="venue.html">Venue</a></li>
-          </ul>
-        </li>
-        <li class="has-dropdown">
-          <a href="conference.html">Conference</a>
-          <ul class="dropdown">
-            <li><a href="https://appinetwork.org/aspai2026call-for-papers" target="_blank">Call for Papers</a></li>
-            <li><a href="conference.html">Schedule</a></li>
-            <li><a href="conference.html#keynotes">Keynotes</a></li>
-          </ul>
-        </li>
+        <li><a href="general-info.html">General Info</a></li>
+        <li><a href="conference.html">Conference</a></li>
         <li><a href="summer-school.html">Summer School</a></li>
         <li><a href="registration.html">Registration</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
@@ -74,10 +59,6 @@
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () { document.body.classList.toggle('nav-open'); });
     document.querySelectorAll('.nav-menu a').forEach(function (a) { a.addEventListener('click', function () { document.body.classList.remove('nav-open'); }); });
-    document.querySelectorAll('.has-dropdown').forEach(function (item) {
-      item.addEventListener('mouseenter', function () { this.classList.add('dropdown-open'); });
-      item.addEventListener('mouseleave', function () { this.classList.remove('dropdown-open'); });
-    });
   </script>
 </body>
 </html>
