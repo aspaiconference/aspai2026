@@ -30,8 +30,23 @@
     <div class="container">
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="general-info.html">General Info</a></li>
-        <li><a href="conference.html">Conference</a></li>
+        <li class="has-dropdown">
+          <a href="general-info.html">General Info</a>
+          <ul class="dropdown">
+            <li><a href="general-info.html#key-dates">Key Dates</a></li>
+            <li><a href="general-info.html#accommodation">Accommodation</a></li>
+            <li><a href="general-info.html#venue">Venue</a></li>
+            <li><a href="general-info.html#committee">Committee</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="conference.html">Conference</a>
+          <ul class="dropdown">
+            <li><a href="call-for-papers.html">Call for Papers</a></li>
+            <li><a href="conference.html">Schedule</a></li>
+            <li><a href="conference.html#keynotes">Keynotes</a></li>
+          </ul>
+        </li>
         <li><a href="summer-school.html">Summer School</a></li>
         <li><a href="registration.html">Registration</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
@@ -83,7 +98,7 @@
         <p>Dinner at <strong>Youngildae Beach</strong> (Aug 25) and a tour with dinner in <strong>Gyeongju</strong>, a historic city (Aug 26).</p>
       </div>
       <div class="cta-box">
-        <a href="https://appinetwork.org/aspai2026call-for-papers" class="btn btn-primary" target="_blank" rel="noopener">Call for Papers</a>
+        <a href="call-for-papers.html" class="btn btn-primary">Call for Papers</a>
       </div>
     </div>
   </main>
@@ -102,6 +117,10 @@
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () { document.body.classList.toggle('nav-open'); });
     document.querySelectorAll('.nav-menu a').forEach(function (a) { a.addEventListener('click', function () { document.body.classList.remove('nav-open'); }); });
+    document.querySelectorAll('.has-dropdown').forEach(function (item) {
+      item.addEventListener('mouseenter', function () { this.classList.add('dropdown-open'); });
+      item.addEventListener('mouseleave', function () { this.classList.remove('dropdown-open'); });
+    });
   </script>
 </body>
 </html>

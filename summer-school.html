@@ -30,8 +30,23 @@
     <div class="container">
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="general-info.html">General Info</a></li>
-        <li><a href="conference.html">Conference</a></li>
+        <li class="has-dropdown">
+          <a href="general-info.html">General Info</a>
+          <ul class="dropdown">
+            <li><a href="general-info.html#key-dates">Key Dates</a></li>
+            <li><a href="general-info.html#accommodation">Accommodation</a></li>
+            <li><a href="general-info.html#committee">Committee</a></li>
+            <li><a href="general-info.html#venue">Venue</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="conference.html">Conference</a>
+          <ul class="dropdown">
+            <li><a href="https://appinetwork.org/aspai2026call-for-papers" target="_blank">Call for Papers</a></li>
+            <li><a href="conference.html">Schedule</a></li>
+            <li><a href="conference.html#keynotes">Keynotes</a></li>
+          </ul>
+        </li>
         <li><a href="summer-school.html">Summer School</a></li>
         <li><a href="registration.html">Registration</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
@@ -41,21 +56,48 @@
   <main class="page-main">
     <div class="container">
       <h1 class="section-title">Summer School</h1>
-      <div class="summer-school-content">
-        <p>A <strong>two-day intensive education program</strong> held concurrently with ASPAI, designed to build core knowledge in Process and AI fields.</p>
+      <div class="summer-school-content page-content-block">
+        <h2 class="subsection-title">The 1st APPI Summer School on Process Intelligence</h2>
         <ul>
-          <li><strong>Dates:</strong> August 27–28, 2026</li>
+          <li><strong>Dates:</strong> Thursday, August 27 – Friday, August 28, 2026</li>
+          <li><strong>Venue:</strong> POSTECH (Pohang University of Science and Technology), POSCO International Center (Pohang, Republic of Korea)</li>
           <li><strong>Fee:</strong> USD $150</li>
         </ul>
-        <a href="https://appinetwork.org/aspai2026summer-school" class="btn btn-secondary" target="_blank" rel="noopener">Summer School Details</a>
+        <p>The <strong>Asia-Pacific Process Intelligence (APPI) Summer School</strong> serves as the premier forum for exploring the intersection of Process Mining, Data Science, and AI in the Asia-Pacific region. This intensive program brings together a diverse community of participants and speakers from across the globe to discuss and develop new approaches in the field.</p>
+        <p>Led by a team of distinguished academic and industry leaders, the curriculum is specifically designed for young researchers such as undergraduate/graduate students, while offering significant value to students and practitioners. The technical program covers process discovery and conformance checking in detail, alongside essential topics in data preprocessing, performance analysis, predictive analytics, and the ethical dimensions of responsible process mining. Beyond the lectures, participants engage in interactive hands-on sessions with both open-source and commercial process mining tools to apply theoretical concepts to practical scenarios.</p>
+
+        <h2 class="subsection-title">Why Attend APPI Summer School 2026?</h2>
+        <ul>
+          <li><strong>High-Impact Curriculum:</strong> Master the essentials of Process Discovery, Conformance, and OCPM in a condensed, intensive format.</li>
+          <li><strong>Engage with the APAC Community:</strong> Join a fast-growing network of researchers and practitioners dedicated to the Asia-Pacific region.</li>
+          <li><strong>Hands-on Skill Development:</strong> Gain practical experience with state-of-the-art process mining tools (PM4Py, Celonis, and R-based frameworks).</li>
+          <li><strong>Cross-Sector Networking:</strong> Opportunity for students and professionals to discuss cross-country collaborations and industrial applications.</li>
+          <li><strong>Official Certification:</strong> Receive a certificate of completion from the Asia-Pacific Process Intelligence Network (APPI).</li>
+        </ul>
+
+        <h2 class="subsection-title">Important Dates</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <ul>
+              <li><strong>Summer School Dates:</strong> 27–28 August 2026</li>
+              <li><strong>Registration Deadline:</strong> 31 May 2026</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>For program details and lecturers, please visit the <a href="https://appinetwork.org/aspai2026summer-school-program" target="_blank" rel="noopener">APPI Network Summer School Program</a> and <a href="https://appinetwork.org/aspai2026summer-school-lecturer" target="_blank" rel="noopener">Lecturers</a> pages.</p>
+
+        <div class="cta-box">
+          <a href="registration.html" class="btn btn-primary">Register</a>
+        </div>
       </div>
     </div>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
-        <a href="https://appinetwork.org/aspai2026call-for-papers" target="_blank" rel="noopener">Call for Papers</a>
-        <a href="https://appinetwork.org/aspai2026summer-school" target="_blank" rel="noopener">Summer School</a>
+        <a href="call-for-papers.html">Call for Papers</a>
+        <a href="summer-school.html">Summer School</a>
         <a href="https://appinetwork.org/" target="_blank" rel="noopener">APPI Network</a>
         <a href="faq.html">FAQs</a>
         <a href="mailto:jonghyeon.ko@qut.edu.au">Contact</a>
@@ -66,6 +108,10 @@
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () { document.body.classList.toggle('nav-open'); });
     document.querySelectorAll('.nav-menu a').forEach(function (a) { a.addEventListener('click', function () { document.body.classList.remove('nav-open'); }); });
+    document.querySelectorAll('.has-dropdown').forEach(function (item) {
+      item.addEventListener('mouseenter', function () { this.classList.add('dropdown-open'); });
+      item.addEventListener('mouseleave', function () { this.classList.remove('dropdown-open'); });
+    });
   </script>
 </body>
 </html>
