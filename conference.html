@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conference Program – ASPAI 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <a href="mailto:jonghyeon.ko@qut.edu.au">Contact Us</a>
+      <span>|</span>
+      <a href="https://appinetwork.org/" target="_blank" rel="noopener">APPI Network</a>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-title">ASPAI 2026</span>
+        <span class="logo-subtitle">2nd Asia-Pacific Symposium on Process and AI</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="key-dates.html">General Info</a>
+          <ul class="dropdown">
+            <li><a href="key-dates.html">Key Dates</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="venue.html">Venue</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="conference.html">Conference</a>
+          <ul class="dropdown">
+            <li><a href="https://appinetwork.org/aspai2026call-for-papers" target="_blank">Call for Papers</a></li>
+            <li><a href="conference.html">Schedule</a></li>
+            <li><a href="conference.html#keynotes">Keynotes</a></li>
+          </ul>
+        </li>
+        <li><a href="summer-school.html">Summer School</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="page-main">
+    <div class="container">
+      <h1 class="section-title">Conference Program</h1>
+      <div id="schedule" class="schedule-table">
+        <div class="schedule-row schedule-header">
+          <span class="schedule-day">Day</span>
+          <span class="schedule-content">Program</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-day">Day 1<br><small>Aug 24</small></span>
+          <span class="schedule-content">Process Mining Industry Day (Seoul) + Welcome Reception</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-day">Day 2<br><small>Aug 25</small></span>
+          <span class="schedule-content">Keynote (Wil van der Aalst) + 3 Sessions (12 presentations)</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-day">Day 3<br><small>Aug 26</small></span>
+          <span class="schedule-content">Keynote (Jan vom Brocke) + 1 Session (4 presentations) + Discussion</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-day">Day 4–5<br><small>Aug 27–28</small></span>
+          <span class="schedule-content">Process Mining Summer School</span>
+        </div>
+      </div>
+      <div id="keynotes" class="keynotes">
+        <h3>Keynote Speakers</h3>
+        <div class="keynote-grid">
+          <div class="keynote-card">
+            <div class="keynote-avatar">WA</div>
+            <p class="keynote-name">Wil van der Aalst</p>
+            <p class="keynote-affiliation">RWTH Aachen University</p>
+          </div>
+          <div class="keynote-card">
+            <div class="keynote-avatar">JB</div>
+            <p class="keynote-name">Jan vom Brocke</p>
+            <p class="keynote-affiliation">University of Münster</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-events">
+        <h3>Social Events</h3>
+        <p>Dinner at <strong>Youngildae Beach</strong> (Aug 25) and a tour with dinner in <strong>Gyeongju</strong>, a historic city (Aug 26).</p>
+      </div>
+      <div class="cta-box">
+        <a href="https://appinetwork.org/aspai2026call-for-papers" class="btn btn-primary" target="_blank" rel="noopener">Call for Papers</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://appinetwork.org/aspai2026call-for-papers" target="_blank" rel="noopener">Call for Papers</a>
+        <a href="https://appinetwork.org/aspai2026summer-school" target="_blank" rel="noopener">Summer School</a>
+        <a href="https://appinetwork.org/" target="_blank" rel="noopener">APPI Network</a>
+        <a href="faq.html">FAQs</a>
+        <a href="mailto:jonghyeon.ko@qut.edu.au">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 ASPAI 2026 – 2nd Asia-Pacific Symposium on Process and Artificial Intelligence. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () { document.body.classList.toggle('nav-open'); });
+    document.querySelectorAll('.nav-menu a').forEach(function (a) { a.addEventListener('click', function () { document.body.classList.remove('nav-open'); }); });
+    document.querySelectorAll('.has-dropdown').forEach(function (item) {
+      item.addEventListener('mouseenter', function () { this.classList.add('dropdown-open'); });
+      item.addEventListener('mouseleave', function () { this.classList.remove('dropdown-open'); });
+    });
+  </script>
+</body>
+</html>

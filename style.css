@@ -418,6 +418,53 @@ a:hover {
   font-size: 0.95rem;
 }
 
+/* Welcome page: big centered photo + text below */
+.welcome-page .welcome-photo-wrap {
+  margin: 0 auto var(--space-2xl);
+  max-width: 900px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.welcome-page .welcome-photo-large {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.welcome-page .welcome-text-block {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.welcome-page .welcome-text-block p {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.welcome-page .welcome-signature {
+  font-style: italic;
+  margin-top: var(--space-xl);
+  color: var(--color-text);
+}
+
+.welcome-page .welcome-chair {
+  margin-top: var(--space-lg);
+  margin-bottom: 0;
+}
+
+/* Inner page layout (for non-home pages) */
+.page-main {
+  padding: var(--space-3xl) 0;
+}
+
+.page-main .section-title {
+  margin-top: 0;
+}
+
 /* General Info */
 .general-info {
   background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
