@@ -418,10 +418,10 @@ a:hover {
   font-size: 0.95rem;
 }
 
-/* Welcome page: big centered photo + text below */
+/* Welcome page: centered photo (moderate size) + text below */
 .welcome-page .welcome-photo-wrap {
   margin: 0 auto var(--space-2xl);
-  max-width: 900px;
+  max-width: 560px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -432,6 +432,7 @@ a:hover {
   height: auto;
   display: block;
   object-fit: cover;
+  max-height: 360px;
 }
 
 .welcome-page .welcome-text-block {
@@ -458,11 +459,34 @@ a:hover {
 
 /* Inner page layout (for non-home pages) */
 .page-main {
-  padding: var(--space-3xl) 0;
+  padding: var(--space-3xl) 0 5rem;
 }
 
 .page-main .section-title {
   margin-top: 0;
+}
+
+.page-main .page-section {
+  margin-bottom: var(--space-3xl);
+}
+
+.page-main .page-section:last-child {
+  margin-bottom: 0;
+}
+
+.page-main .page-section > h2.subsection-title {
+  font-size: 1.35rem;
+  margin-bottom: var(--space-md);
+  margin-top: 0;
+}
+
+.page-main .page-section h3.subsection-title {
+  font-size: 1rem;
+  margin-top: var(--space-md);
+}
+
+.page-main .page-section h3.subsection-title:not(:first-of-type) {
+  margin-top: var(--space-lg);
 }
 
 /* General Info */
