@@ -23,8 +23,8 @@
     {
       url: 'general-info.html#accommodation',
       title: 'Accommodation',
-      keywords: 'hotel accommodation stay lodging Youngildae Lahan Noblion POSCO',
-      content: 'POSCO International Center on-site, Hotels in Youngildae 20-30 min, Noblion Hotel, Lahan Hotel 30 min by taxi.'
+      keywords: 'hotel accommodation stay lodging Yeongildae Noblion',
+      content: 'Hotel Yeongildae 20-30 min from venue, Noblion Hotel 20-30 min from venue.'
     },
     {
       url: 'general-info.html#venue',
