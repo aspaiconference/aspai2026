@@ -60,6 +60,7 @@
             <li><a href="conference.html#keynotes">Keynotes</a></li>
           </ul>
         </li>
+        <li><a href="industry-day.html">Industry Day</a></li>
         <li class="has-dropdown">
           <a href="summer-school.html">Summer School</a>
           <ul class="dropdown">
@@ -95,8 +96,24 @@
               </div>
             </div>
           </div>
-          <!-- Slide 2: Summer School -->
-          <div class="hero-slide" data-slide="1" data-register-href="summer-school.html">
+          <!-- Slide 2: Industry Day -->
+          <div class="hero-slide" data-slide="1" data-register-href="industry-day.html">
+            <div class="container hero-inner">
+              <p class="hero-conf-name">Process Mining Industry Day</p>
+              <h1 class="hero-title">Industry Day 2026</h1>
+              <p class="hero-date">
+                <span class="hero-date-icon">📅</span> August 24, 2026
+                <span class="hero-date-sep">·</span>
+                <span class="hero-date-icon">📍</span> Seoul, Republic of Korea
+              </p>
+              <div class="hero-cta">
+                <a href="industry-day.html" class="btn btn-hero-primary hero-register-btn">Learn More</a>
+                <a href="registration.html" class="btn btn-hero-secondary">Register</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3: Summer School -->
+          <div class="hero-slide" data-slide="2" data-register-href="summer-school.html">
             <div class="container hero-inner">
               <p class="hero-conf-name">APPI Summer School on Process Intelligence</p>
               <h1 class="hero-title">Summer School 2026</h1>
@@ -114,7 +131,8 @@
         </div>
         <div class="hero-carousel-dots" aria-label="Carousel navigation">
           <button type="button" class="hero-dot active" aria-label="Show ASPAI" data-index="0"></button>
-          <button type="button" class="hero-dot" aria-label="Show Summer School" data-index="1"></button>
+          <button type="button" class="hero-dot" aria-label="Show Industry Day" data-index="1"></button>
+          <button type="button" class="hero-dot" aria-label="Show Summer School" data-index="2"></button>
         </div>
       </div>
     </section>
@@ -189,7 +207,7 @@
         index = Math.max(0, Math.min(index, total - 1));
         if (index === current) return;
         current = index;
-        track.style.transform = 'translateX(-' + (current * 50) + '%)';
+        track.style.transform = 'translateX(-' + (current * 33.333) + '%)';
         dots.forEach(function (d, i) {
           d.classList.toggle('active', i === current);
         });
