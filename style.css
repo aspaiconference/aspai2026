@@ -395,9 +395,9 @@ a:hover {
 }
 
 .hero-carousel .hero-slide {
-  flex: 0 0 50%;
-  width: 50%;
-  min-width: 50%;
+  flex: 0 0 33.333%;
+  width: 33.333%;
+  min-width: 33.333%;
 }
 
 .hero-carousel-dots {
