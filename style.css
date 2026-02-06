@@ -389,7 +389,7 @@ a:hover {
 
 .hero-carousel-track {
   display: flex;
-  width: 200%;
+  width: 300%;
   transition: transform 0.4s ease;
   will-change: transform;
 }
@@ -875,7 +875,8 @@ a:hover {
   text-align: center;
 }
 
-.schedule-header .schedule-day {
+.schedule-header .schedule-day,
+.schedule-header .schedule-content {
   background: var(--color-primary-soft);
   color: #fff;
 }
