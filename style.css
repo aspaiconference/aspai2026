@@ -398,6 +398,16 @@ a:hover {
   flex: 0 0 33.333%;
   width: 33.333%;
   min-width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-carousel .hero-slide .container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 var(--space-lg);
 }
 
 .hero-carousel-dots {
