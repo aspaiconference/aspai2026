@@ -118,7 +118,7 @@
         <div class="venue-map-wrap">
           <h3 class="venue-map-title">Location</h3>
           <div id="venue-map" class="venue-map" aria-label="Venue and accommodation locations"></div>
-          <p class="venue-map-link"><a href="https://www.google.com/maps/place/POSCO+%EA%B5%AD%EC%A0%9C%EA%B4%80+%ED%8F%AC%ED%95%AD%EA%B3%B5%EA%B3%BC%EB%8C%80%ED%95%99%EA%B5%90/@36.0138,129.319,17z" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+          <p class="venue-map-link"><a href="https://www.google.com/maps/place/POSCO+%EA%B5%AD%EC%A0%9C%EA%B4%80+%ED%8F%AC%ED%95%AD%EA%B3%B5%EA%B3%BC%EB%8C%80%ED%95%99%EA%B5%90/@36.014,129.321,17z" target="_blank" rel="noopener">Open in Google Maps →</a></p>
         </div>
       </section>
 
@@ -185,11 +185,11 @@
     (function () {
       var mapEl = document.getElementById('venue-map');
       if (!mapEl) return;
-      var venue = [36.0138, 129.319];
+      var venue = [36.014, 129.321];
       var hotels = [
-        { name: 'Lahan Hotel Pohang', lat: 36.0645, lng: 129.3773 },
-        { name: 'Hotel Yeongildae', lat: 36.0595, lng: 129.379 },
-        { name: 'Noblion Hotel', lat: 36.0068, lng: 129.3245 }
+        { name: 'Lahan Hotel Pohang', lat: 36.0616, lng: 129.3796 },
+        { name: 'Hotel Yeongildae', lat: 36.014, lng: 129.334 },
+        { name: 'Noblion Hotel', lat: 36.0123, lng: 129.347 }
       ];
       var map = L.map('venue-map').setView(venue, 12);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
