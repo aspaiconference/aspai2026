@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <script src="search.js" defer></script>
 </head>
 <body>
@@ -96,9 +97,9 @@
         <div class="info-grid">
           <div class="info-card">
             <ul>
-              <li><a href="https://www.lahanhotels.com/pohang/en/main.do" target="_blank" rel="noopener">Lahan Hotel Pohang</a> (20–30 min from venue)</li>
-              <li><a href="https://www.yeongildae.co.kr/" target="_blank" rel="noopener">Hotel Yeongildae</a> (5–10 min from venue)</li>
-              <li><a href="https://hub.hotelstory.com/aG90ZWxzdG9yeQ/rooms?v_Use=MTAwMjYwOA" target="_blank" rel="noopener">Noblion Hotel</a> (5–10 min from venue)</li>
+              <li><a href="https://www.lahanhotels.com/pohang/en/main.do" target="_blank" rel="noopener">Lahan Hotel Pohang</a> (20–30 min by car)</li>
+              <li><a href="https://www.yeongildae.co.kr/" target="_blank" rel="noopener">Hotel Yeongildae</a> (5–10 min by car)</li>
+              <li><a href="https://hub.hotelstory.com/aG90ZWxzdG9yeQ/rooms?v_Use=MTAwMjYwOA" target="_blank" rel="noopener">Noblion Hotel</a> (5–10 min by car)</li>
             </ul>
           </div>
         </div>
@@ -109,14 +110,14 @@
         <p class="venue-address-text"><strong><a href="https://www.postech.ac.kr/eng/student-life/posco_international_hall.do" target="_blank" rel="noopener">POSTECH · POSCO International Center</a></strong><br />77 Cheongam-ro, Nam-gu, Pohang, South Korea</p>
         <p class="venue-desc">The event will be held at POSTECH's POSCO International Center, one of Korea's leading science and technology universities.</p>
         <div class="venue-gallery">
-          <img src="사진/포항1.png" alt="Pohang venue 1" class="venue-photo" />
-          <img src="사진/포항2.png" alt="Pohang venue 2" class="venue-photo" />
-          <img src="사진/포항3.png" alt="Pohang venue 3" class="venue-photo" />
-          <img src="사진/포항4.png" alt="Pohang venue 4" class="venue-photo" />
+          <img src="사진/국제관1.jpg" alt="POSCO International Center 1" class="venue-photo" />
+          <img src="사진/국제관2.jpg" alt="POSCO International Center 2" class="venue-photo" />
+          <img src="사진/국제관3.png" alt="POSCO International Center 3" class="venue-photo" />
+          <img src="사진/국제관4.png" alt="POSCO International Center 4" class="venue-photo" />
         </div>
         <div class="venue-map-wrap">
           <h3 class="venue-map-title">Location</h3>
-          <iframe class="venue-map" src="https://maps.google.com/maps?q=POSCO+%EA%B5%AD%EC%A0%9C%EA%B4%80+%ED%8F%AC%ED%95%AD%EA%B3%B5%EA%B3%BC%EB%8C%80%ED%95%99%EA%B5%90&amp;hl=ko&amp;z=17&amp;output=embed" title="POSCO International Center (포스코 국제관) location" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div id="venue-map" class="venue-map" aria-label="Venue and accommodation locations"></div>
           <p class="venue-map-link"><a href="https://www.google.com/maps/place/POSCO+%EA%B5%AD%EC%A0%9C%EA%B4%80+%ED%8F%AC%ED%95%AD%EA%B3%B5%EA%B3%BC%EB%8C%80%ED%95%99%EA%B5%90/@36.0138,129.319,17z" target="_blank" rel="noopener">Open in Google Maps →</a></p>
         </div>
       </section>
@@ -173,6 +174,7 @@
       <p class="footer-copy">© 2026 ASPAI 2026 – 2nd Asia-Pacific Symposium on Process and Artificial Intelligence. All Rights Reserved.</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () { document.body.classList.toggle('nav-open'); });
     document.querySelectorAll('.nav-menu a').forEach(function (a) { a.addEventListener('click', function () { document.body.classList.remove('nav-open'); }); });
@@ -180,6 +182,24 @@
       item.addEventListener('mouseenter', function () { this.classList.add('dropdown-open'); });
       item.addEventListener('mouseleave', function () { this.classList.remove('dropdown-open'); });
     });
+    (function () {
+      var mapEl = document.getElementById('venue-map');
+      if (!mapEl) return;
+      var venue = [36.0138, 129.319];
+      var hotels = [
+        { name: 'Lahan Hotel Pohang', lat: 36.0645, lng: 129.3773 },
+        { name: 'Hotel Yeongildae', lat: 36.0595, lng: 129.379 },
+        { name: 'Noblion Hotel', lat: 36.0068, lng: 129.3245 }
+      ];
+      var map = L.map('venue-map').setView(venue, 12);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+      L.marker(venue).addTo(map).bindPopup('<strong>Venue</strong><br>POSTECH · POSCO International Center');
+      hotels.forEach(function (h) {
+        L.marker([h.lat, h.lng]).addTo(map).bindPopup('<strong>' + h.name + '</strong>');
+      });
+      var group = new L.featureGroup([L.marker(venue), L.marker([hotels[0].lat, hotels[0].lng]), L.marker([hotels[1].lat, hotels[1].lng]), L.marker([hotels[2].lat, hotels[2].lng])]);
+      map.fitBounds(group.getBounds().pad(0.15));
+    })();
   </script>
 </body>
 </html>
