@@ -76,42 +76,50 @@
     <div class="container">
       <h1 class="section-title">Registration</h1>
       <div class="pricing-table pricing-table-with-register">
-        <div class="pricing-row pricing-row-4col pricing-header">
-          <span>Category</span>
-          <span>Dates</span>
-          <span>Fee</span>
-          <span>Registration</span>
-        </div>
-        <div class="pricing-row pricing-row-4col pricing-row-industry">
-          <span>Industry Day</span>
-          <span>Aug 24</span>
-          <span class="price">Free</span>
-          <span class="pricing-register-cell">
-            <a href="https://pco.postech.ac.kr/pco/events/events.do?mode=view&eventId=148" class="btn btn-register" target="_blank" rel="noopener">Register</a>
-          </span>
-        </div>
-        <div class="pricing-group-wrapper">
-          <div class="pricing-group-rows">
-            <div class="pricing-row pricing-row-3col">
-              <span>Conference</span>
-              <span>Aug 25–26</span>
-              <span class="price">USD $200</span>
-            </div>
-            <div class="pricing-row pricing-row-3col">
-              <span>Summer School</span>
-              <span>Aug 27–28</span>
-              <span class="price">USD $150</span>
-            </div>
-            <div class="pricing-row pricing-row-3col">
-              <span>Conference + Summer School</span>
-              <span>Aug 25–28</span>
-              <span class="price">USD $300</span>
-            </div>
-          </div>
-          <div class="pricing-register-merged">
-            <a href="https://pco.postech.ac.kr/pco/events/events.do?mode=view&eventId=147" class="btn btn-register" target="_blank" rel="noopener">Register</a>
-          </div>
-        </div>
+        <table class="pricing-reg-table">
+          <colgroup>
+            <col class="pricing-reg-col" />
+            <col class="pricing-reg-col" />
+            <col class="pricing-reg-col" />
+            <col class="pricing-reg-col" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Dates</th>
+              <th scope="col">Fee</th>
+              <th scope="col">Registration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="pricing-reg-row-industry">
+              <td>Industry Day</td>
+              <td>Aug 24</td>
+              <td class="price">Free</td>
+              <td class="pricing-reg-cell">
+                <a href="https://pco.postech.ac.kr/pco/events/events.do?mode=view&eventId=148" class="btn btn-register" target="_blank" rel="noopener">Register</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Conference</td>
+              <td>Aug 25–26</td>
+              <td class="price">USD $200</td>
+              <td class="pricing-reg-cell pricing-reg-merged" rowspan="3">
+                <a href="https://pco.postech.ac.kr/pco/events/events.do?mode=view&eventId=147" class="btn btn-register" target="_blank" rel="noopener">Register</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Summer School</td>
+              <td>Aug 27–28</td>
+              <td class="price">USD $150</td>
+            </tr>
+            <tr>
+              <td>Conference + Summer School</td>
+              <td>Aug 25–28</td>
+              <td class="price">USD $300</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </main>
