@@ -1291,16 +1291,56 @@ a:hover {
 
 .pricing-table-with-register {
   position: relative;
-  --pricing-col-gap: var(--space-lg);
+  padding: 0;
 }
 
-.pricing-table-with-register .pricing-row-4col {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: var(--pricing-col-gap);
+.pricing-reg-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-spacing: 0;
 }
 
-.pricing-table-with-register .pricing-row-4col span {
+.pricing-reg-table col.pricing-reg-col {
+  width: 25%;
+}
+
+.pricing-reg-table th,
+.pricing-reg-table td {
   padding: var(--space-lg) var(--space-md);
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--color-border-soft);
+  box-sizing: border-box;
+  background: var(--color-surface);
+}
+
+.pricing-reg-table thead th {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.pricing-reg-table tbody tr:hover td {
+  background: var(--color-bg);
+}
+
+.pricing-reg-table tbody tr.pricing-reg-row-industry td {
+  border-bottom: 2px solid var(--color-border);
+}
+
+.pricing-reg-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-reg-table td.pricing-reg-merged {
+  border-bottom: none;
+  vertical-align: middle;
+}
+
+.pricing-reg-table .pricing-reg-cell {
+  text-align: center;
 }
 
 .pricing-row:last-child {
@@ -1335,12 +1375,6 @@ a:hover {
   color: var(--color-accent-hover);
 }
 
-.pricing-register-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn-register {
   display: inline-block;
   padding: var(--space-sm) var(--space-lg);
@@ -1362,51 +1396,6 @@ a:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
   color: #fff;
-}
-
-.pricing-row-industry {
-  border-bottom: 2px solid var(--color-border);
-}
-
-.pricing-group-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  gap: var(--pricing-col-gap);
-}
-
-.pricing-group-rows {
-  flex: 3 1 0;
-  min-width: 0;
-}
-
-.pricing-table-with-register .pricing-group-rows .pricing-row-3col {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: var(--pricing-col-gap);
-}
-
-.pricing-table-with-register .pricing-group-rows .pricing-row span {
-  padding: var(--space-lg) var(--space-md);
-}
-
-.pricing-group-rows .pricing-row {
-  border-bottom: 1px solid var(--color-border-soft);
-}
-
-.pricing-group-rows .pricing-row:last-child {
-  border-bottom: none;
-}
-
-.pricing-register-merged {
-  flex: 1 1 0;
-  min-width: min(7.5rem, 100%);
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-surface);
-  border-left: 1px solid var(--color-border-soft);
-  padding: var(--space-md);
 }
 
 .contact-box {
@@ -1678,26 +1667,17 @@ a:hover {
     padding-bottom: var(--space-md);
   }
 
-  .pricing-table-with-register .pricing-row-4col {
-    grid-template-columns: 1fr;
-    column-gap: 0;
+  .pricing-table-with-register {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .pricing-table-with-register .pricing-group-wrapper {
-    flex-direction: column;
-    gap: 0;
+  .pricing-reg-table {
+    min-width: 36rem;
   }
 
-  .pricing-table-with-register .pricing-group-rows .pricing-row-3col {
-    grid-template-columns: 1fr;
-    column-gap: 0;
-  }
-
-  .pricing-table-with-register .pricing-register-merged {
-    width: 100%;
-    flex: none;
-    border-left: none;
-    border-top: 1px solid var(--color-border-soft);
-    padding: var(--space-lg);
+  .pricing-reg-table th,
+  .pricing-reg-table td {
+    padding: var(--space-md) var(--space-sm);
   }
 }
