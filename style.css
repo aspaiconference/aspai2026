@@ -1279,6 +1279,10 @@ a:hover {
   transition: background var(--transition);
 }
 
+.pricing-row-4col {
+  grid-template-columns: 1fr 1fr 140px 160px;
+}
+
 .pricing-row:last-child {
   border-bottom: none;
 }
@@ -1309,6 +1313,77 @@ a:hover {
 
 .pricing-featured .price {
   color: var(--color-accent-hover);
+}
+
+.pricing-register-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-register {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: var(--radius);
+  background: var(--color-accent);
+  color: #fff;
+  transition: all var(--transition);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-register:hover {
+  background: var(--color-accent-hover);
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+  color: #fff;
+}
+
+.pricing-table-with-register {
+  position: relative;
+}
+
+.pricing-row-industry {
+  border-bottom: 2px solid var(--color-border);
+}
+
+.pricing-row-3col {
+  grid-template-columns: 1fr 1fr 140px;
+}
+
+.pricing-group-wrapper {
+  display: flex;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.pricing-group-wrapper:last-child {
+  border-bottom: none;
+}
+
+.pricing-group-rows {
+  flex: 1;
+}
+
+.pricing-group-rows .pricing-row {
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.pricing-group-rows .pricing-row:last-child {
+  border-bottom: none;
+}
+
+.pricing-register-merged {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--color-accent-soft) 0%, rgba(204, 251, 241, 0.3) 100%);
+  border-left: 1px solid var(--color-border-soft);
 }
 
 .contact-box {
@@ -1578,5 +1653,20 @@ a:hover {
 
   .pricing-row span:last-child {
     padding-bottom: var(--space-md);
+  }
+
+  .pricing-row-4col {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-group-wrapper {
+    flex-direction: column;
+  }
+
+  .pricing-register-merged {
+    width: 100%;
+    padding: var(--space-lg);
+    border-left: none;
+    border-top: 1px solid var(--color-border-soft);
   }
 }
