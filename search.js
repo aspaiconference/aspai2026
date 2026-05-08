@@ -6,7 +6,7 @@
       url: 'index.html',
       title: 'Home',
       keywords: 'ASPAI 2026 Asia-Pacific Symposium Process Artificial Intelligence Pohang Korea August conference summer school welcome APPI Network',
-      content: 'Welcome to Pohang, South Korea! The 2nd Asia-Pacific Symposium on Process and Artificial Intelligence. August 24-28, 2026 at POSTECH, Pohang University of Science and Technology.'
+      content: 'Welcome to South Korea! ASPAI 2026: Industry Day August 24 in Seoul; Conference August 25-26 and Process Mining Summer School August 27-28 at POSTECH, Pohang.'
     },
     {
       url: 'general-info.html',
