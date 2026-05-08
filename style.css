@@ -713,6 +713,29 @@ a:hover {
   margin-top: var(--space-lg);
 }
 
+/* General Info: Key Dates list readability */
+.key-dates-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.key-date-label {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.key-date-value {
+  white-space: nowrap;
+}
+
+/* General Info: make Venue subheadings clearer */
+#venue h3.subsection-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: var(--space-lg);
+}
+
 /* General Info */
 .general-info {
   background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
