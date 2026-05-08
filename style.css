@@ -713,19 +713,8 @@ a:hover {
   margin-top: var(--space-lg);
 }
 
-/* General Info: Key Dates list readability */
-.key-dates-list li {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.key-date-label {
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.key-date-value {
+/* General Info: prevent date wrapping in Key Dates */
+.key-date-inline {
   white-space: nowrap;
 }
 
