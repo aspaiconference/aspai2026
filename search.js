@@ -53,7 +53,7 @@
     {
       url: 'call-for-papers.html',
       title: 'Call for Papers',
-      keywords: 'call for papers CFP submission topics AI process mining governance ethics digital transformation CEUR publication',
+      keywords: 'call for papers CFP submission topics AI process mining governance ethics digital transformation CEUR publication poster session EasyChair',
       content: 'Submit papers on Process Intelligence & AI, Governance, Risk, Ethics, Digital Transformation, Industry Practice. Full papers max 10 pages, Short papers max 5 pages. Published in CEUR Workshop Proceedings. Double-blind peer review.'
     },
     {
