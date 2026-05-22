@@ -90,7 +90,7 @@
       url: 'faq.html',
       title: 'FAQs',
       keywords: 'FAQ frequently asked questions help contact support',
-      content: 'For any questions about the ASPAI conference, please contact jonghyeon.ko@qut.edu.au'
+      content: 'For any questions about the ASPAI conference, please contact eon7777@postech.ac.kr'
     }
   ];
 
