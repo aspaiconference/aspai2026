@@ -57,6 +57,12 @@
       content: 'Submit papers on Process Intelligence & AI, Governance, Risk, Ethics, Digital Transformation, Industry Practice. Full papers max 10 pages, Short papers max 5 pages. Published in CEUR Workshop Proceedings. Double-blind peer review.'
     },
     {
+      url: 'accepted-papers.html',
+      title: 'Accepted Papers',
+      keywords: 'accepted papers list presentations process mining anomaly detection predictive process monitoring multi-agent orchestration IoT threat detection trace encoding graph neural networks causal mapping translucent event logs transformer conformance Indonesian context',
+      content: 'Papers accepted for presentation at ASPAI 2026: Pre-Readiness for Process Mining, PaCHITA channel-independent transformer for anomaly detection, comparative analysis of trace encoding for next activity prediction, multi-agent orchestration for process mining query answering, IoT threat detection using process conformance, fault management data preprocessing case study, work-in-process prediction with graph neural networks, cross-process causal mapping, and predictive process monitoring via translucent event logs.'
+    },
+    {
       url: 'summer-school.html',
       title: 'Summer School',
       keywords: 'summer school APPI process mining training workshop hands-on PM4Py Celonis',
