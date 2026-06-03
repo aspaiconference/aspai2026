@@ -87,6 +87,12 @@
       content: 'Conference: USD $200 (Aug 25-26). Summer School: USD $150 (Aug 27-28). Conference + Summer School: USD $300 (Aug 25-28).'
     },
     {
+      url: 'visa-information.html',
+      title: 'Visa Information',
+      keywords: 'visa information entry guide K-ETA Korea passport C-3-1 short-term visit invitation letter immigration KVAC embassy consulate exemption document support',
+      content: 'Visa and Entry Guide for ASPAI 2026. Check your entry type: Visa Required (Short-Term Visit Visa C-3-1, e.g. Indonesia, Sri Lanka, China), K-ETA Required (apply at k-eta.go.kr, KRW 10,000, ~72 hours), or Visa/K-ETA Exempt. Passport must be valid at least six months. Organizer provides Official Invitation Letter and Registration Confirmation Letter. Request visa support documents by emailing eon7777@postech.ac.kr.'
+    },
+    {
       url: 'sponsors.html',
       title: 'Sponsors',
       keywords: 'sponsors partners Celonis SAP Puzzle Data support',
