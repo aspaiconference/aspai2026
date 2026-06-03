@@ -320,10 +320,11 @@ a:hover {
 
 .nav-menu > li > a {
   display: block;
-  padding: var(--space-md) var(--space-lg);
+  padding: var(--space-md) var(--space-md);
   color: var(--color-text);
   font-weight: 600;
   font-size: 0.9rem;
+  white-space: nowrap;
   transition: background var(--transition), color var(--transition);
 }
 
@@ -1609,7 +1610,7 @@ a:hover {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-toggle {
     display: flex;
   }
@@ -1652,7 +1653,9 @@ a:hover {
   .has-dropdown.dropdown-open .dropdown {
     display: block;
   }
+}
 
+@media (max-width: 768px) {
   .hero-date {
     flex-direction: column;
   }
