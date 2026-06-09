@@ -801,6 +801,11 @@ a:hover {
   margin: 0 0 var(--space-xl);
 }
 
+/* Note paragraph that follows a card grid — match the top gap above the grid */
+.section-note-after-grid {
+  margin-top: var(--space-xl);
+}
+
 .venue-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
