@@ -784,6 +784,10 @@ a:hover {
   margin-bottom: var(--space-md);
 }
 
+.info-card-prose li {
+  margin-bottom: var(--space-sm);
+}
+
 .info-card-prose p:last-child {
   margin-bottom: 0;
 }
