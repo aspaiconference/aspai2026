@@ -775,20 +775,21 @@ a:hover {
   color: var(--color-text-muted);
 }
 
-/* Prose-style card (paragraphs + list, e.g. accommodation) — looser spacing for readability */
-.info-card-prose p {
+/* Prose-style card (paragraphs + list, e.g. accommodation) — looser spacing for readability.
+   Uses .info-card.info-card-prose for higher specificity so it beats the base .info-card ul/li rules below. */
+.info-card.info-card-prose p {
   margin-bottom: var(--space-md);
 }
 
-.info-card-prose ul {
-  margin-bottom: var(--space-lg);
+.info-card.info-card-prose ul {
+  margin-bottom: var(--space-xl);
 }
 
-.info-card-prose li {
+.info-card.info-card-prose li {
   margin-bottom: var(--space-sm);
 }
 
-.info-card-prose p:last-child {
+.info-card.info-card-prose p:last-child {
   margin-bottom: 0;
 }
 
