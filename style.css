@@ -1572,6 +1572,10 @@ a:hover {
   max-height: 60px;
 }
 
+.sponsor-logo--multi {
+  gap: var(--space-lg);
+}
+
 /* Supported by section (Sponsors page) */
 .supported-by-section {
   margin-top: var(--space-3xl);
