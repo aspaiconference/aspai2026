@@ -942,6 +942,51 @@ a:hover {
   color: #94a3b8;
 }
 
+.travel-table-wrap {
+  margin: var(--space-md) 0 var(--space-lg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-border-soft);
+}
+
+.travel-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.travel-table th,
+.travel-table td {
+  padding: var(--space-md);
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--color-border-soft);
+  background: var(--color-surface);
+}
+
+.travel-table thead th {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.travel-table tbody tr:hover td {
+  background: var(--color-bg);
+}
+
+.travel-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.travel-note {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
 .keynotes {
   margin-bottom: var(--space-xl);
 }
