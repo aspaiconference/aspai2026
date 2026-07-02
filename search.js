@@ -45,7 +45,7 @@
       content: 'ASPAI 2026 detailed schedule (Pohang, August 25-26). Aug 25: Opening, Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML), Predictive Analytics session, Anomaly Detection session, APPI-NET Meeting, Dinner. Aug 26: Case Studies I and II, Process Intelligence session, Practical Application session, Closing, Tour and Dinner in Gyeongju.'
     },
     {
-      url: 'industry-day-program.html',
+      url: 'industry-day.html#program-details',
       title: 'Industry Day Program',
       keywords: 'industry day program schedule Celonis SAP Puzzle Data Samsung Wil van der Aalst Dohun Kim Julian Lebherz Youngil Kim Jinyeon Lee semiconductor fab process atoms company memory Seoul August 24',
       content: 'Process Mining Industry Day, Monday August 24, Seoul. Talks: Celonis (Wil van der Aalst, Dohun Kim); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform (Youngil Kim, CEO); Samsung Applying Process Mining in Semiconductor Fab Operations: A Case Study (Dr. Jinyeon Lee).'

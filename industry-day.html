@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260702e" />
   <script src="search.js" defer></script>
 </head>
 <body>
@@ -57,8 +57,8 @@
         <li class="has-dropdown">
           <a href="industry-day.html">Industry Day</a>
           <ul class="dropdown">
-            <li><a href="industry-day-program.html">Program Details</a></li>
-            <li><a href="industry-day-venue.html">Venue</a></li>
+            <li><a href="industry-day.html#program-details">Program Details</a></li>
+            <li><a href="industry-day.html#venue">Venue</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
@@ -77,18 +77,67 @@
   <main class="page-main">
     <div class="container">
       <h1 class="section-title">Industry Day</h1>
-      <div class="summer-school-content page-content-block">
+
+      <div class="page-content-block">
         <h2 class="subsection-title">Process Mining Industry Day</h2>
         <p><strong>Date:</strong> Monday, August 24th, 2026</p>
         <p><strong>Venue:</strong> Seoul, Republic of Korea</p>
         <p>The <strong>Process Mining Industry Day</strong> brings together industry practitioners, technology leaders, and researchers to explore the latest trends and applications of process mining in real-world business environments.</p>
         <p>This event serves as a bridge between academic research and industrial practice, showcasing successful process mining implementations and discussing future directions for enterprise process intelligence.</p>
+      </div>
 
-        <div class="cta-box cta-box-inline">
-          <a href="industry-day-program.html" class="btn btn-secondary">Program Details</a>
-          <a href="industry-day-venue.html" class="btn btn-secondary">Venue</a>
-        </div>
+      <h2 class="subsection-title" id="program-details">Program Details</h2>
 
+      <h2 class="day-title">Monday, August 24 <small>Seoul</small></h2>
+      <table class="program-table">
+        <thead>
+          <tr><th>Time</th><th>Program</th></tr>
+        </thead>
+        <tbody>
+          <tr class="break">
+            <td class="time">11:00 ~</td>
+            <td><span class="label">Registration</span></td>
+          </tr>
+          <tr>
+            <td class="time">13:10 ~ 14:00</td>
+            <td>
+              <span class="label">[Celonis]</span>
+              <span class="speaker">Speaker: Wil van der Aalst, Dohun Kim</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time">14:10 ~ 15:00</td>
+            <td>
+              <span class="label">[SAP] Process Atoms and Company Memory</span>
+              <span class="speaker">Speaker: Julian Lebherz</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time">15:10 ~ 16:00</td>
+            <td>
+              <span class="label">[Puzzle Data] Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform</span>
+              <span class="speaker">Speaker: Youngil Kim, CEO</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time">16:10 ~ 17:00</td>
+            <td>
+              <span class="label">[Samsung] Applying Process Mining in Semiconductor Fab Operations: A Case Study</span>
+              <span class="speaker">Speaker: Dr. Jinyeon Lee</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="subsection-title" id="venue">Venue</h2>
+      <p class="venue-address-text"><strong><a href="https://www.homehmc.com/en/oakwood-seoul-coex/" target="_blank" rel="noopener">Oakwood Premier Coex Center Seoul</a></strong><br />46, Teheran-ro 87-gil, Gangnam-gu, Seoul</p>
+      <div class="venue-map-wrap">
+        <h3 class="venue-map-title">Location</h3>
+        <iframe class="venue-map" src="https://maps.google.com/maps?q=Oakwood+Premier+Coex+Center+Seoul&amp;hl=en&amp;z=17&amp;output=embed" title="Oakwood Premier Coex Center Seoul location" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="venue-map-link"><a href="https://www.google.com/maps/place/Oakwood+Premier+Coex+Center/@37.5087,127.0596,17z" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      </div>
+
+      <div class="page-content-block">
         <h2 class="subsection-title">FAQs</h2>
         <p>For any questions about the Industry Day, please contact us at <a href="mailto:eon7777@postech.ac.kr">eon7777@postech.ac.kr</a>.</p>
       </div>
