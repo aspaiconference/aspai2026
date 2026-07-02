@@ -1049,7 +1049,7 @@ a:hover {
 }
 
 .keynote-affiliation {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--color-text-muted);
   margin: var(--space-xs) 0 0;
 }
@@ -1098,12 +1098,12 @@ a:hover {
   border-left: 3px solid var(--color-accent);
   background: var(--color-accent-soft);
   border-radius: 0 var(--radius) var(--radius) 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
 .keynote-bio {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
   line-height: 1.7;
   margin: 0;
@@ -1892,7 +1892,7 @@ a:hover {
   width: 160px;
   white-space: nowrap;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--color-primary);
   background: var(--color-accent-soft);
 }
@@ -1958,7 +1958,7 @@ a:hover {
   display: block;
   margin-top: 2px;
   color: var(--color-text-muted);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 /* Session name chip */
@@ -1967,7 +1967,7 @@ a:hover {
   background: var(--color-accent-soft);
   color: var(--color-accent-hover);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
   padding: 2px var(--space-sm);
   border-radius: var(--radius);
   margin-bottom: var(--space-sm);
@@ -1992,12 +1992,12 @@ a:hover {
   display: block;
   color: var(--color-text);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .program-table .p-auth {
   display: block;
   color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   margin-top: 2px;
 }
 
