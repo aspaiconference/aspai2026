@@ -1782,102 +1782,94 @@ a:hover {
   }
 }
 
-/* ---- Detailed program schedule (Industry Day / Conference) ---- */
-.program-day {
-  margin: var(--space-2xl) 0 var(--space-md);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-.program-day:first-of-type {
-  margin-top: var(--space-lg);
-}
-.program-day::before {
-  content: "";
-  width: 6px;
-  height: 26px;
-  background: var(--color-accent);
-  border-radius: 3px;
-}
-.program-day small {
-  font-weight: 500;
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-}
-
-.program-block {
+/* ---- Detailed program table (Industry Day / Conference) ---- */
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
   background: var(--color-surface);
   border-radius: var(--radius-lg);
+  overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid var(--color-border-soft);
-  overflow: hidden;
-  margin-bottom: var(--space-xl);
+  margin: var(--space-lg) 0 var(--space-2xl);
 }
-
-.program-row {
-  display: grid;
-  grid-template-columns: 150px 1fr;
+.program-table th,
+.program-table td {
+  padding: var(--space-md) var(--space-lg);
   border-bottom: 1px solid var(--color-border-soft);
-  transition: background var(--transition);
+  text-align: left;
+  vertical-align: top;
 }
-.program-row:last-child {
+.program-table tr:last-child td {
   border-bottom: none;
 }
-.program-row:hover {
+.program-table thead th {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.program-table tbody tr:hover td {
   background: var(--color-bg);
 }
-
-.program-time {
-  background: var(--color-accent-soft);
-  padding: var(--space-md) var(--space-lg);
+.program-table td.time {
+  width: 160px;
+  white-space: nowrap;
   font-weight: 600;
   font-size: 0.9rem;
   color: var(--color-primary);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: var(--color-accent-soft);
+}
+.program-table tbody tr:hover td.time {
+  background: var(--color-accent-muted);
 }
 
-.program-body {
-  padding: var(--space-md) var(--space-lg);
-  color: var(--color-text);
+/* Day divider row */
+.program-table tr.day-row td {
+  background: var(--color-primary-soft);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
 }
-.program-body .program-label {
-  font-weight: 600;
+.program-table tr.day-row:hover td {
+  background: var(--color-primary-soft);
 }
-.program-body .program-speaker {
-  display: block;
-  margin-top: var(--space-xs);
+.program-table tr.day-row small {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-left: var(--space-sm);
+}
+
+/* Break / logistics rows */
+.program-table tr.break td {
   color: var(--color-text-muted);
-  font-size: 0.9rem;
-  font-weight: 400;
 }
-
-/* Break / logistics rows (registration, lunch, dinner, etc.) */
-.program-row.is-break .program-time {
+.program-table tr.break td.time {
   background: var(--color-bg);
   color: var(--color-text-soft);
 }
-.program-row.is-break .program-body {
-  color: var(--color-text-muted);
-  font-weight: 500;
-}
 
-/* Keynote / highlighted rows */
-.program-row.is-keynote .program-time {
+/* Keynote row */
+.program-table tr.keynote td.time {
   background: var(--color-primary);
   color: #fff;
 }
-.program-row.is-keynote .program-body .program-label {
-  color: var(--color-primary);
+
+/* Labels and speakers */
+.program-table .label {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.program-table .speaker {
+  display: block;
+  margin-top: 2px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
 }
 
-/* Paper session rows */
-.program-session-name {
+/* Session name chip */
+.program-table .session {
   display: inline-block;
   background: var(--color-accent-soft);
   color: var(--color-accent-hover);
@@ -1887,27 +1879,29 @@ a:hover {
   border-radius: var(--radius);
   margin-bottom: var(--space-sm);
 }
-.program-papers {
+
+/* Paper list */
+.program-table ul.papers {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.program-papers li {
+.program-table ul.papers li {
   padding-left: var(--space-md);
   border-left: 2px solid var(--color-accent-muted);
   margin-bottom: var(--space-md);
   line-height: 1.5;
 }
-.program-papers li:last-child {
+.program-table ul.papers li:last-child {
   margin-bottom: 0;
 }
-.program-papers .paper-title {
+.program-table .p-title {
   display: block;
   color: var(--color-text);
   font-weight: 600;
   font-size: 0.95rem;
 }
-.program-papers .paper-authors {
+.program-table .p-auth {
   display: block;
   color: var(--color-text-muted);
   font-size: 0.85rem;
@@ -1915,12 +1909,12 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  .program-row {
-    grid-template-columns: 1fr;
+  .program-table td.time {
+    width: 96px;
+    white-space: normal;
   }
-  .program-time {
-    justify-content: flex-start;
-    text-align: left;
+  .program-table th,
+  .program-table td {
     padding: var(--space-sm) var(--space-md);
   }
 }
