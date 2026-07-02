@@ -57,6 +57,12 @@
       content: 'Keynote Speakers: Wil van der Aalst (RWTH Aachen University), Jan vom Brocke (University of Münster).'
     },
     {
+      url: 'conference.html#poster-session',
+      title: 'Poster Session',
+      keywords: 'poster session posters LLMs process mining object-centric event log IoT smart farming semantic integrity multi-LLM consensus event-data imperfection patterns process voids missing data James Hyunseo Cho Gyunam Park Minsu Cho Yudhi Kurniawan Mahendrawathi Er Faizal Mahananto Ifrina Nuritha Vandha Pradwiyasma Widartha Sareh Sadeghianasl Moe Wynn Robert Andrews Wil van der Aalst Jonghyeon Ko Adam Burke',
+      content: 'Poster Session: Where do LLMs fit in process mining? (James Hyunseo Cho, Gyunam Park, Minsu Cho); Designing an Object-Centric Event Log for IoT-Driven Smart Farming (Yudhi Kurniawan, Mahendrawathi Er, Faizal Mahananto); Semantic Integrity Preservation in Event Log Augmentation via Multi-LLM Consensus (Ifrina Nuritha, Vandha Pradwiyasma Widartha, Mahendrawathi Er); Object-Centric Event-Data Imperfection Patterns (Sareh Sadeghianasl, Moe Wynn, Robert Andrews, Wil M. P. van der Aalst, Jonghyeon Ko); Process Voids: Analysis With Missing Data (Adam Burke, Moe Wynn).'
+    },
+    {
       url: 'call-for-papers.html',
       title: 'Call for Papers',
       keywords: 'call for papers CFP submission topics AI process mining governance ethics digital transformation CEUR publication poster session EasyChair',
