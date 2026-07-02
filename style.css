@@ -1045,6 +1045,54 @@ a:hover {
   margin: var(--space-xs) 0 0;
 }
 
+/* Featured keynote card with photo + bio */
+.keynote-card-featured {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  text-align: left;
+  max-width: 760px;
+}
+
+.keynote-photo {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+}
+
+.keynote-card-featured .keynote-body {
+  flex: 1;
+}
+
+.keynote-card-featured .keynote-name {
+  font-size: 1.15rem;
+}
+
+.keynote-talk {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: var(--space-sm) 0 0;
+  font-size: 0.95rem;
+}
+
+.keynote-bio {
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  line-height: 1.6;
+  margin: var(--space-sm) 0 0;
+}
+
+@media (max-width: 640px) {
+  .keynote-card-featured {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .social-events {
   background: linear-gradient(135deg, var(--color-accent-soft) 0%, #f0fdfa 100%);
   padding: var(--space-xl);
@@ -1831,7 +1879,7 @@ a:hover {
   font-weight: 700;
   font-size: 1.15rem;
   padding: var(--space-md) var(--space-lg);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius);
   margin: var(--space-2xl) 0 var(--space-md);
 }
 .day-title small {
