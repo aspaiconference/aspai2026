@@ -1824,6 +1824,23 @@ a:hover {
   background: var(--color-accent-muted);
 }
 
+/* Day heading above each day's table */
+.day-title {
+  background: var(--color-primary-soft);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  margin: var(--space-2xl) 0 var(--space-md);
+}
+.day-title small {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-left: var(--space-sm);
+}
+
 /* Day divider row */
 .program-table tr.day-row td {
   background: var(--color-primary-soft);
