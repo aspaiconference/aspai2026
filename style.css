@@ -999,6 +999,15 @@ a:hover {
   margin: 0 0 var(--space-lg);
 }
 
+/* Section headings on the Conference page (Keynote / Schedule / Poster Session) */
+.section-heading {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: var(--space-2xl) 0 var(--space-lg);
+}
+
 .keynote-grid {
   display: flex;
   gap: var(--space-xl);

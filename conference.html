@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conference Schedule – ASPAI 2026</title>
+  <title>Conference – ASPAI 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260702c" />
+  <link rel="stylesheet" href="style.css?v=20260702d" />
   <script src="search.js" defer></script>
 </head>
 <body>
@@ -49,9 +49,9 @@
         <li class="has-dropdown">
           <a href="conference.html">Conference</a>
           <ul class="dropdown">
-            <li><a href="conference.html">Schedule</a></li>
-            <li><a href="conference.html#poster-session">Poster Session</a></li>
             <li><a href="conference.html#keynotes">Keynote</a></li>
+            <li><a href="conference.html#schedule">Schedule</a></li>
+            <li><a href="conference.html#poster-session">Poster Session</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
@@ -79,7 +79,7 @@
       <h1 class="section-title">Conference</h1>
 
       <div id="keynotes" class="keynotes">
-        <h3>Keynote Speakers</h3>
+        <h3 class="section-heading">Keynote</h3>
         <div class="keynote-grid">
           <div class="keynote-card keynote-card-featured">
             <img class="keynote-photo" src="사진/Professor Aalst.jpeg" alt="Wil van der Aalst" />
@@ -92,6 +92,8 @@
           </div>
         </div>
       </div>
+
+      <h3 class="section-heading" id="schedule">Schedule</h3>
 
       <h2 class="day-title">Day 1 <small>August 25, 2026</small></h2>
       <table class="program-table">
@@ -238,7 +240,7 @@
         </tbody>
       </table>
 
-      <h2 class="day-title" id="poster-session">Poster Session</h2>
+      <h3 class="section-heading" id="poster-session">Poster Session</h3>
       <table class="program-table">
         <thead>
           <tr><th>Program</th></tr>
