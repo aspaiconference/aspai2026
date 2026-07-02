@@ -1051,7 +1051,7 @@ a:hover {
   gap: var(--space-xl);
   align-items: flex-start;
   text-align: left;
-  max-width: 820px;
+  width: 100%;
   padding: var(--space-xl);
   background: var(--color-surface);
   border: 1px solid var(--color-border-soft);
