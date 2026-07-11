@@ -1125,6 +1125,7 @@ a:hover {
   background: linear-gradient(135deg, var(--color-accent-soft) 0%, #f0fdfa 100%);
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
+  margin-top: var(--space-2xl);
   margin-bottom: var(--space-xl);
   border: 1px solid rgba(13, 148, 136, 0.2);
 }
