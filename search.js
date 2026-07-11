@@ -45,10 +45,10 @@
       content: 'ASPAI 2026 detailed schedule (Pohang, August 25-26). Aug 25: Opening, Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML), Predictive Analytics session, Anomaly Detection session, APPI-NET Meeting, Dinner. Aug 26: Case Studies I and II, Process Intelligence session, Practical Application session, Closing, Tour and Dinner in Gyeongju.'
     },
     {
-      url: 'industry-day.html#program-details',
+      url: 'industry-day.html#program-seoul',
       title: 'Industry Day Program',
-      keywords: 'industry day program schedule Celonis SAP Puzzle Data Samsung Wil van der Aalst Dohun Kim Julian Lebherz Youngil Kim Jinyeon Lee semiconductor fab process atoms company memory Seoul August 24',
-      content: 'Process Mining Industry Day, Monday August 24, Seoul. Talks: Celonis (Wil van der Aalst, Dohun Kim); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform (Youngil Kim, CEO); Samsung Applying Process Mining in Semiconductor Fab Operations: A Case Study (Dr. Jinyeon Lee).'
+      keywords: 'industry day program schedule Seoul Pohang Celonis SAP Puzzle Data Samsung LG Wil van der Aalst Dohun Kim Julian Lebherz Youngil Kim Jinyeon Lee Denis Cho semiconductor fab process atoms company memory vision AI POSCO International Center Changeup Ground August 24',
+      content: 'Process Mining Industry Day, held in Seoul and Pohang. Seoul (Monday, August 24): Celonis (Wil van der Aalst, Dohun Kim); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform (Youngil Kim, CEO); Samsung Applying Process Mining in Semiconductor Fab Operations: A Case Study (Dr. Jinyeon Lee). Pohang (POSCO International Center, Changeup Ground): Opening; Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era (Youngil Kim, CEO); LG Process Improvement with Vision AI (Denis Cho).'
     },
     {
       url: 'conference.html#keynotes',
