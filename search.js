@@ -47,8 +47,8 @@
     {
       url: 'industry-day.html#program-seoul',
       title: 'Industry Day Program',
-      keywords: 'industry day program schedule Seoul Pohang Celonis SAP Puzzle Data Samsung LG Wil van der Aalst Dohun Kim Julian Lebherz Youngil Kim Jinyeon Lee Denis Cho semiconductor fab process atoms company memory vision AI POSCO International Center Changeup Ground August 24',
-      content: 'Process Mining Industry Day, held in Seoul and Pohang. Seoul (Monday, August 24): Celonis (Wil van der Aalst, Dohun Kim); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform (Youngil Kim, CEO); Samsung Applying Process Mining in Semiconductor Fab Operations: A Case Study (Dr. Jinyeon Lee). Pohang (POSCO International Center, Changeup Ground): Opening; Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era (Youngil Kim, CEO); LG Process Improvement with Vision AI (Denis Cho).'
+      keywords: 'industry day program schedule Seoul Pohang Celonis SAP Puzzle Data Samsung LG Wil van der Aalst Dohun Kim Julian Lebherz Youngil Kim Jinyeon Lee Denis Cho semiconductor fab process atoms company memory vision AI POSCO International Center Changeup Ground August 24 August 25',
+      content: 'Process Mining Industry Day, held in Seoul and Pohang. Seoul (Monday, August 24): Celonis (Wil van der Aalst, Dohun Kim); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform (Youngil Kim, CEO); Samsung Applying Process Mining in Semiconductor Fab Operations: A Case Study (Dr. Jinyeon Lee). Pohang (Tuesday, August 25, in parallel with the conference — POSCO International Center, Changeup Ground): Opening; Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML); SAP Process Atoms and Company Memory (Julian Lebherz); Puzzle Data Process Excellence in the AI Era (Youngil Kim, CEO); LG Process Improvement with Vision AI (Denis Cho).'
     },
     {
       url: 'conference.html#keynotes',
@@ -83,14 +83,14 @@
     {
       url: 'summer-school-program.html',
       title: 'Summer School Program Details',
-      keywords: 'summer school program schedule sessions process discovery conformance checking OCPM PM4Py Celonis workshop',
-      content: 'Day 1: Foundations of Process Mining, Process Discovery Algorithms, Hands-on PM4Py, Conformance Checking. Day 2: Performance Analysis, Celonis Workshop, OCPM, Predictive Process Monitoring.'
+      keywords: 'summer school program schedule August 27 28 POSCO International Center process mining process discovery conformance checking Celonis SAP Signavio predictive process monitoring healthcare supply chains Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati',
+      content: 'Summer School Program (POSCO International Center, Large-size Meeting Room 1F). Day 1 (August 27, Thursday): Introduction to Process Mining and Process Discovery (Wil van der Aalst), Conformance Checking (Wil van der Aalst), Process Data and Quality Management (Moe Wynn), Celonis Hands-On (Poornima Dhall), SAP Signavio Hands-On (Julian Lebherz). Day 2 (August 28, Friday): Predictive Process Monitoring and AI in Process Mining (Marco Comuzzi), Federated Process Mining in Supply Chains (Bernardo Nugroho Yahya), Process Mining in Healthcare (Angelina Prima Kurniati).'
     },
     {
       url: 'summer-school-lecturers.html',
       title: 'Summer School Lecturers',
-      keywords: 'lecturers speakers instructors Wil van der Aalst Marlon Dumas Hajo Reijers Minseok Song Celonis SAP',
-      content: 'Academic Lecturers: Prof. Wil van der Aalst (RWTH Aachen), Prof. Marlon Dumas (University of Tartu), Prof. Hajo Reijers (Utrecht University), Prof. Minseok Song (POSTECH). Industry Speakers from Celonis and SAP.'
+      keywords: 'lecturers speakers instructors Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati RWTH Aachen QUT Celonis SAP Signavio UNIST Telkom',
+      content: 'Summer School Lecturers: Prof. Wil van der Aalst (RWTH Aachen University), Prof. Moe Wynn (Queensland University of Technology), Poornima Dhall (Celonis), Julian Lebherz (SAP Signavio), Prof. Marco Comuzzi (UNIST), Prof. Bernardo Nugroho Yahya (Hankook Foreign University), Prof. Angelina Prima Kurniati (Telkom University).'
     },
     {
       url: 'registration.html',
