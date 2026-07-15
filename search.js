@@ -83,14 +83,14 @@
     {
       url: 'summer-school-program.html',
       title: 'Summer School Program Details',
-      keywords: 'summer school program schedule August 27 28 POSCO International Center process mining process discovery conformance checking Celonis SAP Signavio predictive process monitoring healthcare supply chains Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati',
-      content: 'Summer School Program (POSCO International Center, Large-size Meeting Room 1F). Day 1 (August 27, Thursday): Introduction to Process Mining and Process Discovery (Wil van der Aalst), Conformance Checking (Wil van der Aalst), Process Data and Quality Management (Moe Wynn), Celonis Hands-On (Poornima Dhall), SAP Signavio Hands-On (Julian Lebherz). Day 2 (August 28, Friday): Predictive Process Monitoring and AI in Process Mining (Marco Comuzzi), Federated Process Mining in Supply Chains (Bernardo Nugroho Yahya), Process Mining in Healthcare (Angelina Prima Kurniati).'
+      keywords: 'summer school program schedule August 27 28 POSCO International Center process intelligence process mining process discovery event logs conformance checking token-based replay alignments process data quality management hands-on Celonis SAP Signavio process mining AI federated process mining case studies healthcare Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati',
+      content: 'Summer School Program (POSCO International Center, Large-size Meeting Room 1F). Day 1 (August 27, Thursday): Opening (Marco Comuzzi), Unlocking Process Intelligence: A 360 Degree Introduction to Process Mining (Wil van der Aalst), From Event Logs to Process Logic: The Basics of Process Discovery (Wil van der Aalst), Conformance Checking: Token-Based Replay and Alignments (Wil van der Aalst), Process Data Quality Management (Moe Wynn), Process Mining Hands-On A (Poornima Dhall, Celonis), Process Mining Hands-On B (Julian Lebherz, SAP Signavio). Day 2 (August 28, Friday): Process Mining and AI (Marco Comuzzi), Federated Process Mining (Bernardo Nugroho Yahya), Process Mining Case Studies (Angelina Prima Kurniati), Process Mining in the Healthcare (TBD), Closing (Marco Comuzzi).'
     },
     {
       url: 'summer-school-lecturers.html',
       title: 'Summer School Lecturers',
       keywords: 'lecturers speakers instructors Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati RWTH Aachen QUT Celonis SAP Signavio UNIST Telkom',
-      content: 'Summer School Lecturers: Prof. Wil van der Aalst (RWTH Aachen University), Prof. Moe Wynn (Queensland University of Technology), Poornima Dhall (Celonis), Julian Lebherz (SAP Signavio), Prof. Marco Comuzzi (UNIST), Prof. Bernardo Nugroho Yahya (Hankook Foreign University), Prof. Angelina Prima Kurniati (Telkom University).'
+      content: 'Summer School Lecturers: Prof. Wil van der Aalst (RWTH Aachen University), Prof. Moe Wynn (Queensland University of Technology), Poornima Dhall (Celonis), Julian Lebherz (SAP Signavio), Prof. Marco Comuzzi (UNIST), Prof. Bernardo Nugroho Yahya (Hankuk University of Foreign Studies), Prof. Angelina Prima Kurniati (Telkom University).'
     },
     {
       url: 'registration.html',
