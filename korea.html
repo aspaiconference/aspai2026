@@ -86,7 +86,7 @@
         radial-gradient(90% 80% at -5% 110%, rgba(196,241,53,.10), transparent 55%),
         var(--bg);
     }
-    .hero-inner{position:relative;z-index:2;padding:76px 0 84px}
+    .hero-inner{position:relative;z-index:2;padding:76px 0 84px;text-align:center;max-width:960px;margin:0 auto}
     .eyebrow{font-family:var(--display);color:var(--lime);letter-spacing:.16em;font-size:clamp(.82rem,2.4vw,1.06rem);
       text-transform:uppercase;margin-bottom:22px;line-height:1.2}
     .hero h1{font-weight:900;font-size:clamp(2.5rem,7.4vw,5.4rem);line-height:1.02;letter-spacing:-.03em;margin-bottom:8px}
@@ -95,16 +95,16 @@
       color:var(--ink);text-transform:uppercase;margin-top:20px;line-height:1.15}
     .hero .subline small{color:var(--lime)}
     .hero .lead-en{color:var(--muted);font-size:clamp(.95rem,2.4vw,1.12rem);font-weight:500;margin-top:14px;font-style:italic;letter-spacing:0}
-    .meta-chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .meta-chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px;justify-content:center}
     .chip{display:inline-flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);
       border-radius:12px;padding:11px 16px;font-size:.94rem;font-weight:600;color:var(--ink-dim)}
     .chip svg{width:17px;height:17px;color:var(--lime);flex:none}
     .chip b{color:var(--ink);font-weight:800}
-    .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:36px}
+    .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;margin-top:36px}
     .hero-cta .note{font-size:.82rem;color:var(--muted)}
     .partners{margin-top:48px;padding-top:26px;border-top:1px solid var(--line)}
     .partners .plabel{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:14px}
-    .partners .wordmarks{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
+    .partners .wordmarks{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 26px}
     .wordmarks .wm{font-weight:800;font-size:clamp(1rem,3vw,1.35rem);letter-spacing:.01em;color:var(--ink);opacity:.9}
     .wordmarks .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);opacity:.7}
 
@@ -145,6 +145,9 @@
     .b-samsung{background:rgba(91,141,239,.16);color:#93b4f6;border:1px solid rgba(91,141,239,.36)}
     .b-lg{background:rgba(224,96,126,.16);color:#f0a0b4;border:1px solid rgba(224,96,126,.36)}
     .b-key{background:var(--lime);color:#06060a;border:1px solid var(--lime)}
+    .b-seoul{background:rgba(196,241,53,.16);color:#d4f56a;border:1px solid rgba(196,241,53,.42)}
+    .b-pohang{background:rgba(47,58,230,.26);color:#aab2f9;border:1px solid rgba(47,58,230,.55)}
+    .b-both{background:rgba(255,255,255,.09);color:#d2d3dd;border:1px solid rgba(255,255,255,.22)}
 
     /* ---------- Speakers ---------- */
     .spk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:24px}
@@ -324,7 +327,7 @@
             <div class="prog-card__head">
               <span class="city-tag city-seoul">Seoul</span>
               <span class="date">8월 24일 (월)</span>
-              <span class="venue">오크우드 프리미어 코엑스 센터, 서울</span>
+              <span class="venue">오크우드 프리미어 코엑스 센터 프리미어룸 (5층)</span>
             </div>
             <table class="prog">
               <tr class="minor">
@@ -334,7 +337,7 @@
               <tr>
                 <td class="t-time">13:10 ~ 14:00</td>
                 <td class="t-body">
-                  <span class="pl-title"><span class="badge b-celonis">Celonis</span>객체 중심 프로세스 마이닝과 엔터프라이즈 AI</span>
+                  <span class="pl-title"><span class="badge b-celonis">Celonis</span>AI 시대의 프로세스 마이닝과 프로세스 인텔리전스</span>
                   <span class="pl-spk">Wil van der Aalst · Yonghan Lee</span>
                 </td>
               </tr>
@@ -342,7 +345,7 @@
                 <td class="t-time">14:10 ~ 15:00</td>
                 <td class="t-body">
                   <span class="pl-title"><span class="badge b-sap">SAP&nbsp;Signavio</span>Process Atoms and Company Memory</span>
-                  <span class="pl-spk">Julian Lebherz</span>
+                  <span class="pl-spk">Gia-Thi Nguyen · Julian Lebherz · Tony (RaeSung) Park</span>
                 </td>
               </tr>
               <tr>
@@ -378,8 +381,8 @@
               <tr>
                 <td class="t-time">13:10 ~ 14:15</td>
                 <td class="t-body">
-                  <span class="pl-title"><span class="badge b-key">Keynote</span>객체 중심 프로세스 마이닝으로 복잡성 해소와 엔터프라이즈 AI/ML 실현</span>
-                  <span class="pl-spk">Wil van der Aalst · Celonis</span>
+                  <span class="pl-title"><span class="badge b-celonis">Celonis</span>객체 중심 프로세스 마이닝으로 복잡성 해소와 엔터프라이즈 AI/ML 실현</span>
+                  <span class="pl-spk">Wil van der Aalst</span>
                 </td>
               </tr>
               <tr class="subhead"><td colspan="2">체인지업그라운드 &middot; 이벤트홀</td></tr>
@@ -387,7 +390,7 @@
                 <td class="t-time">14:30 ~ 15:10</td>
                 <td class="t-body">
                   <span class="pl-title"><span class="badge b-sap">SAP&nbsp;Signavio</span>Process Atoms and Company Memory</span>
-                  <span class="pl-spk">Julian Lebherz</span>
+                  <span class="pl-spk">Julian Lebherz · Tony (RaeSung) Park</span>
                 </td>
               </tr>
               <tr>
@@ -447,8 +450,8 @@
             </div>
             <div class="spk__body">
               <div class="spk__name">Yonghan Lee</div>
-              <div class="spk__role">Celonis · Process Intelligence</div>
-              <p class="spk__bio">Celonis에서 프로세스 인텔리전스 전문가로 활동하며, 국내 기업의 프로세스 마이닝 도입과 실전 활용을 지원하고 있습니다.</p>
+              <div class="spk__role">Celonis Korea · Sales Director</div>
+              <p class="spk__bio">Celonis Korea에서 세일즈를 이끄는 디렉터입니다. 이번 행사에서는 Wil van der Aalst 교수와 함께 발표하며, 폭넓은 컨설팅 경험과 다양한 프로세스 혁신(PI) 사례를 공유할 예정입니다.</p>
             </div>
           </article>
 
@@ -499,8 +502,8 @@
             </div>
             <div class="spk__body">
               <div class="spk__name">Youngill Kim</div>
-              <div class="spk__role">PuzzleData · 대표이사(CEO)</div>
-              <p class="spk__bio">국내 유일의 프로세스 마이닝 솔루션 ‘ProDiscovery’를 개발한 퍼즐데이터의 대표이사. 반도체·제조·유통·의료 등 다양한 산업에 프로세스 마이닝을 적용해 온 국내 선도 기업을 이끌고 있습니다.</p>
+              <div class="spk__role">㈜퍼즐데이터 · 대표이사(CEO)</div>
+              <p class="spk__bio">김영일 대표는 국내 프로세스 마이닝(Process Mining) 분야를 대표하는 기업 ㈜퍼즐데이터의 대표이사로, 자체 개발한 플랫폼 ‘프로디스커버리(ProDiscovery)’로 신한은행, SK텔레콤 등 주요 기업의 프로세스 혁신을 이끌어왔습니다. 퍼즐데이터는 가트너 프로세스 마이닝 대표 기업으로 9년 연속 선정된 아시아 대표 프로세스 마이닝 기업입니다.</p>
             </div>
           </article>
 
@@ -512,14 +515,24 @@
             </div>
             <div class="spk__body">
               <div class="spk__name">Jinyoun Lee</div>
-              <div class="spk__role">Samsung · 반도체 제조</div>
-              <p class="spk__bio">삼성에서 반도체 Fab 운영에 프로세스 마이닝을 적용하는 실무를 담당하며, 제조 데이터 기반의 공정 최적화 사례를 연구·구현하고 있습니다.</p>
+              <div class="spk__role">삼성전자 디지털트윈센터 · 수석연구원</div>
+              <p class="spk__bio">삼성전자 디지털트윈센터의 수석연구원(Principal Engineer)이자 파트장(Head of Part)입니다. POSTECH에서 산업경영공학 박사 학위를 취득했으며, 오퍼레이션 리서치, 인공지능, 디지털 트윈, 그리고 반도체 제조 최적화를 중심으로 연구하고 있습니다.</p>
+            </div>
+          </article>
+
+          <!-- Denis Cho -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(224,96,126,.2);color:#f4b4c4">LG Electronics</span>
+              <img src="korea-speakers/denis-cho.jpg" alt="Denis Cho" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Denis Cho</div>
+              <div class="spk__role">LG전자 · Vice President</div>
+              <p class="spk__bio">LG전자 상무로서 AI·빅데이터·클라우드 혁신을 통해 전사적 디지털 전환을 이끌어 온 기술 리더입니다. 현재는 산업 안전과 운영 효율을 높이는 피지컬 AI 플랫폼 ‘EVA’의 확산을 주도하고 있습니다. 복잡한 기술 역량을 구체적인 비즈니스 가치로 전환해 산업 현장의 패러다임을 바꾸는 데 강점을 지니고 있습니다.</p>
             </div>
           </article>
         </div>
-        <p class="sec-intro reveal" style="margin-top:28px;margin-bottom:0;font-size:.9rem;color:var(--muted)">
-          이 외에도 포항 세션에서는 <b style="color:#f0a0b4">LG</b>의 <b>Denis Cho</b>가 ‘비전 AI를 활용한 프로세스 개선’을 주제로 발표합니다.
-        </p>
       </div>
     </section>
 
@@ -535,12 +548,33 @@
         </div>
 
         <div class="talk-list">
-          <!-- Keynote -->
+          <!-- Celonis · Seoul -->
           <article class="talk reveal">
-            <div class="talk__idx">K</div>
+            <div class="talk__idx">01</div>
             <div>
               <div class="talk__top">
-                <span class="badge b-key">Keynote</span>
+                <span class="badge b-seoul">서울</span>
+                <span class="badge b-celonis">Celonis</span>
+                <span class="talk__spk">Wil van der Aalst · Yonghan Lee</span>
+              </div>
+              <h3 class="talk__title">
+                AI 시대의 프로세스 마이닝과 프로세스 인텔리전스
+                <span class="en">Process Mining and Process Intelligence in the Age of AI</span>
+              </h3>
+              <p class="talk__abs">
+                프로세스 마이닝은 이제 단순한 프로세스 시각화를 넘어, AI와 결합한 ‘프로세스 인텔리전스’로 진화하고 있습니다.
+                프로세스 마이닝의 창시자 Wil van der Aalst 교수와 Celonis Korea의 Yonghan Lee가 함께,
+                객체 중심 프로세스 마이닝을 비롯한 최신 흐름과 실제 프로세스 혁신(PI) 사례를 통해 AI 시대의 프로세스 인텔리전스가 나아갈 방향을 제시합니다.
+              </p>
+            </div>
+          </article>
+
+          <!-- Celonis · Pohang (keynote) -->
+          <article class="talk reveal">
+            <div class="talk__idx">02</div>
+            <div>
+              <div class="talk__top">
+                <span class="badge b-pohang">포항</span>
                 <span class="badge b-celonis">Celonis</span>
                 <span class="talk__spk">Wil van der Aalst</span>
               </div>
@@ -556,13 +590,14 @@
             </div>
           </article>
 
-          <!-- SAP -->
+          <!-- SAP · Seoul & Pohang -->
           <article class="talk reveal">
-            <div class="talk__idx">01</div>
+            <div class="talk__idx">03</div>
             <div>
               <div class="talk__top">
+                <span class="badge b-both">서울 · 포항</span>
                 <span class="badge b-sap">SAP&nbsp;Signavio</span>
-                <span class="talk__spk">Julian Lebherz</span>
+                <span class="talk__spk">Gia-Thi Nguyen · Julian Lebherz · Tony (RaeSung) Park</span>
               </div>
               <h3 class="talk__title">
                 Process Atoms and Company Memory
@@ -575,11 +610,12 @@
             </div>
           </article>
 
-          <!-- PuzzleData -->
+          <!-- PuzzleData · Seoul & Pohang -->
           <article class="talk reveal">
-            <div class="talk__idx">02</div>
+            <div class="talk__idx">04</div>
             <div>
               <div class="talk__top">
+                <span class="badge b-both">서울 · 포항</span>
                 <span class="badge b-puzzle">PuzzleData</span>
                 <span class="talk__spk">Youngill Kim, 대표이사</span>
               </div>
@@ -594,11 +630,12 @@
             </div>
           </article>
 
-          <!-- Samsung -->
+          <!-- Samsung · Seoul -->
           <article class="talk reveal">
-            <div class="talk__idx">03</div>
+            <div class="talk__idx">05</div>
             <div>
               <div class="talk__top">
+                <span class="badge b-seoul">서울</span>
                 <span class="badge b-samsung">Samsung</span>
                 <span class="talk__spk">Jinyoun Lee</span>
               </div>
@@ -613,14 +650,14 @@
             </div>
           </article>
 
-          <!-- LG -->
+          <!-- LG · Pohang -->
           <article class="talk reveal">
-            <div class="talk__idx">04</div>
+            <div class="talk__idx">06</div>
             <div>
               <div class="talk__top">
+                <span class="badge b-pohang">포항</span>
                 <span class="badge b-lg">LG</span>
                 <span class="talk__spk">Denis Cho</span>
-                <span class="talk__spk">· 포항 세션</span>
               </div>
               <h3 class="talk__title">
                 비전 AI를 활용한 프로세스 개선
@@ -662,7 +699,7 @@
         <div class="venue-grid">
           <div class="venue-card reveal">
             <div class="vc-city city-seoul">Seoul · 8/24</div>
-            <div class="vc-name"><a href="https://www.homehmc.com/en/oakwood-seoul-coex/" target="_blank" rel="noopener">오크우드 프리미어 코엑스 센터</a></div>
+            <div class="vc-name"><a href="https://www.homehmc.com/en/oakwood-seoul-coex/" target="_blank" rel="noopener">오크우드 프리미어 코엑스 센터</a> <span style="color:var(--muted);font-weight:600;font-size:.85rem">프리미어룸 (5층)</span></div>
             <div class="vc-addr">서울 강남구 테헤란로87길 46<br />46, Teheran-ro 87-gil, Gangnam-gu, Seoul</div>
           </div>
           <div class="venue-card reveal">
