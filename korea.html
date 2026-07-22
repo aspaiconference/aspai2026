@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>프로세스 마이닝 인더스트리 데이 · 서울 &amp; 포항 | ASPAI 2026</title>
+  <meta name="description" content="ASPAI 2026 프로세스 마이닝 인더스트리 데이 — 2026년 8월 24일(서울) · 8월 25일(포항). Celonis, SAP Signavio, PuzzleData, Samsung, LG의 프로세스 마이닝 실전 사례를 만나보세요." />
+  <meta property="og:title" content="프로세스 마이닝 인더스트리 데이 · 서울 & 포항 | ASPAI 2026" />
+  <meta property="og:description" content="AI 시대의 혁신은 프로세스에서 시작됩니다. 프로세스 마이닝 인더스트리 데이 — 서울 8/24 · 포항 8/25." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2307070a'/%3E%3Cpolygon points='6,26 16,6 26,26' fill='%23c4f135'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <script>document.documentElement.classList.add("js");</script>
+  <style>
+    /* ============================================================
+       ASPAI 2026 — Process Mining Industry Day (Korea) · korea.html
+       Standalone poster-style dark theme. Self-contained (no shared css).
+       ============================================================ */
+    :root{
+      --bg:#07070a; --bg-soft:#0d0d12; --panel:#131319; --panel-2:#1a1a22;
+      --line:rgba(255,255,255,.10); --line-strong:rgba(255,255,255,.18);
+      --ink:#f6f6f8; --ink-dim:#c9c9d2; --muted:#8f8f9c;
+      --lime:#c4f135; --lime-deep:#a7d827; --blue:#2f3ae6; --blue-deep:#1a1fb0;
+      --celonis:#a78bfa; --sap:#f0b429; --puzzle:#c4f135; --samsung:#5b8def; --lg:#e0607e;
+      --maxw:1160px; --radius:16px;
+      --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+      --display:"Anton",var(--font);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:var(--font); background:var(--bg); color:var(--ink);
+      line-height:1.7; letter-spacing:-.01em; word-break:keep-all;
+      overflow-x:hidden; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    ::selection{background:var(--lime);color:#06060a}
+    .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+    /* ---------- Top bar ---------- */
+    .topbar{
+      position:sticky;top:0;z-index:60;
+      background:rgba(7,7,10,.72);backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{display:flex;align-items:center;gap:20px;height:62px}
+    .brand{display:flex;flex-direction:column;line-height:1.05;letter-spacing:.02em}
+    .brand b{font-weight:800;font-size:1rem}
+    .brand span{font-size:.62rem;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+    .topnav{display:flex;gap:26px;margin-left:auto;align-items:center}
+    .topnav a.navlink{font-size:.9rem;font-weight:600;color:var(--ink-dim);transition:color .2s;position:relative;padding:4px 0}
+    .topnav a.navlink:hover{color:var(--lime)}
+    .lang{display:flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.05em}
+    .lang a{padding:3px 8px;border-radius:999px}
+    .lang .cur{background:var(--lime);color:#06060a}
+    .lang a:not(.cur):hover{color:var(--ink)}
+    .btn{
+      display:inline-flex;align-items:center;gap:.5em;font-weight:800;font-family:var(--font);
+      border-radius:999px;cursor:pointer;transition:transform .18s ease,box-shadow .25s ease,background .2s,color .2s;
+      letter-spacing:-.01em;border:none;white-space:nowrap;
+    }
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    .btn-lg{padding:17px 34px;font-size:1.06rem}
+    .btn-primary{background:var(--lime);color:#06060a;box-shadow:0 6px 22px rgba(196,241,53,.22)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(196,241,53,.34)}
+    .btn-primary .arw{transition:transform .2s}
+    .btn-primary:hover .arw{transform:translateX(4px)}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line-strong)}
+    .btn-ghost:hover{border-color:var(--lime);color:var(--lime)}
+    .btn.is-pending{background:#26262e;color:var(--muted);box-shadow:none;cursor:not-allowed}
+    .btn.is-pending:hover{transform:none;box-shadow:none}
+
+    /* ---------- Decorative triangles ---------- */
+    .deco{position:absolute;pointer-events:none;z-index:0}
+    .glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;pointer-events:none;z-index:0}
+
+    /* ---------- Hero ---------- */
+    .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(120% 90% at 85% -10%, rgba(47,58,230,.20), transparent 55%),
+        radial-gradient(90% 80% at -5% 110%, rgba(196,241,53,.10), transparent 55%),
+        var(--bg);
+    }
+    .hero-inner{position:relative;z-index:2;padding:76px 0 84px}
+    .eyebrow{font-family:var(--display);color:var(--lime);letter-spacing:.16em;font-size:clamp(.82rem,2.4vw,1.06rem);
+      text-transform:uppercase;margin-bottom:22px;line-height:1.2}
+    .hero h1{font-weight:900;font-size:clamp(2.5rem,7.4vw,5.4rem);line-height:1.02;letter-spacing:-.03em;margin-bottom:8px}
+    .hero h1 .hl{color:var(--lime)}
+    .hero .subline{font-family:var(--display);font-size:clamp(1.05rem,3.4vw,1.9rem);letter-spacing:.06em;
+      color:var(--ink);text-transform:uppercase;margin-top:20px;line-height:1.15}
+    .hero .subline small{color:var(--lime)}
+    .hero .lead-en{color:var(--muted);font-size:clamp(.95rem,2.4vw,1.12rem);font-weight:500;margin-top:14px;font-style:italic;letter-spacing:0}
+    .meta-chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .chip{display:inline-flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);
+      border-radius:12px;padding:11px 16px;font-size:.94rem;font-weight:600;color:var(--ink-dim)}
+    .chip svg{width:17px;height:17px;color:var(--lime);flex:none}
+    .chip b{color:var(--ink);font-weight:800}
+    .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:36px}
+    .hero-cta .note{font-size:.82rem;color:var(--muted)}
+    .partners{margin-top:48px;padding-top:26px;border-top:1px solid var(--line)}
+    .partners .plabel{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:14px}
+    .partners .wordmarks{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
+    .wordmarks .wm{font-weight:800;font-size:clamp(1rem,3vw,1.35rem);letter-spacing:.01em;color:var(--ink);opacity:.9}
+    .wordmarks .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);opacity:.7}
+
+    /* ---------- Section scaffolding ---------- */
+    section{position:relative;scroll-margin-top:80px}
+    .sec{padding:96px 0}
+    .sec-head{display:flex;align-items:flex-end;gap:22px;margin-bottom:46px;flex-wrap:wrap}
+    .sec-num{font-family:var(--display);font-size:clamp(2.6rem,8vw,4.6rem);line-height:.8;color:transparent;
+      -webkit-text-stroke:1.5px var(--lime);text-stroke:1.5px var(--lime);letter-spacing:.02em}
+    .sec-titles .kicker{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--lime);font-weight:700;margin-bottom:8px}
+    .sec-titles h2{font-size:clamp(1.7rem,4.6vw,2.7rem);font-weight:900;letter-spacing:-.02em;line-height:1.08}
+    .sec-intro{max-width:760px;color:var(--ink-dim);font-size:clamp(1rem,2.4vw,1.12rem);margin-top:-24px;margin-bottom:44px}
+    .rule{height:1px;background:linear-gradient(90deg,var(--lime),transparent);margin:0 0 46px;opacity:.6}
+
+    /* ---------- Program ---------- */
+    .prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+    .prog-card{background:linear-gradient(180deg,var(--panel),var(--bg-soft));border:1px solid var(--line);
+      border-radius:var(--radius);overflow:hidden}
+    .prog-card__head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .city-tag{font-family:var(--display);font-size:1.5rem;letter-spacing:.04em;text-transform:uppercase}
+    .city-seoul{color:var(--lime)} .city-pohang{color:var(--blue)}
+    .prog-card__head .date{font-weight:800;font-size:1rem}
+    .prog-card__head .venue{width:100%;font-size:.86rem;color:var(--muted);font-weight:500}
+    table.prog{width:100%;border-collapse:collapse}
+    table.prog td{padding:14px 16px;vertical-align:top;border-top:1px solid var(--line);font-size:.92rem}
+    table.prog tr:first-child td{border-top:none}
+    td.t-time{white-space:nowrap;color:var(--lime);font-weight:700;font-variant-numeric:tabular-nums;width:106px;font-size:.86rem}
+    td.t-body .pl-title{font-weight:700;color:var(--ink);display:block;line-height:1.45}
+    td.t-body .pl-spk{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}
+    tr.subhead td{background:rgba(255,255,255,.03);color:var(--ink-dim);font-weight:800;font-size:.82rem;
+      letter-spacing:.04em;text-transform:uppercase}
+    tr.minor td{color:var(--muted)}
+    .badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.03em;padding:2px 8px;border-radius:6px;
+      margin-right:8px;vertical-align:middle;text-transform:uppercase}
+    .b-celonis{background:rgba(167,139,250,.16);color:#c4b5fd;border:1px solid rgba(167,139,250,.35)}
+    .b-sap{background:rgba(240,180,41,.14);color:#f6c95c;border:1px solid rgba(240,180,41,.34)}
+    .b-puzzle{background:rgba(196,241,53,.14);color:#d4f56a;border:1px solid rgba(196,241,53,.34)}
+    .b-samsung{background:rgba(91,141,239,.16);color:#93b4f6;border:1px solid rgba(91,141,239,.36)}
+    .b-lg{background:rgba(224,96,126,.16);color:#f0a0b4;border:1px solid rgba(224,96,126,.36)}
+    .b-key{background:var(--lime);color:#06060a;border:1px solid var(--lime)}
+
+    /* ---------- Speakers ---------- */
+    .spk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:24px}
+    .spk{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+      display:flex;flex-direction:column;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+    .spk:hover{transform:translateY(-6px);border-color:var(--line-strong);box-shadow:0 20px 44px rgba(0,0,0,.5)}
+    .spk__photo{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0c0c11}
+    .spk__photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.04) brightness(.94);
+      transition:filter .45s ease,transform .6s ease}
+    .spk:hover .spk__photo img{filter:grayscale(0%) contrast(1) brightness(1);transform:scale(1.04)}
+    .spk__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(7,7,10,.82));pointer-events:none}
+    .spk__org{position:absolute;left:12px;top:12px;z-index:2;font-size:.66rem;font-weight:800;letter-spacing:.05em;
+      text-transform:uppercase;padding:4px 9px;border-radius:7px;backdrop-filter:blur(4px)}
+    .spk__body{padding:16px 18px 20px}
+    .spk__name{font-size:1.12rem;font-weight:900;letter-spacing:-.01em;line-height:1.2}
+    .spk__role{font-size:.8rem;color:var(--lime);font-weight:700;margin-top:3px;letter-spacing:.01em}
+    .spk__bio{font-size:.855rem;color:var(--ink-dim);margin-top:11px;line-height:1.62}
+
+    /* ---------- Talks ---------- */
+    .talk-list{display:grid;gap:20px}
+    .talk{display:grid;grid-template-columns:64px 1fr;gap:24px;background:linear-gradient(180deg,var(--panel),var(--bg-soft));
+      border:1px solid var(--line);border-radius:var(--radius);padding:28px 30px;transition:border-color .25s,transform .25s}
+    .talk:hover{border-color:var(--line-strong);transform:translateX(4px)}
+    .talk__idx{font-family:var(--display);font-size:2.2rem;line-height:1;color:transparent;-webkit-text-stroke:1.4px var(--line-strong)}
+    .talk__top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+    .talk__spk{font-size:.82rem;color:var(--muted);font-weight:600}
+    .talk__title{font-size:clamp(1.12rem,2.8vw,1.4rem);font-weight:900;letter-spacing:-.015em;line-height:1.28}
+    .talk__title .en{display:block;font-family:var(--font);font-weight:600;font-size:.82rem;color:var(--muted);
+      letter-spacing:.01em;margin-top:6px;font-style:italic}
+    .talk__abs{color:var(--ink-dim);font-size:.96rem;margin-top:13px;line-height:1.72;max-width:78ch}
+
+    /* ---------- Register band ---------- */
+    .register{position:relative;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(80% 140% at 50% -20%, rgba(47,58,230,.24), transparent 60%),
+        linear-gradient(180deg,#0a0a10,#08080b);
+    }
+    .register-inner{position:relative;z-index:2;padding:92px 0;text-align:center}
+    .register .kicker{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--lime);font-weight:800;margin-bottom:16px}
+    .register h2{font-size:clamp(2rem,6vw,3.4rem);font-weight:900;letter-spacing:-.025em;line-height:1.06;margin-bottom:16px}
+    .register h2 .hl{color:var(--lime)}
+    .register p{color:var(--ink-dim);max-width:560px;margin:0 auto 34px;font-size:1.05rem}
+    .register .subnote{margin-top:18px;font-size:.85rem;color:var(--muted)}
+    .register .subnote b{color:var(--lime-deep)}
+
+    /* ---------- Venue ---------- */
+    .venue-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .venue-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px}
+    .venue-card .vc-city{font-family:var(--display);letter-spacing:.04em;text-transform:uppercase;font-size:1.15rem;margin-bottom:6px}
+    .venue-card .vc-name{font-weight:800;font-size:1.05rem;margin-bottom:6px}
+    .venue-card .vc-name a{border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+    .venue-card .vc-name a:hover{color:var(--lime);border-color:var(--lime)}
+    .venue-card .vc-addr{color:var(--muted);font-size:.9rem;line-height:1.6}
+    .venue-card .vc-addr + .vc-name{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+
+    /* ---------- Footer ---------- */
+    .footer{background:#050507;border-top:1px solid var(--line);padding:48px 0 40px}
+    .footer .f-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+    .footer .brand b{font-size:1.1rem}
+    .f-links{display:flex;gap:22px;flex-wrap:wrap}
+    .f-links a{color:var(--ink-dim);font-size:.9rem;font-weight:600;transition:color .2s}
+    .f-links a:hover{color:var(--lime)}
+    .f-copy{color:var(--muted);font-size:.8rem;margin-top:24px;padding-top:22px;border-top:1px solid var(--line);line-height:1.7}
+
+    /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
+    .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+    .js .reveal.in{opacity:1;transform:none}
+
+    /* ---------- Responsive ---------- */
+    @media(max-width:860px){
+      .topnav .navlink{display:none}
+      .prog-grid,.venue-grid{grid-template-columns:1fr}
+      .sec{padding:70px 0}
+      .talk{grid-template-columns:1fr;gap:8px;padding:24px}
+      .talk__idx{font-size:1.6rem}
+    }
+    @media(max-width:560px){
+      .container{padding:0 18px}
+      .hero-inner{padding:52px 0 60px}
+      .sec-head{gap:14px}
+      .meta-chips .chip{width:100%}
+      .lang{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .js .reveal{opacity:1;transform:none;transition:none}
+      *{transition:none!important}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="ASPAI 2026 홈">
+        <b>ASPAI 2026</b>
+        <span>Process &amp; AI Symposium</span>
+      </a>
+      <nav class="topnav">
+        <a class="navlink" href="#program">프로그램</a>
+        <a class="navlink" href="#speakers">연사</a>
+        <a class="navlink" href="#talks">발표내용</a>
+        <span class="lang" aria-label="언어 선택">
+          <a class="cur" href="korea.html" aria-current="page">KO</a>
+          <a href="industry-day.html">EN</a>
+        </span>
+        <a class="btn btn-primary btn-sm js-register" href="#register">등록하기</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <!-- decorative geometry (poster motif) -->
+    <svg class="deco" style="top:-40px;right:-30px;width:340px;opacity:.9" viewBox="0 0 200 200" aria-hidden="true"><polygon points="200,0 200,200 40,0" fill="#2f3ae6" opacity="0.55"/></svg>
+    <svg class="deco" style="bottom:40px;right:8%;width:200px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="100,10 190,180 10,180" fill="none" stroke="#c4f135" stroke-width="2.5" opacity="0.5"/></svg>
+    <svg class="deco" style="bottom:-30px;left:-30px;width:180px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="0,200 0,40 160,200" fill="#1a1fb0" opacity="0.4"/></svg>
+    <div class="glow" style="width:420px;height:420px;background:#2f3ae6;top:-140px;right:-60px"></div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow">Asia&ndash;Pacific Symposium on Process and AI</p>
+      <h1>AI 시대의 혁신은<br /><span class="hl">프로세스</span>에서 시작됩니다</h1>
+      <p class="lead-en">Innovation in the AI Era Starts with Process</p>
+      <p class="subline">Process Mining Industry Day <small>·</small> Seoul &amp; Pohang</p>
+
+      <div class="meta-chips">
+        <span class="chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span><b>서울</b> 2026. 8. 24 (월)&nbsp;&nbsp;·&nbsp;&nbsp;<b>포항</b> 2026. 8. 25 (화)</span>
+        </span>
+        <span class="chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>서울 코엑스 &amp; 포항 포스텍</span>
+        </span>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg js-register" href="#register">지금 등록하기 <span class="arw">→</span></a>
+        <a class="btn btn-ghost btn-lg" href="#program">프로그램 보기</a>
+      </div>
+
+      <div class="partners">
+        <p class="plabel">참여 기업 · Participating Companies</p>
+        <div class="wordmarks">
+          <span class="wm">Celonis</span><span class="dot"></span>
+          <span class="wm">SAP&nbsp;Signavio</span><span class="dot"></span>
+          <span class="wm">PuzzleData</span><span class="dot"></span>
+          <span class="wm">Samsung</span><span class="dot"></span>
+          <span class="wm">LG</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 01 · PROGRAM ============ -->
+    <section class="sec" id="program">
+      <div class="container">
+        <div class="sec-head reveal">
+          <div class="sec-num">01</div>
+          <div class="sec-titles">
+            <p class="kicker">Program</p>
+            <h2>프로그램 소개</h2>
+          </div>
+        </div>
+        <p class="sec-intro reveal">
+          <b>프로세스 마이닝 인더스트리 데이</b>는 학계와 산업 현장을 잇는 자리입니다.
+          프로세스 마이닝을 실제 비즈니스에 적용해 온 글로벌 리더와 국내 선도 기업이 한자리에 모여,
+          AI 시대의 프로세스 인텔리전스 최신 동향과 실전 사례를 공유합니다.
+          행사는 <b>서울</b>과 <b>포항</b> 두 도시에서 이틀에 걸쳐 진행됩니다.
+        </p>
+
+        <div class="prog-grid">
+          <!-- Seoul -->
+          <div class="prog-card reveal">
+            <div class="prog-card__head">
+              <span class="city-tag city-seoul">Seoul</span>
+              <span class="date">8월 24일 (월)</span>
+              <span class="venue">오크우드 프리미어 코엑스 센터, 서울</span>
+            </div>
+            <table class="prog">
+              <tr class="minor">
+                <td class="t-time">11:00 ~</td>
+                <td class="t-body"><span class="pl-title">등록 (Registration)</span></td>
+              </tr>
+              <tr>
+                <td class="t-time">13:10 ~ 14:00</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-celonis">Celonis</span>객체 중심 프로세스 마이닝과 엔터프라이즈 AI</span>
+                  <span class="pl-spk">Wil van der Aalst · Yonghan Lee</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="t-time">14:10 ~ 15:00</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-sap">SAP&nbsp;Signavio</span>Process Atoms and Company Memory</span>
+                  <span class="pl-spk">Julian Lebherz</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="t-time">15:10 ~ 16:00</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-puzzle">PuzzleData</span>AI 시대의 프로세스 엑설런스와 플랫폼 활용 사례</span>
+                  <span class="pl-spk">Youngill Kim, 대표이사</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="t-time">16:10 ~ 17:00</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-samsung">Samsung</span>반도체 Fab 운영에서의 프로세스 마이닝 적용 사례</span>
+                  <span class="pl-spk">Jinyoun Lee</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Pohang -->
+          <div class="prog-card reveal">
+            <div class="prog-card__head">
+              <span class="city-tag city-pohang">Pohang</span>
+              <span class="date">8월 25일 (화)</span>
+              <span class="venue">포스코국제관 · 체인지업그라운드, 포항</span>
+            </div>
+            <table class="prog">
+              <tr class="subhead"><td colspan="2">포스코국제관 &middot; 국제회의장</td></tr>
+              <tr class="minor">
+                <td class="t-time">13:00 ~ 13:10</td>
+                <td class="t-body"><span class="pl-title">개회 (Opening)</span></td>
+              </tr>
+              <tr>
+                <td class="t-time">13:10 ~ 14:15</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-key">Keynote</span>객체 중심 프로세스 마이닝으로 복잡성 해소와 엔터프라이즈 AI/ML 실현</span>
+                  <span class="pl-spk">Wil van der Aalst · Celonis</span>
+                </td>
+              </tr>
+              <tr class="subhead"><td colspan="2">체인지업그라운드 &middot; 이벤트홀</td></tr>
+              <tr>
+                <td class="t-time">14:30 ~ 15:10</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-sap">SAP&nbsp;Signavio</span>Process Atoms and Company Memory</span>
+                  <span class="pl-spk">Julian Lebherz</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="t-time">15:10 ~ 15:50</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-puzzle">PuzzleData</span>AI 시대의 프로세스 엑설런스와 플랫폼 활용 사례</span>
+                  <span class="pl-spk">Youngill Kim, 대표이사</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="t-time">16:00 ~ 16:40</td>
+                <td class="t-body">
+                  <span class="pl-title"><span class="badge b-lg">LG</span>비전 AI를 활용한 프로세스 개선</span>
+                  <span class="pl-spk">Denis Cho</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 · SPEAKERS ============ -->
+    <section class="sec" id="speakers" style="background:linear-gradient(180deg,var(--bg),var(--bg-soft),var(--bg))">
+      <div class="container">
+        <div class="sec-head reveal">
+          <div class="sec-num">02</div>
+          <div class="sec-titles">
+            <p class="kicker">Speakers</p>
+            <h2>연사 소개</h2>
+          </div>
+        </div>
+        <p class="sec-intro reveal">
+          프로세스 마이닝을 창시한 세계적 석학부터, 글로벌 솔루션 기업과 국내 산업 현장의 실무 리더까지.
+          프로세스 인텔리전스의 오늘과 내일을 이끄는 전문가들이 함께합니다.
+        </p>
+
+        <div class="spk-grid">
+          <!-- Wil van der Aalst -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(167,139,250,.2);color:#d6c9ff">Celonis</span>
+              <img src="korea-speakers/wil-van-der-aalst.jpg" alt="Wil van der Aalst" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Wil van der Aalst</div>
+              <div class="spk__role">Celonis · Chief Scientist</div>
+              <p class="spk__bio">‘프로세스 마이닝의 대부’로 불리는 세계적 석학. RWTH 아헨 공과대학 교수이자 Celonis 수석 과학자로, 객체 중심 프로세스 마이닝 연구를 이끌고 있습니다.</p>
+            </div>
+          </article>
+
+          <!-- Yonghan Lee -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(167,139,250,.2);color:#d6c9ff">Celonis</span>
+              <img src="korea-speakers/yonghan-lee.jpg" alt="Yonghan Lee" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Yonghan Lee</div>
+              <div class="spk__role">Celonis · Process Intelligence</div>
+              <p class="spk__bio">Celonis에서 프로세스 인텔리전스 전문가로 활동하며, 국내 기업의 프로세스 마이닝 도입과 실전 활용을 지원하고 있습니다.</p>
+            </div>
+          </article>
+
+          <!-- Julian Lebherz -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(240,180,41,.2);color:#f6d488">SAP Signavio</span>
+              <img src="korea-speakers/julian-lebherz.jpg" alt="Julian Lebherz" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Julian Lebherz</div>
+              <div class="spk__role">SAP · Process Intelligence</div>
+              <p class="spk__bio">SAP에서 프로세스 인텔리전스와 비즈니스 트랜스포메이션을 담당합니다. ‘Process Atoms and Company Memory’ 개념으로 기업의 프로세스 지식을 자산화하는 방법을 제시합니다.</p>
+            </div>
+          </article>
+
+          <!-- Gia-Thi Nguyen -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(240,180,41,.2);color:#f6d488">SAP Signavio</span>
+              <img src="korea-speakers/gia-thi-nguyen.jpg" alt="Gia-Thi Nguyen" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Gia-Thi Nguyen</div>
+              <div class="spk__role">SAP Signavio · VP, Center of Excellence</div>
+              <p class="spk__bio">SAP Signavio Center of Excellence를 이끄는 부사장. 前 Siemens에서 대규모 프로세스 마이닝과 운영 혁신을 주도한 프로세스 엑설런스·디지털 전환 분야의 글로벌 전문가입니다.</p>
+            </div>
+          </article>
+
+          <!-- Tony (RaeSung) Park -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(240,180,41,.2);color:#f6d488">SAP Korea</span>
+              <img src="korea-speakers/tony-park.jpg" alt="Tony (RaeSung) Park" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Tony (RaeSung) Park</div>
+              <div class="spk__role">SAP Korea · Business Transformation</div>
+              <p class="spk__bio">SAP 코리아에서 비즈니스 트랜스포메이션 매니지먼트(BTM) 프리세일즈 리드를 맡아, SAP Signavio를 중심으로 국내 기업의 프로세스 혁신을 지원합니다.</p>
+            </div>
+          </article>
+
+          <!-- Youngill Kim -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(196,241,53,.22);color:#dcf87a">PuzzleData</span>
+              <img src="korea-speakers/youngill-kim.jpg" alt="Youngill Kim" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Youngill Kim</div>
+              <div class="spk__role">PuzzleData · 대표이사(CEO)</div>
+              <p class="spk__bio">국내 유일의 프로세스 마이닝 솔루션 ‘ProDiscovery’를 개발한 퍼즐데이터의 대표이사. 반도체·제조·유통·의료 등 다양한 산업에 프로세스 마이닝을 적용해 온 국내 선도 기업을 이끌고 있습니다.</p>
+            </div>
+          </article>
+
+          <!-- Jinyoun Lee -->
+          <article class="spk reveal">
+            <div class="spk__photo">
+              <span class="spk__org" style="background:rgba(91,141,239,.22);color:#aec6f8">Samsung</span>
+              <img src="korea-speakers/jinyoun-lee.jpg" alt="Jinyoun Lee" loading="lazy" />
+            </div>
+            <div class="spk__body">
+              <div class="spk__name">Jinyoun Lee</div>
+              <div class="spk__role">Samsung · 반도체 제조</div>
+              <p class="spk__bio">삼성에서 반도체 Fab 운영에 프로세스 마이닝을 적용하는 실무를 담당하며, 제조 데이터 기반의 공정 최적화 사례를 연구·구현하고 있습니다.</p>
+            </div>
+          </article>
+        </div>
+        <p class="sec-intro reveal" style="margin-top:28px;margin-bottom:0;font-size:.9rem;color:var(--muted)">
+          이 외에도 포항 세션에서는 <b style="color:#f0a0b4">LG</b>의 <b>Denis Cho</b>가 ‘비전 AI를 활용한 프로세스 개선’을 주제로 발표합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 03 · TALKS ============ -->
+    <section class="sec" id="talks">
+      <div class="container">
+        <div class="sec-head reveal">
+          <div class="sec-num">03</div>
+          <div class="sec-titles">
+            <p class="kicker">Sessions</p>
+            <h2>발표 내용 소개</h2>
+          </div>
+        </div>
+
+        <div class="talk-list">
+          <!-- Keynote -->
+          <article class="talk reveal">
+            <div class="talk__idx">K</div>
+            <div>
+              <div class="talk__top">
+                <span class="badge b-key">Keynote</span>
+                <span class="badge b-celonis">Celonis</span>
+                <span class="talk__spk">Wil van der Aalst</span>
+              </div>
+              <h3 class="talk__title">
+                객체 중심 프로세스 마이닝으로 복잡성 해소와 엔터프라이즈 AI/ML 실현
+                <span class="en">Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML</span>
+              </h3>
+              <p class="talk__abs">
+                전통적인 프로세스 마이닝은 하나의 케이스 관점에 묶여 실제 비즈니스의 복잡한 상호작용을 온전히 담아내지 못했습니다.
+                객체 중심 프로세스 마이닝(OCPM)은 여러 객체와 이벤트의 관계를 있는 그대로 모델링해 복잡성을 풀어내고,
+                이를 토대로 기업 전반의 AI/ML을 실현하는 새로운 길을 제시합니다.
+              </p>
+            </div>
+          </article>
+
+          <!-- SAP -->
+          <article class="talk reveal">
+            <div class="talk__idx">01</div>
+            <div>
+              <div class="talk__top">
+                <span class="badge b-sap">SAP&nbsp;Signavio</span>
+                <span class="talk__spk">Julian Lebherz</span>
+              </div>
+              <h3 class="talk__title">
+                Process Atoms and Company Memory
+                <span class="en">프로세스 아톰과 기업 메모리 — 흩어진 프로세스 지식을 자산으로</span>
+              </h3>
+              <p class="talk__abs">
+                프로세스를 가장 작은 단위인 ‘아톰(Atom)’으로 분해하고, 이를 조직의 ‘기업 메모리(Company Memory)’로 축적·재활용하는 접근을 소개합니다.
+                흩어져 있던 프로세스 지식을 자산으로 전환해 지속적인 개선과 자동화의 토대를 마련하는 방법을 다룹니다.
+              </p>
+            </div>
+          </article>
+
+          <!-- PuzzleData -->
+          <article class="talk reveal">
+            <div class="talk__idx">02</div>
+            <div>
+              <div class="talk__top">
+                <span class="badge b-puzzle">PuzzleData</span>
+                <span class="talk__spk">Youngill Kim, 대표이사</span>
+              </div>
+              <h3 class="talk__title">
+                AI 시대의 프로세스 엑설런스와 프로세스 인텔리전스 플랫폼 활용 사례
+                <span class="en">Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform</span>
+              </h3>
+              <p class="talk__abs">
+                AI 시대에 프로세스 엑설런스가 갖는 의미를 짚고, 국산 프로세스 마이닝 플랫폼 ProDiscovery를 활용한 다양한 산업의 실제 적용 사례를 공유합니다.
+                데이터 기반으로 프로세스를 진단하고 개선한 구체적인 성과를 확인할 수 있습니다.
+              </p>
+            </div>
+          </article>
+
+          <!-- Samsung -->
+          <article class="talk reveal">
+            <div class="talk__idx">03</div>
+            <div>
+              <div class="talk__top">
+                <span class="badge b-samsung">Samsung</span>
+                <span class="talk__spk">Jinyoun Lee</span>
+              </div>
+              <h3 class="talk__title">
+                반도체 Fab 운영에서의 프로세스 마이닝 적용 사례
+                <span class="en">Applying Process Mining in Semiconductor Fab Operations: A Case Study</span>
+              </h3>
+              <p class="talk__abs">
+                세계 최고 수준의 복잡도를 지닌 반도체 Fab 운영에 프로세스 마이닝을 적용한 사례를 소개합니다.
+                방대한 제조 이벤트 로그에서 병목과 이상 흐름을 발견하고, 공정 효율을 개선한 실전 경험을 공유합니다.
+              </p>
+            </div>
+          </article>
+
+          <!-- LG -->
+          <article class="talk reveal">
+            <div class="talk__idx">04</div>
+            <div>
+              <div class="talk__top">
+                <span class="badge b-lg">LG</span>
+                <span class="talk__spk">Denis Cho</span>
+                <span class="talk__spk">· 포항 세션</span>
+              </div>
+              <h3 class="talk__title">
+                비전 AI를 활용한 프로세스 개선
+                <span class="en">Process Improvement with Vision AI</span>
+              </h3>
+              <p class="talk__abs">
+                비전 AI(Vision AI)를 프로세스 분석과 결합해 현장의 흐름을 관찰하고 개선하는 접근을 소개합니다.
+                영상·이미지 데이터에서 얻은 인사이트를 실제 프로세스 개선으로 연결한 사례를 다룹니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REGISTER ============ -->
+    <section class="register" id="register">
+      <svg class="deco" style="top:20px;left:6%;width:150px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="100,10 190,180 10,180" fill="none" stroke="#c4f135" stroke-width="2.5" opacity="0.45"/></svg>
+      <svg class="deco" style="bottom:0;right:0;width:260px;opacity:.5" viewBox="0 0 200 200" aria-hidden="true"><polygon points="200,40 200,200 40,200" fill="#2f3ae6" opacity="0.5"/></svg>
+      <div class="container register-inner">
+        <p class="kicker">Registration</p>
+        <h2>지금 <span class="hl">등록</span>하세요</h2>
+        <p>프로세스 마이닝 인더스트리 데이 참가 신청은 아래 버튼을 통해 진행됩니다. 좌석이 한정되어 있으니 서둘러 등록해 주세요.</p>
+        <a class="btn btn-primary btn-lg js-register" href="#register">참가 등록하기 <span class="arw">→</span></a>
+        <p class="subnote js-register-note"><b>등록 폼을 준비 중입니다.</b> 곧 온라인 신청이 열립니다.</p>
+      </div>
+    </section>
+
+    <!-- ============ VENUE ============ -->
+    <section class="sec" id="venue" style="padding-top:80px">
+      <div class="container">
+        <div class="sec-head reveal">
+          <div class="sec-num">04</div>
+          <div class="sec-titles">
+            <p class="kicker">Venue</p>
+            <h2>오시는 길</h2>
+          </div>
+        </div>
+        <div class="venue-grid">
+          <div class="venue-card reveal">
+            <div class="vc-city city-seoul">Seoul · 8/24</div>
+            <div class="vc-name"><a href="https://www.homehmc.com/en/oakwood-seoul-coex/" target="_blank" rel="noopener">오크우드 프리미어 코엑스 센터</a></div>
+            <div class="vc-addr">서울 강남구 테헤란로87길 46<br />46, Teheran-ro 87-gil, Gangnam-gu, Seoul</div>
+          </div>
+          <div class="venue-card reveal">
+            <div class="vc-city city-pohang">Pohang · 8/25</div>
+            <div class="vc-name"><a href="https://postech.ac.kr/kor/college-life/posco_international_hall.do" target="_blank" rel="noopener">포스코국제관</a> <span style="color:var(--muted);font-weight:600;font-size:.85rem">국제회의장</span></div>
+            <div class="vc-addr">포항시 남구 청암로 77<br />77, Cheongam-ro, Nam-gu, Pohang</div>
+            <div class="vc-name"><a href="https://changeupgroundpohang.com/" target="_blank" rel="noopener">체인지업그라운드</a> <span style="color:var(--muted);font-weight:600;font-size:.85rem">이벤트홀</span></div>
+            <div class="vc-addr">포항시 남구 청암로 87<br />87, Cheongam-ro, Nam-gu, Pohang</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <a class="brand" href="index.html">
+          <b>ASPAI 2026</b>
+          <span>2nd Asia-Pacific Symposium on Process and AI</span>
+        </a>
+        <nav class="f-links">
+          <a href="index.html">Home</a>
+          <a href="industry-day.html">Industry Day (EN)</a>
+          <a href="conference.html">Conference</a>
+          <a href="mailto:eon7777@postech.ac.kr">문의하기</a>
+        </nav>
+      </div>
+      <p class="f-copy">
+        문의: <a href="mailto:eon7777@postech.ac.kr" style="color:var(--ink-dim)">eon7777@postech.ac.kr</a><br />
+        © 2026 ASPAI 2026 — 2nd Asia-Pacific Symposium on Process and Artificial Intelligence. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    /* ============================================================
+       등록 버튼 링크 설정
+       구글폼이 준비되면 아래 따옴표 안에 링크를 붙여넣으세요.
+       예: var REGISTRATION_URL = "https://forms.gle/XXXXXXXXXXXX";
+       비워두면 버튼이 '등록 폼 준비 중' 상태로 표시됩니다.
+       ============================================================ */
+    var REGISTRATION_URL = ""; // ← 여기에 구글폼 링크 입력
+
+    (function () {
+      var btns = document.querySelectorAll(".js-register");
+      var note = document.querySelector(".js-register-note");
+      var url = (REGISTRATION_URL || "").trim();
+
+      if (url) {
+        // 링크 준비됨: 모든 등록 버튼을 실제 구글폼으로 연결
+        btns.forEach(function (b) {
+          b.setAttribute("href", url);
+          b.setAttribute("target", "_blank");
+          b.setAttribute("rel", "noopener");
+          b.classList.remove("is-pending");
+        });
+        if (note) note.style.display = "none";
+      } else {
+        // 링크 미준비: 히어로/상단 버튼은 활성 상태로 등록 섹션까지 스크롤,
+        // 등록 섹션의 메인 버튼만 '준비 중' 상태로 표시
+        btns.forEach(function (b) {
+          if (b.closest("#register")) {
+            b.classList.add("is-pending");
+            b.textContent = "등록 폼 준비 중";
+            b.setAttribute("href", "#register");
+            b.addEventListener("click", function (e) { e.preventDefault(); });
+          }
+        });
+      }
+    })();
+
+    /* Scroll reveal */
+    (function () {
+      var els = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        els.forEach(function (el) { el.classList.add("in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
