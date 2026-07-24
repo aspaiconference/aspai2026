@@ -9,7 +9,7 @@
   <meta property="og:description" content="프로세스 마이닝의 기초부터 AI 접목까지, 이틀간의 집중 강의와 실습. APPI Summer School — 포항 8/27~28." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f7f1e7'/%3E%3Cpolygon points='6,26 16,6 26,26' fill='%23c56a43'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2307070a'/%3E%3Cpolygon points='6,26 16,6 26,26' fill='%23f4a52a'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
@@ -18,13 +18,13 @@
   <style>
     /* ============================================================
        ASPAI 2026 — APPI Summer School (Korea) · summer-school-ko.html
-       Standalone poster-style WARM SAND theme. Self-contained.
+       Standalone poster-style DARK AMBER theme. Self-contained.
        ============================================================ */
     :root{
-      --bg:#f7f1e7; --bg-soft:#efe6d6; --panel:#fffaf2; --panel-2:#f3ead9;
-      --line:rgba(74,52,33,.14); --line-strong:rgba(74,52,33,.26);
-      --ink:#2e2620; --ink-dim:#5c5148; --muted:#9a8c7d;
-      --clay:#c56a43; --clay-deep:#a8522f; --sage:#7d7a52; --sky:#4c7d94;
+      --bg:#07070a; --bg-soft:#0d0d12; --panel:#131319; --panel-2:#1a1a22;
+      --line:rgba(255,255,255,.10); --line-strong:rgba(255,255,255,.18);
+      --ink:#f6f6f8; --ink-dim:#c9c9d2; --muted:#8f8f9c;
+      --clay:#f4a52a; --clay-deep:#d4880f; --sage:#e0673c; --sky:#e0673c;
       --rwth:#c56a43; --celonis:#8a6fc4; --sap:#c99327; --qut:#4c7d94; --unist:#3f6ea8; --hufs:#c05a72; --telkom:#5c8a52;
       --maxw:1160px; --radius:16px;
       --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
@@ -39,13 +39,13 @@
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
-    ::selection{background:var(--clay);color:#fff}
+    ::selection{background:var(--clay);color:#06060a}
     .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
 
     /* ---------- Top bar ---------- */
     .topbar{
       position:sticky;top:0;z-index:60;
-      background:rgba(247,241,231,.78);backdrop-filter:blur(14px);
+      background:rgba(7,7,10,.72);backdrop-filter:blur(14px);
       border-bottom:1px solid var(--line);
     }
     .topbar-inner{display:flex;align-items:center;gap:20px;height:62px}
@@ -57,7 +57,7 @@
     .topnav a.navlink:hover{color:var(--clay)}
     .lang{display:flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.05em}
     .lang a{padding:3px 8px;border-radius:999px}
-    .lang .cur{background:var(--clay);color:#fff}
+    .lang .cur{background:var(--clay);color:#06060a}
     .lang a:not(.cur):hover{color:var(--ink)}
     .btn{
       display:inline-flex;align-items:center;gap:.5em;font-weight:800;font-family:var(--font);
@@ -66,13 +66,13 @@
     }
     .btn-sm{padding:9px 18px;font-size:.85rem}
     .btn-lg{padding:17px 34px;font-size:1.06rem}
-    .btn-primary{background:var(--clay);color:#fff;box-shadow:0 6px 22px rgba(197,106,67,.28)}
-    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(197,106,67,.4)}
+    .btn-primary{background:var(--clay);color:#06060a;box-shadow:0 6px 22px rgba(244,165,42,.24)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(244,165,42,.36)}
     .btn-primary .arw{transition:transform .2s}
     .btn-primary:hover .arw{transform:translateX(4px)}
     .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line-strong)}
     .btn-ghost:hover{border-color:var(--clay);color:var(--clay)}
-    .btn.is-pending{background:#e4dccc;color:var(--muted);box-shadow:none;cursor:not-allowed}
+    .btn.is-pending{background:#26262e;color:var(--muted);box-shadow:none;cursor:not-allowed}
     .btn.is-pending:hover{transform:none;box-shadow:none}
 
     /* ---------- Decorative ---------- */
@@ -82,8 +82,8 @@
     /* ---------- Hero ---------- */
     .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
       background:
-        radial-gradient(120% 90% at 85% -10%, rgba(197,106,67,.18), transparent 55%),
-        radial-gradient(90% 80% at -5% 110%, rgba(125,122,82,.14), transparent 55%),
+        radial-gradient(120% 90% at 85% -10%, rgba(244,165,42,.20), transparent 55%),
+        radial-gradient(90% 80% at -5% 110%, rgba(224,103,60,.14), transparent 55%),
         var(--bg);
     }
     .hero-inner{position:relative;z-index:2;padding:76px 0 84px;text-align:center;max-width:960px;margin:0 auto}
@@ -121,7 +121,7 @@
     /* ---------- Program ---------- */
     .prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
     .prog-card{background:linear-gradient(180deg,var(--panel),var(--bg-soft));border:1px solid var(--line);
-      border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px rgba(74,52,33,.05)}
+      border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.32)}
     .prog-card__head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
     .day-tag{font-family:var(--display);font-size:1.5rem;letter-spacing:.04em;text-transform:uppercase;color:var(--clay)}
     .day-tag.d2{color:var(--sky)}
@@ -130,41 +130,41 @@
     table.prog{width:100%;border-collapse:collapse}
     table.prog td{padding:14px 16px;vertical-align:top;border-top:1px solid var(--line);font-size:.92rem}
     table.prog tr:first-child td{border-top:none}
-    td.t-time{white-space:nowrap;color:var(--clay-deep);font-weight:700;font-variant-numeric:tabular-nums;width:106px;font-size:.86rem}
+    td.t-time{white-space:nowrap;color:var(--clay);font-weight:700;font-variant-numeric:tabular-nums;width:106px;font-size:.86rem}
     td.t-body .pl-title{font-weight:700;color:var(--ink);display:block;line-height:1.45}
     td.t-body .pl-spk{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}
-    tr.subhead td{background:rgba(74,52,33,.05);color:var(--ink-dim);font-weight:800;font-size:.82rem;
+    tr.subhead td{background:rgba(255,255,255,.03);color:var(--ink-dim);font-weight:800;font-size:.82rem;
       letter-spacing:.04em;text-transform:uppercase}
     tr.minor td{color:var(--muted)}
     .badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.03em;padding:2px 8px;border-radius:6px;
       margin-right:8px;vertical-align:middle;text-transform:uppercase}
-    .b-rwth{background:rgba(197,106,67,.14);color:#b1552f;border:1px solid rgba(197,106,67,.34)}
-    .b-celonis{background:rgba(138,111,196,.16);color:#6f56ad;border:1px solid rgba(138,111,196,.34)}
-    .b-sap{background:rgba(201,147,39,.16);color:#a3781c;border:1px solid rgba(201,147,39,.36)}
-    .b-qut{background:rgba(76,125,148,.16);color:#3d6879;border:1px solid rgba(76,125,148,.36)}
-    .b-unist{background:rgba(63,110,168,.16);color:#345d8e;border:1px solid rgba(63,110,168,.36)}
-    .b-hufs{background:rgba(192,90,114,.16);color:#a84a60;border:1px solid rgba(192,90,114,.36)}
-    .b-telkom{background:rgba(92,138,82,.16);color:#4b7343;border:1px solid rgba(92,138,82,.36)}
-    .b-hands{background:var(--sage);color:#fff;border:1px solid var(--sage)}
-    .b-day1{background:rgba(197,106,67,.16);color:#b1552f;border:1px solid rgba(197,106,67,.42)}
-    .b-day2{background:rgba(76,125,148,.18);color:#3d6879;border:1px solid rgba(76,125,148,.5)}
+    .b-rwth{background:rgba(244,165,42,.16);color:#f6c56a;border:1px solid rgba(244,165,42,.4)}
+    .b-celonis{background:rgba(167,139,250,.16);color:#c4b5fd;border:1px solid rgba(167,139,250,.35)}
+    .b-sap{background:rgba(240,180,41,.14);color:#f6c95c;border:1px solid rgba(240,180,41,.34)}
+    .b-qut{background:rgba(76,170,185,.16);color:#84d4e0;border:1px solid rgba(76,170,185,.38)}
+    .b-unist{background:rgba(91,141,239,.16);color:#93b4f6;border:1px solid rgba(91,141,239,.36)}
+    .b-hufs{background:rgba(224,96,126,.16);color:#f0a0b4;border:1px solid rgba(224,96,126,.36)}
+    .b-telkom{background:rgba(120,190,110,.16);color:#a6e096;border:1px solid rgba(120,190,110,.38)}
+    .b-hands{background:var(--sage);color:#06060a;border:1px solid var(--sage)}
+    .b-day1{background:rgba(244,165,42,.16);color:#f6c56a;border:1px solid rgba(244,165,42,.42)}
+    .b-day2{background:rgba(224,103,60,.18);color:#f0a07e;border:1px solid rgba(224,103,60,.5)}
 
     /* ---------- Lecturers ---------- */
     .spk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:24px}
     .spk{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
       display:flex;flex-direction:column;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease;
-      box-shadow:0 8px 24px rgba(74,52,33,.05)}
-    .spk:hover{transform:translateY(-6px);border-color:var(--line-strong);box-shadow:0 20px 44px rgba(74,52,33,.14)}
+      box-shadow:0 8px 24px rgba(0,0,0,.32)}
+    .spk:hover{transform:translateY(-6px);border-color:var(--line-strong);box-shadow:0 20px 44px rgba(0,0,0,.5)}
     .spk__photo{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--panel-2)}
     .spk__mono{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
       font-family:var(--display);font-size:3.6rem;letter-spacing:.04em;color:var(--clay);
       background:linear-gradient(135deg,var(--panel-2),var(--bg-soft));z-index:0}
     .spk__photo img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;
-      filter:grayscale(28%) sepia(8%) contrast(1.02);transition:filter .45s ease,transform .6s ease}
-    .spk:hover .spk__photo img{filter:grayscale(0%) sepia(0%) contrast(1);transform:scale(1.04)}
-    .spk__photo::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,transparent 58%,rgba(46,38,32,.42));pointer-events:none}
+      filter:grayscale(100%) contrast(1.04) brightness(.94);transition:filter .45s ease,transform .6s ease}
+    .spk:hover .spk__photo img{filter:grayscale(0%) contrast(1) brightness(1);transform:scale(1.04)}
+    .spk__photo::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,transparent 58%,rgba(7,7,10,.82));pointer-events:none}
     .spk__org{position:absolute;left:12px;top:12px;z-index:3;font-size:.66rem;font-weight:800;letter-spacing:.05em;
-      text-transform:uppercase;padding:4px 9px;border-radius:7px;backdrop-filter:blur(4px);background:rgba(255,250,242,.86);color:var(--ink)}
+      text-transform:uppercase;padding:4px 9px;border-radius:7px;backdrop-filter:blur(4px);background:rgba(10,10,15,.62);color:var(--ink)}
     .spk__body{padding:16px 18px 20px}
     .spk__name{font-size:1.12rem;font-weight:900;letter-spacing:-.01em;line-height:1.2}
     .spk__role{font-size:.8rem;color:var(--clay-deep);font-weight:700;margin-top:3px;letter-spacing:.01em}
@@ -175,7 +175,7 @@
     .talk-list{display:grid;gap:20px}
     .talk{display:grid;grid-template-columns:64px 1fr;gap:24px;background:linear-gradient(180deg,var(--panel),var(--bg-soft));
       border:1px solid var(--line);border-radius:var(--radius);padding:28px 30px;transition:border-color .25s,transform .25s;
-      box-shadow:0 8px 24px rgba(74,52,33,.05)}
+      box-shadow:0 8px 24px rgba(0,0,0,.32)}
     .talk:hover{border-color:var(--line-strong);transform:translateX(4px)}
     .talk__idx{font-family:var(--display);font-size:2.2rem;line-height:1;color:transparent;-webkit-text-stroke:1.4px var(--line-strong)}
     .talk__top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
@@ -188,8 +188,8 @@
     /* ---------- Register band ---------- */
     .register{position:relative;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
       background:
-        radial-gradient(80% 140% at 50% -20%, rgba(197,106,67,.2), transparent 60%),
-        linear-gradient(180deg,#f1e7d6,#ede2cf);
+        radial-gradient(80% 140% at 50% -20%, rgba(244,165,42,.16), transparent 60%),
+        linear-gradient(180deg,#0a0a10,#08080b);
     }
     .register-inner{position:relative;z-index:2;padding:92px 0;text-align:center}
     .register .kicker{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--clay);font-weight:800;margin-bottom:16px}
@@ -202,7 +202,7 @@
     /* ---------- Venue ---------- */
     .venue-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
     .venue-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;
-      box-shadow:0 8px 24px rgba(74,52,33,.05)}
+      box-shadow:0 8px 24px rgba(0,0,0,.32)}
     .venue-card .vc-city{font-family:var(--display);letter-spacing:.04em;text-transform:uppercase;font-size:1.15rem;margin-bottom:6px;color:var(--clay)}
     .venue-card .vc-name{font-weight:800;font-size:1.05rem;margin-bottom:6px}
     .venue-card .vc-name a{border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
@@ -220,22 +220,22 @@
     .support-label::before,.support-label::after{content:"";width:26px;height:1px;background:var(--line-strong)}
     .support-host{display:inline-flex;align-items:center;gap:18px;margin-bottom:32px;text-align:left}
     .logo-chip{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:16px;
-      width:86px;height:86px;padding:13px;flex:none;transition:transform .2s ease,box-shadow .25s ease;box-shadow:0 6px 18px rgba(74,52,33,.1)}
+      width:86px;height:86px;padding:13px;flex:none;transition:transform .2s ease,box-shadow .25s ease;box-shadow:0 6px 18px rgba(0,0,0,.4)}
     .logo-chip img{width:100%;height:100%;object-fit:contain;display:block}
     .host-name b{display:block;font-size:1.1rem;font-weight:800;color:var(--ink);letter-spacing:-.01em}
     .host-name span{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:4px}
-    .support-host:hover .logo-chip{transform:translateY(-3px);box-shadow:0 14px 30px rgba(74,52,33,.18)}
+    .support-host:hover .logo-chip{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.55)}
     .support-host:hover .host-name b{color:var(--clay)}
     .support-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 12px;max-width:1040px;margin:0 auto}
     .support-links a{display:inline-flex;align-items:center;gap:7px;font-size:.875rem;font-weight:600;color:var(--ink-dim);
-      border:1px solid var(--line);border-radius:999px;padding:9px 18px;line-height:1.3;background:rgba(255,255,255,.5);
+      border:1px solid var(--line);border-radius:999px;padding:9px 18px;line-height:1.3;background:rgba(255,255,255,.02);
       transition:border-color .2s,color .2s,background .2s}
     .support-links a::after{content:"↗";font-size:.82em;opacity:.5}
-    .support-links a:hover{color:var(--clay);border-color:var(--clay);background:rgba(197,106,67,.07)}
+    .support-links a:hover{color:var(--clay);border-color:var(--clay);background:rgba(244,165,42,.07)}
     @media(max-width:520px){.support-host{flex-direction:column;gap:12px;text-align:center}}
 
     /* ---------- Footer ---------- */
-    .footer{background:#ece0cd;border-top:1px solid var(--line);padding:48px 0 40px}
+    .footer{background:#050507;border-top:1px solid var(--line);padding:48px 0 40px}
     .footer .f-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
     .footer .brand b{font-size:1.1rem}
     .f-links{display:flex;gap:22px;flex-wrap:wrap}
@@ -293,10 +293,10 @@
 
   <!-- ============ HERO ============ -->
   <header class="hero">
-    <svg class="deco" style="top:-40px;right:-30px;width:340px;opacity:.85" viewBox="0 0 200 200" aria-hidden="true"><polygon points="200,0 200,200 40,0" fill="#c56a43" opacity="0.4"/></svg>
-    <svg class="deco" style="bottom:40px;right:8%;width:200px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="100,10 190,180 10,180" fill="none" stroke="#7d7a52" stroke-width="2.5" opacity="0.5"/></svg>
-    <svg class="deco" style="bottom:-30px;left:-30px;width:180px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="0,200 0,40 160,200" fill="#4c7d94" opacity="0.3"/></svg>
-    <div class="glow" style="width:420px;height:420px;background:#c56a43;top:-140px;right:-60px"></div>
+    <svg class="deco" style="top:-40px;right:-30px;width:340px;opacity:.85" viewBox="0 0 200 200" aria-hidden="true"><polygon points="200,0 200,200 40,0" fill="#e0673c" opacity="0.42"/></svg>
+    <svg class="deco" style="bottom:40px;right:8%;width:200px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="100,10 190,180 10,180" fill="none" stroke="#f4a52a" stroke-width="2.5" opacity="0.5"/></svg>
+    <svg class="deco" style="bottom:-30px;left:-30px;width:180px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="0,200 0,40 160,200" fill="#d4880f" opacity="0.3"/></svg>
+    <div class="glow" style="width:420px;height:420px;background:#f4a52a;top:-140px;right:-60px"></div>
 
     <div class="container hero-inner">
       <p class="eyebrow">Asia&ndash;Pacific Symposium on Process and AI</p>
@@ -726,8 +726,8 @@
 
     <!-- ============ REGISTER ============ -->
     <section class="register" id="register">
-      <svg class="deco" style="top:20px;left:6%;width:150px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="100,10 190,180 10,180" fill="none" stroke="#c56a43" stroke-width="2.5" opacity="0.4"/></svg>
-      <svg class="deco" style="bottom:0;right:0;width:260px;opacity:.4" viewBox="0 0 200 200" aria-hidden="true"><polygon points="200,40 200,200 40,200" fill="#7d7a52" opacity="0.5"/></svg>
+      <svg class="deco" style="top:20px;left:6%;width:150px" viewBox="0 0 200 200" aria-hidden="true"><polygon points="100,10 190,180 10,180" fill="none" stroke="#f4a52a" stroke-width="2.5" opacity="0.4"/></svg>
+      <svg class="deco" style="bottom:0;right:0;width:260px;opacity:.4" viewBox="0 0 200 200" aria-hidden="true"><polygon points="200,40 200,200 40,200" fill="#e0673c" opacity="0.5"/></svg>
       <div class="container register-inner">
         <p class="kicker">Registration</p>
         <h2>지금 <span class="hl">등록</span>하세요</h2>
