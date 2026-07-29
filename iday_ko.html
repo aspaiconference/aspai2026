@@ -234,6 +234,22 @@
     .support-links a:hover{color:var(--lime);border-color:var(--lime);background:rgba(196,241,53,.06)}
     @media(max-width:520px){.support-host{flex-direction:column;gap:12px;text-align:center}}
 
+    /* ---------- 후원/지원 기관 로고 ---------- */
+    .support-logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px;
+      max-width:1100px;margin:34px auto 0}
+    .support-logo{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;
+      height:96px;padding:16px 22px;box-sizing:border-box;transition:transform .2s ease,box-shadow .25s ease}
+    .support-logo img{max-height:52px;max-width:250px;width:auto;height:auto;object-fit:contain;display:block}
+    /* 세로형(상하 조합) 로고는 높이를 더 주고 폭을 좁게 */
+    .support-logo.is-tall img{max-height:64px;max-width:150px}
+    .support-logo:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+    @media(max-width:640px){
+      .support-logos{gap:10px;margin-top:26px}
+      .support-logo{height:76px;padding:12px 16px;border-radius:10px}
+      .support-logo img{max-height:42px;max-width:190px}
+      .support-logo.is-tall img{max-height:50px;max-width:120px}
+    }
+
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
     .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
     .js .reveal.in{opacity:1;transform:none}
@@ -748,6 +764,13 @@
         <a href="https://dpsrc.postech.ac.kr/" target="_blank" rel="noopener">Wil van der Aalst Data &amp; Process Science Research Center</a>
         <a href="https://ax.postech.ac.kr" target="_blank" rel="noopener">AX Graduate School</a>
         <a href="https://ids.postech.ac.kr" target="_blank" rel="noopener">IDS (Industrial Data Science) Program</a>
+      </div>
+      <div class="support-logos reveal">
+        <span class="support-logo"><img src="logos/ids-ko.png" alt="포스텍 산업데이터사이언스 (IDS)" loading="lazy" /></span>
+        <span class="support-logo is-tall"><img src="logos/msit-ko.png" alt="과학기술정보통신부" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/iitp-ko.png" alt="정보통신기획평가원 (IITP)" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/gyeongbuk-ko.png" alt="경상북도" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/pohang-ko.png" alt="포항시" loading="lazy" /></span>
       </div>
     </div>
   </section>
