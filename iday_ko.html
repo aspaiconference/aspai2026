@@ -228,18 +228,22 @@
     /* ---------- 후원/지원 기관 로고 ----------
        흰 박스 없음: logos/mono/ 파일은 배경이 투명한 흰색 로고라
        어두운 섹션 배경 위에 바로 얹힙니다. */
-    .support-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-      gap:22px 34px;width:100%;max-width:920px;margin:0 auto 30px}
+    .support-logos{display:flex;flex-direction:column;align-items:center;gap:26px;
+      width:100%;margin:0 auto 30px}
+    /* 4개 + 3개 두 줄로 명시 배치 — 마지막 로고가 혼자 남지 않도록 */
+    .support-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+      gap:20px 36px;max-width:700px}
     .support-logo{display:inline-flex;align-items:center;justify-content:center;
       opacity:.72;transition:opacity .25s ease}
-    .support-logo img{max-height:26px;max-width:190px;width:auto;height:auto;object-fit:contain;display:block}
-    /* 정방형·세로형(상하 조합) 로고는 높이를 더 크게, 폭은 좁게 */
-    .support-logo.is-tall img{max-height:34px;max-width:120px}
+    .support-logo img{max-height:28px;max-width:170px;width:auto;height:auto;object-fit:contain;display:block}
+    /* 정방형·세로형(상하 조합) 로고는 같은 시각적 무게가 되도록 높이를 더 크게 */
+    .support-logo.is-tall img{max-height:46px;max-width:130px}
     a.support-logo:hover{opacity:1}
     @media(max-width:640px){
-      .support-logos{gap:16px 24px;margin-bottom:24px}
-      .support-logo img{max-height:20px;max-width:140px}
-      .support-logo.is-tall img{max-height:26px;max-width:90px}
+      .support-logos{gap:18px}
+      .support-row{gap:16px 26px}
+      .support-logo img{max-height:22px;max-width:130px}
+      .support-logo.is-tall img{max-height:34px;max-width:100px}
     }
 
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
@@ -751,15 +755,19 @@
   <section class="support">
     <div class="container">
       <p class="support-label">후원</p>
-      <!-- 로고 7개: 가운데 정렬, 폭에 맞춰 자동 줄바꿈 -->
+      <!-- 로고 7개: 4개 + 3개 두 줄, 기존 순서 유지 -->
       <div class="support-logos reveal">
-        <a class="support-logo is-tall" href="https://www.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/postech.png" alt="포항공과대학교 POSTECH" /></a>
-        <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ids-ko.png" alt="포스텍 산업데이터사이언스 (IDS)" loading="lazy" /></a>
-        <span class="support-logo is-tall"><img src="logos/mono/msit-ko.png" alt="과학기술정보통신부" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/mono/iitp-ko.png" alt="정보통신기획평가원 (IITP)" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/mono/gyeongbuk-ko.png" alt="경상북도" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/mono/pohang-ko.png" alt="포항시" loading="lazy" /></span>
-        <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH 인공지능융합전공" loading="lazy" /></a>
+        <div class="support-row">
+          <a class="support-logo is-tall" href="https://www.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/postech.png" alt="포항공과대학교 POSTECH" /></a>
+          <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ids-ko.png" alt="포스텍 산업데이터사이언스 (IDS)" loading="lazy" /></a>
+          <span class="support-logo is-tall"><img src="logos/mono/msit-ko.png" alt="과학기술정보통신부" loading="lazy" /></span>
+          <span class="support-logo"><img src="logos/mono/iitp-ko.png" alt="정보통신기획평가원 (IITP)" loading="lazy" /></span>
+        </div>
+        <div class="support-row">
+          <span class="support-logo"><img src="logos/mono/gyeongbuk-ko.png" alt="경상북도" loading="lazy" /></span>
+          <span class="support-logo"><img src="logos/mono/pohang-ko.png" alt="포항시" loading="lazy" /></span>
+          <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH 인공지능융합전공" loading="lazy" /></a>
+        </div>
       </div>
       <!-- 로고 없는 기관: 텍스트 링크 -->
       <div class="support-links">

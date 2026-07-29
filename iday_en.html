@@ -228,18 +228,22 @@
     /* ---------- Supporting organisation logos ----------
        No white plate: the files in logos/mono/ are white knockouts with a
        transparent background, so they sit directly on the dark section. */
-    .support-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-      gap:22px 34px;width:100%;max-width:920px;margin:0 auto 30px}
+    .support-logos{display:flex;flex-direction:column;align-items:center;gap:26px;
+      width:100%;margin:0 auto 30px}
+    /* Explicit rows (4 + 3) so no logo is left stranded on its own line */
+    .support-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+      gap:20px 36px;max-width:700px}
     .support-logo{display:inline-flex;align-items:center;justify-content:center;
       opacity:.72;transition:opacity .25s ease}
-    .support-logo img{max-height:26px;max-width:190px;width:auto;height:auto;object-fit:contain;display:block}
-    /* Square / stacked (portrait) lockups get more height, less width */
-    .support-logo.is-tall img{max-height:34px;max-width:120px}
+    .support-logo img{max-height:28px;max-width:170px;width:auto;height:auto;object-fit:contain;display:block}
+    /* Square / stacked (portrait) lockups need more height to read at the same optical weight */
+    .support-logo.is-tall img{max-height:46px;max-width:130px}
     a.support-logo:hover{opacity:1}
     @media(max-width:640px){
-      .support-logos{gap:16px 24px;margin-bottom:24px}
-      .support-logo img{max-height:20px;max-width:140px}
-      .support-logo.is-tall img{max-height:26px;max-width:90px}
+      .support-logos{gap:18px}
+      .support-row{gap:16px 26px}
+      .support-logo img{max-height:22px;max-width:130px}
+      .support-logo.is-tall img{max-height:34px;max-width:100px}
     }
 
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
@@ -743,15 +747,19 @@
   <section class="support">
     <div class="container">
       <p class="support-label">Supported by</p>
-      <!-- Seven logos, centred and wrapping freely -->
+      <!-- Seven logos in two balanced rows (4 + 3), original order preserved -->
       <div class="support-logos reveal">
-        <a class="support-logo is-tall" href="https://www.postech.ac.kr/eng/" target="_blank" rel="noopener"><img src="logos/mono/postech.png" alt="POSTECH — Pohang University of Science and Technology" /></a>
-        <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ids-en.png" alt="POSTECH Industrial Data Science (IDS)" loading="lazy" /></a>
-        <span class="support-logo is-tall"><img src="logos/mono/msit-en.png" alt="Ministry of Science and ICT" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/mono/iitp-en.png" alt="Institute of Information &amp; Communications Technology Planning &amp; Evaluation (IITP)" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/mono/gyeongbuk-en.png" alt="Gyeongsangbuk-do" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/mono/pohang-en.png" alt="Pohang City" loading="lazy" /></span>
-        <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH AX Graduate School (AI Convergence)" loading="lazy" /></a>
+        <div class="support-row">
+          <a class="support-logo is-tall" href="https://www.postech.ac.kr/eng/" target="_blank" rel="noopener"><img src="logos/mono/postech.png" alt="POSTECH — Pohang University of Science and Technology" /></a>
+          <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ids-en.png" alt="POSTECH Industrial Data Science (IDS)" loading="lazy" /></a>
+          <span class="support-logo is-tall"><img src="logos/mono/msit-en.png" alt="Ministry of Science and ICT" loading="lazy" /></span>
+          <span class="support-logo"><img src="logos/mono/iitp-en.png" alt="Institute of Information &amp; Communications Technology Planning &amp; Evaluation (IITP)" loading="lazy" /></span>
+        </div>
+        <div class="support-row">
+          <span class="support-logo"><img src="logos/mono/gyeongbuk-en.png" alt="Gyeongsangbuk-do" loading="lazy" /></span>
+          <span class="support-logo"><img src="logos/mono/pohang-en.png" alt="Pohang City" loading="lazy" /></span>
+          <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH AX Graduate School (AI Convergence)" loading="lazy" /></a>
+        </div>
       </div>
       <!-- Organisations without a logo: text links -->
       <div class="support-links">
