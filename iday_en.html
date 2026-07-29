@@ -226,20 +226,23 @@
     .support-links a:hover{color:var(--lime);border-color:var(--lime);background:rgba(196,241,53,.06)}
 
     /* ---------- Supporting organisation logos (3 x 2) ---------- */
-    .support-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
-      width:100%;max-width:880px;margin:0 auto 32px}
-    .support-logo{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;
-      height:96px;padding:16px 20px;box-sizing:border-box;transition:transform .2s ease,box-shadow .25s ease}
-    .support-logo img{max-height:52px;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}
+    .support-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+      width:100%;max-width:680px;margin:0 auto 28px}
+    .support-logo{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:10px;
+      height:64px;padding:10px 14px;box-sizing:border-box;transition:transform .2s ease,box-shadow .25s ease}
+    .support-logo img{max-height:32px;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}
     /* Square / stacked (portrait) lockups get more height */
-    .support-logo.is-tall img{max-height:64px}
+    .support-logo.is-tall img{max-height:40px}
+    /* A lone card on the last row sits in the centre column */
+    .support-logo.is-solo{grid-column:2}
     .support-logo:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.4)}
     @media(max-width:640px){
       /* Two columns on narrow screens */
-      .support-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:24px}
-      .support-logo{height:76px;padding:12px 14px;border-radius:10px}
-      .support-logo img{max-height:42px}
-      .support-logo.is-tall img{max-height:52px}
+      .support-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-bottom:22px}
+      .support-logo{height:52px;padding:8px 11px;border-radius:9px}
+      .support-logo img{max-height:27px}
+      .support-logo.is-tall img{max-height:34px}
+      .support-logo.is-solo{grid-column:1/-1}
     }
 
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
@@ -743,7 +746,7 @@
   <section class="support">
     <div class="container">
       <p class="support-label">Supported by</p>
-      <!-- Six logos: three on top, three below -->
+      <!-- Seven logos: three per row, the last one centred -->
       <div class="support-logos reveal">
         <a class="support-logo is-tall" href="https://www.postech.ac.kr/eng/" target="_blank" rel="noopener"><img src="logos/postech.jpg" alt="POSTECH — Pohang University of Science and Technology" /></a>
         <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/ids-en.png" alt="POSTECH Industrial Data Science (IDS)" loading="lazy" /></a>
@@ -751,11 +754,11 @@
         <span class="support-logo"><img src="logos/iitp-en.png" alt="Institute of Information &amp; Communications Technology Planning &amp; Evaluation (IITP)" loading="lazy" /></span>
         <span class="support-logo"><img src="logos/gyeongbuk-en.png" alt="Gyeongsangbuk-do" loading="lazy" /></span>
         <span class="support-logo"><img src="logos/pohang-en.png" alt="Pohang City" loading="lazy" /></span>
+        <a class="support-logo is-solo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/ax-postech.png" alt="POSTECH AX Graduate School (AI Convergence)" loading="lazy" /></a>
       </div>
       <!-- Organisations without a logo: text links -->
       <div class="support-links">
         <a href="https://dpsrc.postech.ac.kr/" target="_blank" rel="noopener">Wil van der Aalst Data &amp; Process Science Research Center</a>
-        <a href="https://ax.postech.ac.kr" target="_blank" rel="noopener">AX Graduate School</a>
       </div>
     </div>
   </section>
