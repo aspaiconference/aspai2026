@@ -225,24 +225,21 @@
     .support-links a::after{content:"↗";font-size:.82em;opacity:.5}
     .support-links a:hover{color:var(--lime);border-color:var(--lime);background:rgba(196,241,53,.06)}
 
-    /* ---------- 후원/지원 기관 로고 (3 x 2) ---------- */
-    .support-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
-      width:100%;max-width:680px;margin:0 auto 28px}
-    .support-logo{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:10px;
-      height:64px;padding:10px 14px;box-sizing:border-box;transition:transform .2s ease,box-shadow .25s ease}
-    .support-logo img{max-height:32px;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}
-    /* 정방형·세로형(상하 조합) 로고는 높이를 더 크게 */
-    .support-logo.is-tall img{max-height:40px}
-    /* 마지막 줄에 혼자 남는 카드는 가운데 열에 배치 */
-    .support-logo.is-solo{grid-column:2}
-    .support-logo:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+    /* ---------- 후원/지원 기관 로고 ----------
+       흰 박스 없음: logos/mono/ 파일은 배경이 투명한 흰색 로고라
+       어두운 섹션 배경 위에 바로 얹힙니다. */
+    .support-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+      gap:22px 34px;width:100%;max-width:920px;margin:0 auto 30px}
+    .support-logo{display:inline-flex;align-items:center;justify-content:center;
+      opacity:.72;transition:opacity .25s ease}
+    .support-logo img{max-height:26px;max-width:190px;width:auto;height:auto;object-fit:contain;display:block}
+    /* 정방형·세로형(상하 조합) 로고는 높이를 더 크게, 폭은 좁게 */
+    .support-logo.is-tall img{max-height:34px;max-width:120px}
+    a.support-logo:hover{opacity:1}
     @media(max-width:640px){
-      /* 좁은 화면에서는 2열로 */
-      .support-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-bottom:22px}
-      .support-logo{height:52px;padding:8px 11px;border-radius:9px}
-      .support-logo img{max-height:27px}
-      .support-logo.is-tall img{max-height:34px}
-      .support-logo.is-solo{grid-column:1/-1}
+      .support-logos{gap:16px 24px;margin-bottom:24px}
+      .support-logo img{max-height:20px;max-width:140px}
+      .support-logo.is-tall img{max-height:26px;max-width:90px}
     }
 
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
@@ -754,15 +751,15 @@
   <section class="support">
     <div class="container">
       <p class="support-label">후원</p>
-      <!-- 로고 7개: 한 줄에 3개, 마지막 1개는 가운데 정렬 -->
+      <!-- 로고 7개: 가운데 정렬, 폭에 맞춰 자동 줄바꿈 -->
       <div class="support-logos reveal">
-        <a class="support-logo is-tall" href="https://www.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/postech.jpg" alt="포항공과대학교 POSTECH" /></a>
-        <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/ids-ko.png" alt="포스텍 산업데이터사이언스 (IDS)" loading="lazy" /></a>
-        <span class="support-logo is-tall"><img src="logos/msit-ko.png" alt="과학기술정보통신부" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/iitp-ko.png" alt="정보통신기획평가원 (IITP)" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/gyeongbuk-ko.png" alt="경상북도" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/pohang-ko.png" alt="포항시" loading="lazy" /></span>
-        <a class="support-logo is-solo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/ax-postech.png" alt="POSTECH 인공지능융합전공" loading="lazy" /></a>
+        <a class="support-logo is-tall" href="https://www.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/postech.png" alt="포항공과대학교 POSTECH" /></a>
+        <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ids-ko.png" alt="포스텍 산업데이터사이언스 (IDS)" loading="lazy" /></a>
+        <span class="support-logo is-tall"><img src="logos/mono/msit-ko.png" alt="과학기술정보통신부" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/mono/iitp-ko.png" alt="정보통신기획평가원 (IITP)" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/mono/gyeongbuk-ko.png" alt="경상북도" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/mono/pohang-ko.png" alt="포항시" loading="lazy" /></span>
+        <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH 인공지능융합전공" loading="lazy" /></a>
       </div>
       <!-- 로고 없는 기관: 텍스트 링크 -->
       <div class="support-links">

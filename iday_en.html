@@ -225,24 +225,21 @@
     .support-links a::after{content:"↗";font-size:.82em;opacity:.5}
     .support-links a:hover{color:var(--lime);border-color:var(--lime);background:rgba(196,241,53,.06)}
 
-    /* ---------- Supporting organisation logos (3 x 2) ---------- */
-    .support-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
-      width:100%;max-width:680px;margin:0 auto 28px}
-    .support-logo{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:10px;
-      height:64px;padding:10px 14px;box-sizing:border-box;transition:transform .2s ease,box-shadow .25s ease}
-    .support-logo img{max-height:32px;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}
-    /* Square / stacked (portrait) lockups get more height */
-    .support-logo.is-tall img{max-height:40px}
-    /* A lone card on the last row sits in the centre column */
-    .support-logo.is-solo{grid-column:2}
-    .support-logo:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+    /* ---------- Supporting organisation logos ----------
+       No white plate: the files in logos/mono/ are white knockouts with a
+       transparent background, so they sit directly on the dark section. */
+    .support-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+      gap:22px 34px;width:100%;max-width:920px;margin:0 auto 30px}
+    .support-logo{display:inline-flex;align-items:center;justify-content:center;
+      opacity:.72;transition:opacity .25s ease}
+    .support-logo img{max-height:26px;max-width:190px;width:auto;height:auto;object-fit:contain;display:block}
+    /* Square / stacked (portrait) lockups get more height, less width */
+    .support-logo.is-tall img{max-height:34px;max-width:120px}
+    a.support-logo:hover{opacity:1}
     @media(max-width:640px){
-      /* Two columns on narrow screens */
-      .support-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-bottom:22px}
-      .support-logo{height:52px;padding:8px 11px;border-radius:9px}
-      .support-logo img{max-height:27px}
-      .support-logo.is-tall img{max-height:34px}
-      .support-logo.is-solo{grid-column:1/-1}
+      .support-logos{gap:16px 24px;margin-bottom:24px}
+      .support-logo img{max-height:20px;max-width:140px}
+      .support-logo.is-tall img{max-height:26px;max-width:90px}
     }
 
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
@@ -746,15 +743,15 @@
   <section class="support">
     <div class="container">
       <p class="support-label">Supported by</p>
-      <!-- Seven logos: three per row, the last one centred -->
+      <!-- Seven logos, centred and wrapping freely -->
       <div class="support-logos reveal">
-        <a class="support-logo is-tall" href="https://www.postech.ac.kr/eng/" target="_blank" rel="noopener"><img src="logos/postech.jpg" alt="POSTECH — Pohang University of Science and Technology" /></a>
-        <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/ids-en.png" alt="POSTECH Industrial Data Science (IDS)" loading="lazy" /></a>
-        <span class="support-logo is-tall"><img src="logos/msit-en.png" alt="Ministry of Science and ICT" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/iitp-en.png" alt="Institute of Information &amp; Communications Technology Planning &amp; Evaluation (IITP)" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/gyeongbuk-en.png" alt="Gyeongsangbuk-do" loading="lazy" /></span>
-        <span class="support-logo"><img src="logos/pohang-en.png" alt="Pohang City" loading="lazy" /></span>
-        <a class="support-logo is-solo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/ax-postech.png" alt="POSTECH AX Graduate School (AI Convergence)" loading="lazy" /></a>
+        <a class="support-logo is-tall" href="https://www.postech.ac.kr/eng/" target="_blank" rel="noopener"><img src="logos/mono/postech.png" alt="POSTECH — Pohang University of Science and Technology" /></a>
+        <a class="support-logo" href="https://ids.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ids-en.png" alt="POSTECH Industrial Data Science (IDS)" loading="lazy" /></a>
+        <span class="support-logo is-tall"><img src="logos/mono/msit-en.png" alt="Ministry of Science and ICT" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/mono/iitp-en.png" alt="Institute of Information &amp; Communications Technology Planning &amp; Evaluation (IITP)" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/mono/gyeongbuk-en.png" alt="Gyeongsangbuk-do" loading="lazy" /></span>
+        <span class="support-logo"><img src="logos/mono/pohang-en.png" alt="Pohang City" loading="lazy" /></span>
+        <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH AX Graduate School (AI Convergence)" loading="lazy" /></a>
       </div>
       <!-- Organisations without a logo: text links -->
       <div class="support-links">
