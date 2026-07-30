@@ -238,12 +238,15 @@
     .support-logo img{max-height:28px;max-width:170px;width:auto;height:auto;object-fit:contain;display:block}
     /* 정방형·세로형(상하 조합) 로고는 같은 시각적 무게가 되도록 높이를 더 크게 */
     .support-logo.is-tall img{max-height:46px;max-width:130px}
+    /* 가로로 매우 긴 로고(12:1 이상)는 폭을 더 줘야 실처럼 얇아지지 않음 */
+    .support-logo.is-wide img{max-width:250px}
     a.support-logo:hover{opacity:1}
     @media(max-width:640px){
       .support-logos{gap:18px}
       .support-row{gap:16px 26px}
       .support-logo img{max-height:22px;max-width:130px}
       .support-logo.is-tall img{max-height:34px;max-width:100px}
+      .support-logo.is-wide img{max-width:200px}
     }
 
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
@@ -766,7 +769,7 @@
         <div class="support-row">
           <span class="support-logo"><img src="logos/mono/gyeongbuk-ko.png" alt="경상북도" loading="lazy" /></span>
           <span class="support-logo"><img src="logos/mono/pohang-ko.png" alt="포항시" loading="lazy" /></span>
-          <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH 인공지능융합전공" loading="lazy" /></a>
+          <a class="support-logo is-wide" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech-ko.png" alt="POSTECH 인공지능융합전공" loading="lazy" /></a>
         </div>
       </div>
       <!-- 로고 없는 기관: 텍스트 링크 -->

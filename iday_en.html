@@ -238,12 +238,15 @@
     .support-logo img{max-height:28px;max-width:170px;width:auto;height:auto;object-fit:contain;display:block}
     /* Square / stacked (portrait) lockups need more height to read at the same optical weight */
     .support-logo.is-tall img{max-height:46px;max-width:130px}
+    /* Ultra-wide lockups (17:1) need extra width or they render as a hairline */
+    .support-logo.is-wide img{max-width:250px}
     a.support-logo:hover{opacity:1}
     @media(max-width:640px){
       .support-logos{gap:18px}
       .support-row{gap:16px 26px}
       .support-logo img{max-height:22px;max-width:130px}
       .support-logo.is-tall img{max-height:34px;max-width:100px}
+      .support-logo.is-wide img{max-width:200px}
     }
 
     /* ---------- Reveal (progressive enhancement: hidden only when JS active) ---------- */
@@ -758,7 +761,7 @@
         <div class="support-row">
           <span class="support-logo"><img src="logos/mono/gyeongbuk-en.png" alt="Gyeongsangbuk-do" loading="lazy" /></span>
           <span class="support-logo"><img src="logos/mono/pohang-en.png" alt="Pohang City" loading="lazy" /></span>
-          <a class="support-logo" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech.png" alt="POSTECH AX Graduate School (AI Convergence)" loading="lazy" /></a>
+          <a class="support-logo is-wide" href="https://ax.postech.ac.kr" target="_blank" rel="noopener"><img src="logos/mono/ax-postech-en.png" alt="POSTECH Applied Artificial Intelligence" loading="lazy" /></a>
         </div>
       </div>
       <!-- Organisations without a logo: text links -->
