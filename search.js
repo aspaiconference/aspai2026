@@ -77,20 +77,20 @@
     {
       url: 'summer-school.html',
       title: 'Summer School',
-      keywords: 'summer school APPI process mining training workshop hands-on PM4Py Celonis',
-      content: 'The 1st APPI Summer School on Process Intelligence. August 27-28, 2026 at POSTECH. Learn process discovery, conformance checking, performance analysis, OCPM, predictive analytics.'
+      keywords: 'summer school 3rd process mining summer school Aachen Bolzano training workshop hands-on PM4Py Celonis',
+      content: 'The 3rd Process Mining Summer School, following the previous editions in Aachen, Germany (2022) and Bolzano, Italy (2026), and the first edition held in the Asia-Pacific region. August 27-28, 2026 at POSTECH. Learn process discovery, conformance checking, performance analysis, OCPM, predictive analytics.'
     },
     {
       url: 'summer-school-program.html',
       title: 'Summer School Program Details',
-      keywords: 'summer school program schedule August 27 28 POSCO International Center process intelligence process mining process discovery event logs conformance checking token-based replay alignments process data quality management hands-on Celonis SAP BTM AI agent mining process mining AI federated process mining case studies healthcare Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Tony Park RaeSung Park Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati',
-      content: 'Summer School Program (POSCO International Center, Large-size Meeting Room 1F). Day 1 (August 27, Thursday): Opening (Marco Comuzzi), Unlocking Process Intelligence: A 360 Degree Introduction to Process Mining (Wil van der Aalst), From Event Logs to Process Logic: The Basics of Process Discovery (Wil van der Aalst), Conformance Checking: Token-Based Replay and Alignments (Wil van der Aalst), Process Data Quality Management (Moe Wynn), Process Mining Hands-On A (Poornima Dhall, Celonis), AI Agent Mining in Practice (Julian Lebherz, Tony (RaeSung) Park, SAP BTM). Day 2 (August 28, Friday): Process Mining and AI (Marco Comuzzi), Federated Process Mining (Bernardo Nugroho Yahya), Process Mining Case Studies (Angelina Prima Kurniati), Process Mining in the Healthcare (TBD), Closing (Marco Comuzzi).'
+      keywords: 'summer school program schedule August 27 28 POSCO International Center process intelligence process mining process discovery event logs conformance checking token-based replay alignments data foundations event log quality hands-on Celonis SAP BTM AI agent mining predictive generative AI LLM federated process mining case studies healthcare evidence-based Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Tony Park RaeSung Park Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati Simon Poon',
+      content: 'Summer School Program (POSCO International Center, Large-size Meeting Room 1F). Day 1 (August 27, Thursday): Opening (Marco Comuzzi), Unlocking Process Intelligence: A 360 Degree Introduction to Process Mining (Wil van der Aalst), From Event Logs to Process Logic: The Basics of Process Discovery (Wil van der Aalst), Conformance Checking: Token-Based Replay and Alignments (Wil van der Aalst), Building Strong Data Foundations for Process Mining (Moe Wynn), Process Mining Hands-On A (Poornima Dhall, Celonis), Process Mining Hands-On B: AI Agent Mining in Practice (Julian Lebherz, Tony (RaeSung) Park, SAP BTM). Day 2 (August 28, Friday): Unleashing Predictive and Generative AI in Process Mining (Marco Comuzzi), Federated Process Mining: Federated Event Log Generation for Process Discovery across Organizational Boundaries (Bernardo Nugroho Yahya), Process Mining Case Studies (Angelina Prima Kurniati), Evidence-Based Evaluation of Process Mining in Healthcare (Simon Poon), Closing (Marco Comuzzi).'
     },
     {
       url: 'summer-school-lecturers.html',
       title: 'Summer School Lecturers',
-      keywords: 'lecturers speakers instructors Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Tony Park RaeSung Park Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati RWTH Aachen QUT Celonis SAP BTM Business Transformation Management UNIST Telkom',
-      content: 'Summer School Lecturers: Prof. Wil van der Aalst (RWTH Aachen University), Prof. Moe Wynn (Queensland University of Technology), Poornima Dhall (Celonis), Julian Lebherz (SAP BTM), Tony (RaeSung) Park (SAP BTM), Prof. Marco Comuzzi (UNIST), Prof. Bernardo Nugroho Yahya (Hankuk University of Foreign Studies), Prof. Angelina Prima Kurniati (Telkom University).'
+      keywords: 'lecturers speakers instructors Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Tony Park RaeSung Park Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati Simon Poon RWTH Aachen QUT Celonis SAP BTM Business Transformation Management UNIST Telkom University of Sydney',
+      content: 'Summer School Lecturers: Prof. Wil van der Aalst (RWTH Aachen University), Prof. Moe Wynn (Queensland University of Technology), Poornima Dhall (Celonis), Julian Lebherz (SAP BTM), Tony (RaeSung) Park (SAP BTM), Prof. Marco Comuzzi (UNIST), Prof. Bernardo Nugroho Yahya (Hankuk University of Foreign Studies), Prof. Angelina Prima Kurniati (Telkom University), Prof. Simon Poon (The University of Sydney).'
     },
     {
       url: 'registration.html',
