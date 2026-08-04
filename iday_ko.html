@@ -120,16 +120,16 @@
     .rule{height:1px;background:linear-gradient(90deg,var(--lime),transparent);margin:0 0 46px;opacity:.6}
 
     /* ---------- Program overview (intro prose) ---------- */
-    .intro-lead{color:var(--ink-dim);font-size:clamp(1rem,2.4vw,1.1rem);line-height:1.85;margin-bottom:34px}
-    .intro-lead p+p{margin-top:18px}
+    .intro-lead{max-width:940px;color:var(--ink-dim);font-size:clamp(1rem,2.4vw,1.06rem);line-height:1.95}
+    .intro-lead p+p{margin-top:20px}
     .intro-lead b{color:var(--ink);font-weight:800}
-    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .intro-card{background:linear-gradient(180deg,var(--panel),var(--bg-soft));border:1px solid var(--line);
-      border-radius:var(--radius);padding:26px}
-    .intro-card .badge{margin-bottom:14px;font-size:.72rem;padding:4px 10px}
-    .intro-card h3{font-size:1.02rem;font-weight:800;margin-bottom:10px;line-height:1.35}
-    .intro-card p{color:var(--ink-dim);font-size:.93rem;line-height:1.8}
-    .intro-close{margin-top:22px;padding:26px 28px;border:1px solid var(--line);border-left:3px solid var(--lime);
+    .intro-lead .p-lead{font-size:clamp(1.06rem,2.6vw,1.2rem);line-height:1.85}
+    .intro-lead mark{background:linear-gradient(180deg,transparent 56%,rgba(196,241,53,.26) 56%);
+      color:var(--ink);font-weight:700;padding:0 2px}
+    .intro-lead .org{font-weight:800}
+    .o-celonis{color:#c4b5fd} .o-sap{color:#f6c95c} .o-puzzle{color:#d4f56a}
+    .o-samsung{color:#93b4f6} .o-lg{color:#f0a0b4}
+    .intro-close{max-width:940px;margin-top:32px;padding:26px 28px;border:1px solid var(--line);border-left:3px solid var(--lime);
       border-radius:var(--radius);background:rgba(196,241,53,.04);color:var(--ink-dim);
       font-size:.98rem;line-height:1.82}
     .intro-close b{color:var(--ink);font-weight:800}
@@ -271,7 +271,7 @@
     /* ---------- Responsive ---------- */
     @media(max-width:860px){
       .topnav .navlink{display:none}
-      .prog-grid,.venue-grid,.intro-grid{grid-template-columns:1fr}
+      .prog-grid,.venue-grid{grid-template-columns:1fr}
       .sec{padding:70px 0}
       .talk{grid-template-columns:1fr;gap:8px;padding:24px}
       .talk__idx{font-size:1.6rem}
@@ -368,84 +368,62 @@
           </div>
         </div>
         <div class="intro-lead reveal">
-          <p>
+          <p class="p-lead">
             <b>ASPAI Industry Day</b>는 인공지능(AI), 프로세스 인텔리전스(Process Intelligence),
-            프로세스 마이닝(Process Mining)가 산업의 미래를 어떻게 변화시키고 있는지를 조망하는 국제 행사입니다.
+            프로세스 마이닝(Process Mining)이 <mark>산업의 미래를 어떻게 변화시키고 있는지를 조망하는 국제 행사</mark>입니다.
             AI 기술의 급속한 발전과 함께 기업들은 단순한 업무 자동화를 넘어, 데이터와 프로세스를 기반으로
-            스스로 학습하고 최적화하는 지능형 조직으로 빠르게 진화하고 있습니다. 이번 행사는 이러한 변화의 중심에서
-            활동하고 있는 세계적인 연구자와 글로벌 기업의 전문가들이 한자리에 모여 최신 기술과 실제 산업 적용 사례를
+            스스로 학습하고 최적화하는 <b>지능형 조직</b>으로 빠르게 진화하고 있습니다. 이번 행사는 이러한 변화의 중심에서
+            활동하고 있는 <b>세계적인 연구자와 글로벌 기업의 전문가들</b>이 한자리에 모여 최신 기술과 실제 산업 적용 사례를
             공유하는 특별한 기회를 제공합니다.
           </p>
-        </div>
 
-        <div class="intro-grid">
-          <div class="intro-card reveal">
-            <span class="badge b-celonis">Celonis</span>
-            <h3>AI 시대의 프로세스 인텔리전스</h3>
-            <p>
-              이번 Industry Day에서는 프로세스 마이닝 분야의 세계적인 석학인 Wil van der Aalst 교수와 Celonis의
-              전문가들이 AI 시대의 프로세스 인텔리전스와 데이터 기반 프로세스 혁신의 미래를 제시합니다.
-              Celonis는 기업가치 100억 달러 이상을 인정받은 독일의 데카콘(Decacorn) 기업이자 세계 최대의
-              Process Intelligence 플랫폼 기업으로, Siemens, BMW, PepsiCo, Uber 등 전 세계 수천 개 기업이
-              업무 프로세스를 분석하고 운영 효율을 극대화하는 데 활용하고 있습니다. 이번 발표에서는 AI와
-              프로세스 인텔리전스가 결합하여 기업의 운영 혁신을 어떻게 가속화하는지에 대한 최신 비전과 사례를
-              소개합니다.
-            </p>
-          </div>
+          <p>
+            이번 Industry Day에서는 프로세스 마이닝 분야의 세계적인 석학인 <b>Wil van der Aalst 교수</b>와
+            <span class="org o-celonis">Celonis</span>의 전문가들이 AI 시대의 프로세스 인텔리전스와 데이터 기반
+            프로세스 혁신의 미래를 제시합니다. Celonis는 <mark>기업가치 100억 달러 이상을 인정받은 독일의
+            데카콘(Decacorn) 기업</mark>이자 세계 최대의 Process Intelligence 플랫폼 기업으로,
+            <b>Siemens, BMW, PepsiCo, Uber</b> 등 전 세계 수천 개 기업이 업무 프로세스를 분석하고 운영 효율을
+            극대화하는 데 활용하고 있습니다. 이번 발표에서는 AI와 프로세스 인텔리전스가 결합하여 기업의 운영 혁신을
+            어떻게 가속화하는지에 대한 최신 비전과 사례를 소개합니다.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-sap">SAP</span>
-            <h3>차세대 엔터프라이즈 AI</h3>
-            <p>
-              이어 SAP에서는 차세대 엔터프라이즈 AI의 핵심 개념인 Process Atoms와 Company Memory를 소개합니다.
-              SAP는 전 세계 기업의 핵심 비즈니스 시스템을 지원하는 글로벌 최고의 엔터프라이즈 소프트웨어 기업으로,
-              ERP를 비롯한 다양한 기업용 솔루션을 통해 수십만 개 기업의 디지털 전환을 이끌어 왔습니다.
-              이번 발표에서는 AI와 비즈니스 프로세스를 유기적으로 연결하여 기업의 의사결정과 업무 혁신을 지원하는
-              차세대 엔터프라이즈 AI 비전을 제시합니다.
-            </p>
-          </div>
+          <p>
+            이어 <span class="org o-sap">SAP</span>에서는 차세대 엔터프라이즈 AI의 핵심 개념인
+            <b>Process Atoms</b>와 <b>Company Memory</b>를 소개합니다. SAP는 전 세계 기업의 핵심 비즈니스 시스템을
+            지원하는 <mark>글로벌 최고의 엔터프라이즈 소프트웨어 기업</mark>으로, ERP를 비롯한 다양한 기업용 솔루션을 통해
+            수십만 개 기업의 디지털 전환을 이끌어 왔습니다. 이번 발표에서는 AI와 비즈니스 프로세스를 유기적으로 연결하여
+            기업의 의사결정과 업무 혁신을 지원하는 차세대 엔터프라이즈 AI 비전을 제시합니다.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-puzzle">PuzzleData</span>
-            <h3>국내 프로세스 혁신 전략과 사례</h3>
-            <p>
-              국내 프로세스 인텔리전스 전문기업인 Puzzle Data는 제조와 금융 등 다양한 산업에서 수행한 프로젝트
-              경험을 바탕으로 AI 시대의 프로세스 혁신 전략과 실제 성공 사례를 공유합니다. 국내 기업 환경에 최적화된
-              프로세스 분석과 AI 기반 업무 혁신 사례를 통해 참가자들은 현장에서 바로 활용할 수 있는 실질적인
-              인사이트를 얻을 수 있습니다.
-            </p>
-          </div>
+          <p>
+            국내 프로세스 인텔리전스 전문기업인 <span class="org o-puzzle">Puzzle Data</span>는 제조와 금융 등 다양한
+            산업에서 수행한 프로젝트 경험을 바탕으로 <b>AI 시대의 프로세스 혁신 전략과 실제 성공 사례</b>를 공유합니다.
+            국내 기업 환경에 최적화된 프로세스 분석과 AI 기반 업무 혁신 사례를 통해 참가자들은
+            <mark>현장에서 바로 활용할 수 있는 실질적인 인사이트</mark>를 얻을 수 있습니다.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-samsung">Samsung</span>
-            <h3>반도체 제조 현장의 프로세스 마이닝</h3>
-            <p>
-              삼성전자에서는 세계 최고 수준의 반도체 제조 환경에서 프로세스 마이닝과 프로세스 인텔리전스가 어떻게
-              활용되고 있는지를 소개합니다. 글로벌 반도체 산업을 선도하는 삼성전자는 초대형 생산 공정에 데이터 기반
-              프로세스 분석 기술을 적용하여 생산성과 운영 효율을 지속적으로 향상시키고 있으며, 실제 제조 현장에서
-              축적된 경험과 혁신 사례를 공유할 예정입니다. 참가자들은 첨단 제조 환경에서 AI와 데이터 기반 의사결정이
-              만들어내는 혁신을 직접 확인할 수 있습니다.
-            </p>
-          </div>
+          <p>
+            <span class="org o-samsung">삼성전자</span>에서는 <b>세계 최고 수준의 반도체 제조 환경</b>에서 프로세스 마이닝과
+            프로세스 인텔리전스가 어떻게 활용되고 있는지를 소개합니다. 글로벌 반도체 산업을 선도하는 삼성전자는
+            <mark>초대형 생산 공정에 데이터 기반 프로세스 분석 기술을 적용</mark>하여 생산성과 운영 효율을 지속적으로
+            향상시키고 있으며, 실제 제조 현장에서 축적된 경험과 혁신 사례를 공유할 예정입니다. 참가자들은 첨단 제조
+            환경에서 AI와 데이터 기반 의사결정이 만들어내는 혁신을 직접 확인할 수 있습니다.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-lg">LG</span>
-            <h3>AI 기반 스마트 제조와 디지털 전환</h3>
-            <p>
-              LG전자에서는 AI 기반 스마트 제조와 디지털 전환을 위한 프로세스 혁신 사례를 소개합니다. 글로벌 가전 및
-              전자산업을 선도하는 LG전자는 생산, 품질, 공급망 등 다양한 제조 프로세스에 AI와 데이터 분석 기술을
-              접목하여 운영 효율성과 의사결정 수준을 지속적으로 향상시키고 있으며, 실제 제조 현장에서 축적된 경험과
-              혁신 사례를 공유합니다. 이를 통해 참가자들은 글로벌 제조기업이 AI와 프로세스 인텔리전스를 활용하여
-              지속적인 운영 혁신을 실현하는 전략과 실무 경험을 살펴볼 수 있습니다.
-            </p>
-          </div>
+          <p>
+            <span class="org o-lg">LG전자</span>에서는 <b>AI 기반 스마트 제조와 디지털 전환</b>을 위한 프로세스 혁신 사례를
+            소개합니다. 글로벌 가전 및 전자산업을 선도하는 LG전자는 <mark>생산, 품질, 공급망 등 다양한 제조 프로세스에
+            AI와 데이터 분석 기술을 접목</mark>하여 운영 효율성과 의사결정 수준을 지속적으로 향상시키고 있으며, 실제 제조
+            현장에서 축적된 경험과 혁신 사례를 공유합니다. 이를 통해 참가자들은 글로벌 제조기업이 AI와 프로세스
+            인텔리전스를 활용하여 지속적인 운영 혁신을 실현하는 전략과 실무 경험을 살펴볼 수 있습니다.
+          </p>
         </div>
 
         <div class="intro-close reveal">
           <b>ASPAI Industry Day</b>는 최신 학술 연구와 산업 현장의 실제 경험을 한자리에서 접할 수 있는 특별한 행사입니다.
-          연구자, 기업 관계자, 엔지니어, 학생뿐만 아니라 AI와 디지털 전환에 관심 있는 모든 참가자들에게 세계 최고 수준의
-          전문가들과 교류하고, 산업 혁신의 미래를 함께 전망하며 새로운 협력과 비즈니스 기회를 모색할 수 있는 뜻깊은 자리가
-          될 것입니다.
+          연구자, 기업 관계자, 엔지니어, 학생뿐만 아니라 AI와 디지털 전환에 관심 있는 모든 참가자들에게
+          <b>세계 최고 수준의 전문가들과 교류</b>하고, 산업 혁신의 미래를 함께 전망하며
+          <b>새로운 협력과 비즈니스 기회</b>를 모색할 수 있는 뜻깊은 자리가 될 것입니다.
         </div>
       </div>
     </section>

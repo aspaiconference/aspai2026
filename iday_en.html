@@ -120,16 +120,16 @@
     .rule{height:1px;background:linear-gradient(90deg,var(--lime),transparent);margin:0 0 46px;opacity:.6}
 
     /* ---------- Program overview (intro prose) ---------- */
-    .intro-lead{color:var(--ink-dim);font-size:clamp(1rem,2.4vw,1.1rem);line-height:1.85;margin-bottom:34px}
-    .intro-lead p+p{margin-top:18px}
+    .intro-lead{max-width:940px;color:var(--ink-dim);font-size:clamp(1rem,2.4vw,1.06rem);line-height:1.9}
+    .intro-lead p+p{margin-top:20px}
     .intro-lead b{color:var(--ink);font-weight:800}
-    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .intro-card{background:linear-gradient(180deg,var(--panel),var(--bg-soft));border:1px solid var(--line);
-      border-radius:var(--radius);padding:26px}
-    .intro-card .badge{margin-bottom:14px;font-size:.72rem;padding:4px 10px}
-    .intro-card h3{font-size:1.02rem;font-weight:800;margin-bottom:10px;line-height:1.35}
-    .intro-card p{color:var(--ink-dim);font-size:.93rem;line-height:1.8}
-    .intro-close{margin-top:22px;padding:26px 28px;border:1px solid var(--line);border-left:3px solid var(--lime);
+    .intro-lead .p-lead{font-size:clamp(1.06rem,2.6vw,1.2rem);line-height:1.8}
+    .intro-lead mark{background:linear-gradient(180deg,transparent 56%,rgba(196,241,53,.26) 56%);
+      color:var(--ink);font-weight:700;padding:0 2px}
+    .intro-lead .org{font-weight:800}
+    .o-celonis{color:#c4b5fd} .o-sap{color:#f6c95c} .o-puzzle{color:#d4f56a}
+    .o-samsung{color:#93b4f6} .o-lg{color:#f0a0b4}
+    .intro-close{max-width:940px;margin-top:32px;padding:26px 28px;border:1px solid var(--line);border-left:3px solid var(--lime);
       border-radius:var(--radius);background:rgba(196,241,53,.04);color:var(--ink-dim);
       font-size:.98rem;line-height:1.82}
     .intro-close b{color:var(--ink);font-weight:800}
@@ -271,7 +271,7 @@
     /* ---------- Responsive ---------- */
     @media(max-width:860px){
       .topnav .navlink{display:none}
-      .prog-grid,.venue-grid,.intro-grid{grid-template-columns:1fr}
+      .prog-grid,.venue-grid{grid-template-columns:1fr}
       .sec{padding:70px 0}
       .talk{grid-template-columns:1fr;gap:8px;padding:24px}
       .talk__idx{font-size:1.6rem}
@@ -368,89 +368,68 @@
           </div>
         </div>
         <div class="intro-lead reveal">
-          <p>
-            <b>ASPAI Industry Day</b> is an international event exploring how Artificial Intelligence (AI),
-            Process Intelligence and Process Mining are reshaping the future of industry. As AI advances at pace,
-            companies are moving beyond simple task automation and evolving rapidly into intelligent organizations
+          <p class="p-lead">
+            <b>ASPAI Industry Day</b> is an <mark>international event exploring how Artificial Intelligence (AI),
+            Process Intelligence and Process Mining are reshaping the future of industry</mark>. As AI advances at pace,
+            companies are moving beyond simple task automation and evolving rapidly into <b>intelligent organizations</b>
             that learn and optimize themselves on the basis of their data and processes. This event brings together
-            world-leading researchers and experts from global enterprises who stand at the center of that shift,
+            <b>world-leading researchers and experts from global enterprises</b> who stand at the center of that shift,
             offering a rare opportunity to share the latest technology alongside real industrial applications.
           </p>
-        </div>
 
-        <div class="intro-grid">
-          <div class="intro-card reveal">
-            <span class="badge b-celonis">Celonis</span>
-            <h3>Process Intelligence in the AI Era</h3>
-            <p>
-              At this Industry Day, Prof. Wil van der Aalst &mdash; the world's foremost authority on process mining &mdash;
-              and experts from Celonis present the future of process intelligence and data-driven process innovation
-              in the AI era. Celonis is a German decacorn valued at over USD 10 billion and the world's largest
-              Process Intelligence platform company, used by thousands of organizations worldwide &mdash; including
-              Siemens, BMW, PepsiCo and Uber &mdash; to analyze their business processes and maximize operational
-              efficiency. Their talk introduces the latest vision and cases for how AI combined with process
-              intelligence accelerates operational innovation.
-            </p>
-          </div>
+          <p>
+            At this Industry Day, <b>Prof. Wil van der Aalst</b> &mdash; the world's foremost authority on process mining &mdash;
+            and experts from <span class="org o-celonis">Celonis</span> present the future of process intelligence and
+            data-driven process innovation in the AI era. Celonis is a <mark>German decacorn valued at over USD 10 billion</mark>
+            and the world's largest Process Intelligence platform company, used by thousands of organizations worldwide
+            &mdash; including <b>Siemens, BMW, PepsiCo and Uber</b> &mdash; to analyze their business processes and maximize
+            operational efficiency. Their talk introduces the latest vision and cases for how AI combined with process
+            intelligence accelerates operational innovation.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-sap">SAP</span>
-            <h3>Next-Generation Enterprise AI</h3>
-            <p>
-              SAP then introduces Process Atoms and Company Memory, the core concepts behind next-generation
-              enterprise AI. SAP is the world's leading enterprise software company, powering the core business
-              systems of organizations worldwide and driving the digital transformation of hundreds of thousands
-              of companies through ERP and a broad portfolio of enterprise solutions. This talk presents a vision
-              for next-generation enterprise AI that organically connects AI with business processes to support
-              decision-making and transform the way work gets done.
-            </p>
-          </div>
+          <p>
+            <span class="org o-sap">SAP</span> then introduces <b>Process Atoms</b> and <b>Company Memory</b>, the core
+            concepts behind next-generation enterprise AI. SAP is the <mark>world's leading enterprise software company</mark>,
+            powering the core business systems of organizations worldwide and driving the digital transformation of
+            hundreds of thousands of companies through ERP and a broad portfolio of enterprise solutions. This talk
+            presents a vision for next-generation enterprise AI that organically connects AI with business processes
+            to support decision-making and transform the way work gets done.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-puzzle">PuzzleData</span>
-            <h3>Process Innovation Strategy &amp; Cases in Korea</h3>
-            <p>
-              PuzzleData, a Korean specialist in process intelligence, shares process innovation strategies for the
-              AI era together with real success stories, drawing on project experience across manufacturing, finance
-              and other industries. Through process analysis and AI-driven work innovation tailored to the Korean
-              enterprise environment, attendees gain practical insights they can apply directly in the field.
-            </p>
-          </div>
+          <p>
+            <span class="org o-puzzle">PuzzleData</span>, a Korean specialist in process intelligence, shares
+            <b>process innovation strategies for the AI era</b> together with real success stories, drawing on project
+            experience across manufacturing, finance and other industries. Through process analysis and AI-driven work
+            innovation tailored to the Korean enterprise environment, attendees gain
+            <mark>practical insights they can apply directly in the field</mark>.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-samsung">Samsung</span>
-            <h3>Process Mining on the Semiconductor Fab Floor</h3>
-            <p>
-              Samsung Electronics shows how process mining and process intelligence are used in a world-class
-              semiconductor manufacturing environment. A leader in the global semiconductor industry, Samsung
-              applies data-driven process analysis to ultra-large-scale production lines to continuously improve
-              productivity and operational efficiency, and will share the experience and innovation cases accumulated
-              on the actual manufacturing floor. Attendees will see first-hand the innovation that AI and data-driven
-              decision-making create in an advanced manufacturing setting.
-            </p>
-          </div>
+          <p>
+            <span class="org o-samsung">Samsung Electronics</span> shows how process mining and process intelligence are
+            used in a <b>world-class semiconductor manufacturing environment</b>. A leader in the global semiconductor
+            industry, Samsung <mark>applies data-driven process analysis to ultra-large-scale production lines</mark> to
+            continuously improve productivity and operational efficiency, and will share the experience and innovation
+            cases accumulated on the actual manufacturing floor. Attendees will see first-hand the innovation that AI
+            and data-driven decision-making create in an advanced manufacturing setting.
+          </p>
 
-          <div class="intro-card reveal">
-            <span class="badge b-lg">LG</span>
-            <h3>AI-Driven Smart Manufacturing &amp; Digital Transformation</h3>
-            <p>
-              LG Electronics introduces process innovation cases for AI-driven smart manufacturing and digital
-              transformation. A leader in the global home appliance and electronics industry, LG applies AI and data
-              analytics across manufacturing processes spanning production, quality and supply chain to continuously
-              raise operational efficiency and the quality of decision-making, and shares the experience and
-              innovation cases accumulated on the manufacturing floor. Attendees can examine the strategies and
-              hands-on practices by which a global manufacturer realizes continuous operational innovation with AI
-              and process intelligence.
-            </p>
-          </div>
+          <p>
+            <span class="org o-lg">LG Electronics</span> introduces process innovation cases for
+            <b>AI-driven smart manufacturing and digital transformation</b>. A leader in the global home appliance and
+            electronics industry, LG <mark>applies AI and data analytics across production, quality and supply-chain
+            processes</mark> to continuously raise operational efficiency and the quality of decision-making, and shares
+            the experience and innovation cases accumulated on the manufacturing floor. Attendees can examine the
+            strategies and hands-on practices by which a global manufacturer realizes continuous operational innovation
+            with AI and process intelligence.
+          </p>
         </div>
 
         <div class="intro-close reveal">
           <b>ASPAI Industry Day</b> is a special occasion to encounter the latest academic research and real-world
           industrial experience in one place. For researchers, industry professionals, engineers and students &mdash;
-          as well as anyone interested in AI and digital transformation &mdash; it offers a meaningful setting to engage
-          with world-class experts, look ahead to the future of industrial innovation together, and explore new
-          opportunities for collaboration and business.
+          as well as anyone interested in AI and digital transformation &mdash; it offers a meaningful setting to
+          <b>engage with world-class experts</b>, look ahead to the future of industrial innovation together, and explore
+          <b>new opportunities for collaboration and business</b>.
         </div>
       </div>
     </section>
