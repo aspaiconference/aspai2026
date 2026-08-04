@@ -29,8 +29,8 @@
     {
       url: 'general-info.html#venue',
       title: 'Venue',
-      keywords: 'venue location POSTECH POSCO International Center Pohang address map',
-      content: 'POSTECH POSCO International Center, 77 Cheongam-ro, Nam-gu, Pohang, South Korea.'
+      keywords: 'venue location POSTECH POSCO International Center Changeup Ground Pohang address map',
+      content: 'POSTECH POSCO International Center, 77 Cheongam-ro, Nam-gu, Pohang, South Korea (conference paper sessions and summer school). Changeup Ground, 87 Cheongam-ro, Pohang (Pohang Industry Day and the August 25 registration, lunch, opening and keynote).'
     },
     {
       url: 'general-info.html#committee',
@@ -41,14 +41,14 @@
     {
       url: 'conference.html',
       title: 'Conference Program',
-      keywords: 'conference program schedule keynote speakers sessions presentations Predictive Analytics Anomaly Detection Process Intelligence Practical Application Case Studies APPI-NET Pohang August 25 26',
-      content: 'ASPAI 2026 detailed schedule (Pohang, August 25-26). Aug 25: Opening, Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML), Predictive Analytics session, Anomaly Detection session, APPI-NET Meeting, Dinner. Aug 26: Case Studies I and II, Process Intelligence session, Practical Application session, Closing, Tour and Dinner in Gyeongju.'
+      keywords: 'conference program schedule keynote speakers sessions presentations Predictive Analytics Anomaly Detection Process Intelligence Practical Application Case Studies APPI-NET Pohang August 25 26 Changeup Ground POSCO International Center venue',
+      content: 'ASPAI 2026 detailed schedule (Pohang, August 25-26). Aug 25 at Changeup Ground (Event Hall): Registration, Lunch, Opening, Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML). Aug 25 at POSCO International Center: Predictive Analytics session, Anomaly Detection session, APPI-NET Meeting, Dinner. Aug 26: Case Studies I and II, Process Intelligence session, Practical Application session, Closing, Tour and Dinner in Gyeongju.'
     },
     {
       url: 'industry-day.html#program-seoul',
       title: 'Industry Day Program',
-      keywords: 'industry day program schedule Seoul Pohang Celonis SAP BTM Business Transformation Management Puzzle Data Samsung LG Wil van der Aalst Yonghan Lee Gia-Thi Nguyen Tony Park RaeSung Park Julian Lebherz Youngil Kim Jinyeon Lee Bongsu Cho automated chaos intelligent processes enterprise AI semiconductor fab autonomous enterprise context process atoms company memory vision AI POSCO International Center Changeup Ground August 24 August 25',
-      content: 'Process Mining Industry Day, held in Seoul and Pohang. Seoul (Monday, August 24): Celonis From Automated Chaos to Intelligent Processes: Making Enterprise AI Pay Off (Wil van der Aalst, Yonghan Lee); SAP BTM The Autonomous Enterprise runs on Context: Process Atoms and Company Memory (Gia-Thi Nguyen, Tony (RaeSung) Park); Puzzle Data Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform (Youngil Kim, CEO); Samsung Applying Process Mining in Semiconductor Fab Operations: A Case Study (Dr. Jinyeon Lee). Pohang (Tuesday, August 25, in parallel with the conference — POSCO International Center, Changeup Ground): Opening; Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML); SAP BTM The Autonomous Enterprise runs on Context: Process Atoms and Company Memory (Tony (RaeSung) Park, Julian Lebherz); Puzzle Data Process Excellence in the AI Era (Youngil Kim, CEO); LG Process Improvement with Vision AI (Bongsu Cho).'
+      keywords: 'industry day program schedule Seoul Pohang Celonis SAP BTM Business Transformation Management Puzzle Data Samsung LG Wil van der Aalst Yonghan Lee Gia-Thi Nguyen Tony Park RaeSung Park Julian Lebherz Youngil Kim Jinyeon Lee Bongsu Cho automated chaos intelligent processes enterprise AI semiconductor fab autonomous enterprise context process atoms company memory vision AI Changeup Ground Event Hall August 24 August 25',
+      content: 'Process Mining Industry Day, held in Seoul and Pohang. Seoul (Monday, August 24): Celonis From Automated Chaos to Intelligent Processes: Making Enterprise AI Pay Off (Wil van der Aalst, Yonghan Lee); SAP BTM The Autonomous Enterprise runs on Context: Process Atoms and Company Memory (Gia-Thi Nguyen, Tony (RaeSung) Park); Puzzle Data Process Excellence in the AI Era and Use Cases of a Process Intelligence Platform (Youngil Kim, CEO); Samsung Applying Process Mining in Semiconductor Fab Operations: A Case Study (Dr. Jinyeon Lee). Pohang (Tuesday, August 25, in parallel with the conference — Changeup Ground, Event Hall): Opening; Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML); SAP BTM The Autonomous Enterprise runs on Context: Process Atoms and Company Memory (Tony (RaeSung) Park, Julian Lebherz); Puzzle Data Process Excellence in the AI Era (Youngil Kim, CEO); LG Process Improvement with Vision AI (Bongsu Cho).'
     },
     {
       url: 'conference.html#keynotes',
