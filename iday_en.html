@@ -120,18 +120,19 @@
     .rule{height:1px;background:linear-gradient(90deg,var(--lime),transparent);margin:0 0 46px;opacity:.6}
 
     /* ---------- Program overview (intro prose) ---------- */
-    .intro-lead{max-width:940px;color:var(--ink-dim);font-size:clamp(1rem,2.4vw,1.06rem);line-height:1.9}
+    .intro-lead{color:var(--ink-dim);font-size:clamp(1rem,2.4vw,1.06rem);line-height:1.9;text-align:justify;hyphens:auto}
     .intro-lead p+p{margin-top:20px}
     .intro-lead b{color:var(--ink);font-weight:800}
     .intro-lead .p-lead{font-size:clamp(1.06rem,2.6vw,1.2rem);line-height:1.8}
     .intro-lead mark{background:linear-gradient(180deg,transparent 56%,rgba(196,241,53,.26) 56%);
-      color:var(--ink);font-weight:700;padding:0 2px}
+      color:var(--ink);font-weight:700;padding:0;
+      -webkit-box-decoration-break:clone;box-decoration-break:clone}
     .intro-lead .org{font-weight:800}
     .o-celonis{color:#c4b5fd} .o-sap{color:#f6c95c} .o-puzzle{color:#d4f56a}
     .o-samsung{color:#93b4f6} .o-lg{color:#f0a0b4}
-    .intro-close{max-width:940px;margin-top:32px;padding:26px 28px;border:1px solid var(--line);border-left:3px solid var(--lime);
+    .intro-close{margin-top:32px;padding:26px 28px;border:1px solid var(--line);border-left:3px solid var(--lime);
       border-radius:var(--radius);background:rgba(196,241,53,.04);color:var(--ink-dim);
-      font-size:.98rem;line-height:1.82}
+      font-size:.98rem;line-height:1.82;text-align:justify;hyphens:auto}
     .intro-close b{color:var(--ink);font-weight:800}
 
     /* ---------- Program ---------- */
@@ -282,6 +283,7 @@
       .sec-head{gap:14px}
       .meta-chips .chip{width:100%}
       .lang{display:none}
+      .intro-lead,.intro-close{text-align:left}
     }
     @media(prefers-reduced-motion:reduce){
       html{scroll-behavior:auto}
