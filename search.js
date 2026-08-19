@@ -33,6 +33,12 @@
       content: 'POSTECH POSCO International Center, 77 Cheongam-ro, Nam-gu, Pohang, South Korea (conference paper sessions and summer school). Changeup Ground, 87 Cheongam-ro, Pohang (Pohang Industry Day and the August 25 registration, lunch, opening and keynote).'
     },
     {
+      url: 'general-info.html#shuttle-bus',
+      title: 'Shuttle Bus',
+      keywords: 'shuttle bus transport timetable schedule boarding point Pohang Station Caffe Bene Lahan Hotel Noblion Hotel Yeongildae POSTECH pick-up',
+      content: 'Complimentary shuttle buses on August 25-26 between the official hotels, Pohang Station and POSTECH. Bus 1 serves Lahan Hotel Pohang and Pohang Station; Bus 2 serves Noblion Hotel and Hotel Yeongildae. At Pohang Station, gather in front of Caffe Bene where staff will be waiting with an ASPAI 2026 placard; at the hotels, board in the lobby.'
+    },
+    {
       url: 'general-info.html#committee',
       title: 'Organizing Committee',
       keywords: 'committee chairs organizers program Mahendrawathi Jongchan Kim members',
