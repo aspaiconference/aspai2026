@@ -93,6 +93,12 @@
       content: 'Summer School Program (POSCO International Center, Large-size Meeting Room 1F). Day 1 (August 27, Thursday): Opening (Minseok Song, Marco Comuzzi), Unlocking Process Intelligence: A 360 Degree Introduction to Process Mining (Wil van der Aalst), From Event Logs to Process Logic: The Basics of Process Discovery (Wil van der Aalst), Conformance Checking: Token-Based Replay and Alignments (Wil van der Aalst), Building Strong Data Foundations for Process Mining (Moe Wynn), Process Mining Hands-On A (Poornima Dhall, Celonis), Process Mining Hands-On B: AI Agent Mining in Practice (Julian Lebherz, Tony (RaeSung) Park, SAP BTM), Dinner and Networking (18:00). Day 2 (August 28, Friday): Unleashing Predictive and Generative AI in Process Mining (Marco Comuzzi), Federated Process Mining: Federated Event Log Generation for Process Discovery across Organizational Boundaries (Bernardo Nugroho Yahya), Process Mining Case Studies (Angelina Prima Kurniati), Evidence-Based Evaluation of Process Mining in Healthcare (Simon Poon), Closing (Minseok Song, Marco Comuzzi), Lunch (12:30).'
     },
     {
+      url: 'summer-school-preparation.html',
+      title: 'Summer School Preparation',
+      keywords: 'preparation prepare before arrival laptop install tools software download datasets ProM ProM Lite 6.15 1.4 Java 8 Docker Celonis Academic Edition signup registration Disco Fluxicon academic license data extraction checklist Pizzeria event log case table Excel xlsx pmdata2026 Wil van der Aalst hands-on DFG BPMN instructions requirements',
+      content: 'What to do before the Summer School: bring your own laptop to all classes; install ProM 6.15 or ProM Lite 1.4 (requires Java 8, Docker alternative available), obtain access to the Celonis Academic Edition, and install Disco from Fluxicon using your university email address. Review the Fluxicon data extraction and data extraction checklist resources. Download the Day 1 datasets (pmdata2026.zip) used by Prof. Wil van der Aalst, and the two Pizzeria Excel datasets (Pizzeria_Event.xlsx and Pizzeria_Case_enriched.xlsx) used in the Celonis hands-on session.'
+    },
+    {
       url: 'summer-school-lecturers.html',
       title: 'Summer School Lecturers',
       keywords: 'lecturers speakers instructors Wil van der Aalst Moe Wynn Poornima Dhall Julian Lebherz Tony Park RaeSung Park Marco Comuzzi Bernardo Nugroho Yahya Angelina Prima Kurniati Simon Poon RWTH Aachen QUT Celonis SAP BTM Business Transformation Management UNIST Telkom University of Sydney',

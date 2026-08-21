@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summer School Preparation – ASPAI 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <a href="mailto:eon7777@postech.ac.kr">Contact Us</a>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search..." aria-label="Search site" />
+        <button type="button" id="searchBtn" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-title">ASPAI 2026</span>
+        <span class="logo-subtitle">2nd Asia-Pacific Symposium on Process and AI</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="general-info.html">General Info</a>
+          <ul class="dropdown">
+            <li><a href="general-info.html#key-dates">Key Dates</a></li>
+            <li><a href="general-info.html#accommodation">Accommodation</a></li>
+            <li><a href="general-info.html#venue">Venue</a></li>
+            <li><a href="general-info.html#getting-to-pohang">Getting to Pohang</a></li>
+            <li><a href="general-info.html#shuttle-bus">Shuttle Bus</a></li>
+            <li><a href="general-info.html#committee">Committee</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="industry-day.html">Industry Day</a>
+          <ul class="dropdown">
+            <li><a href="industry-day.html#program-seoul">Program Details (Seoul)</a></li>
+            <li><a href="industry-day.html#venue-seoul">Venue (Seoul)</a></li>
+            <li><a href="industry-day.html#program-pohang">Program Details (Pohang)</a></li>
+            <li><a href="industry-day.html#venue-pohang">Venue (Pohang)</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="conference.html">Conference</a>
+          <ul class="dropdown">
+            <li><a href="conference.html#keynotes">Keynote</a></li>
+            <li><a href="conference.html#program-details">Program Details</a></li>
+            <li><a href="conference.html#poster-session">Poster Session</a></li>
+            <li><a href="conference.html#venue">Venue</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="summer-school.html">Summer School</a>
+          <ul class="dropdown">
+            <li><a href="summer-school.html#program-details">Program Details</a></li>
+            <li><a href="summer-school-lecturers.html">Lecturers</a></li>
+            <li><a href="summer-school-preparation.html">Preparation</a></li>
+            <li><a href="summer-school.html#venue">Venue</a></li>
+          </ul>
+        </li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="visa-information.html">Visa Information</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="page-main">
+    <div class="container">
+      <h1 class="section-title">Summer School Preparation</h1>
+
+      <div class="notice-banner">
+        <span class="notice-icon" aria-hidden="true">📌</span>
+        <div>
+          <p><strong>The 3rd Process Mining Summer School is almost here!</strong></p>
+          <p>To make the most of your experience, it is <strong>very important</strong> that you complete some preparation before coming to Pohang. Please read the following instructions carefully.</p>
+        </div>
+      </div>
+
+      <h2 class="subsection-title prep-step"><span class="prep-step-num">1</span> Bring your laptop</h2>
+      <div class="page-content-block content-full">
+        <p>Please bring your own laptop to all classes. The Summer School features highly interactive sessions using state-of-the-art process mining tools.</p>
+      </div>
+
+      <h2 class="subsection-title prep-step"><span class="prep-step-num">2</span> Install the required tools</h2>
+      <div class="page-content-block content-full">
+        <p>Please install the following tools on your laptop and download the datasets that will be used during the lectures.</p>
+      </div>
+
+      <div class="prep-tools">
+        <div class="info-card info-card-prose">
+          <h3>ProM</h3>
+          <p class="prep-tool-meta"><span>Windows &amp; other platforms</span><span>Requires Java 8</span><span>Free / open source</span></p>
+          <p>Obtain ProM from the <a href="https://promtools.org/" target="_blank" rel="noopener">ProM website</a>. Please install either <strong>ProM 6.15</strong> or <strong>ProM Lite 1.4</strong>.</p>
+          <p>If you encounter difficulties, you may use our Docker-based solution. Please refer to the <a href="https://www.youtube.com/watch?v=rmpWqyHGRm4" target="_blank" rel="noopener">installation video</a>.</p>
+        </div>
+
+        <div class="info-card info-card-prose">
+          <h3>Celonis</h3>
+          <p class="prep-tool-meta"><span>Any platform (web browser)</span><span>Academic Edition</span><span>Registration required</span></p>
+          <p>Obtain access to the <strong>Celonis Academic Edition</strong> through the <a href="https://signup.celonis.com/" target="_blank" rel="noopener">Celonis registration page</a>. You can also visit the <a href="https://www.celonis.com/academic/" target="_blank" rel="noopener">Celonis Academic website</a> for additional resources.</p>
+          <p>Because Celonis runs in a web browser, it is available on any platform. Please refer to the <a href="https://www.youtube.com/watch?v=zd7amuEC028" target="_blank" rel="noopener">Celonis tutorial video</a>.</p>
+        </div>
+
+        <div class="info-card info-card-prose">
+          <h3>Disco</h3>
+          <p class="prep-tool-meta"><span>Windows &amp; macOS</span><span>University email required</span><span>Free version sufficient</span></p>
+          <p>Download and install Disco from the <a href="https://fluxicon.com/disco/" target="_blank" rel="noopener">Fluxicon website</a>. After installation, you must register with your email address to use the tool &mdash; please use your <strong>university email address</strong>.</p>
+          <p>Many universities in Korea and abroad have academic license agreements with Fluxicon, which provide access to the full version. Even if your university does not have such an agreement, you will still be able to use the free version. The free version has a limitation on dataset size, but it will be sufficient for the Summer School.</p>
+          <p>In addition, please review the following resources, which will be referenced in the lecture on data foundations for process mining:</p>
+          <ul>
+            <li><a href="https://fluxicon.com/book/read/dataext/" target="_blank" rel="noopener">Data extraction</a></li>
+            <li><a href="https://fluxicon.com/book/read/dataextchecklist/" target="_blank" rel="noopener">Data extraction checklist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-content-block content-full prep-note">
+        <p>You do not need to watch the full ProM and Celonis videos in advance. However, please verify that you can upload at least the case-centric datasets and perform some basic analyses, such as discovering directly-follows graphs (DFGs) and BPMN models.</p>
+      </div>
+
+      <h2 class="subsection-title prep-step" id="datasets"><span class="prep-step-num">3</span> Download the datasets</h2>
+
+      <h3 class="subsection-title prep-substep">Datasets for Day 1 (August 27)</h3>
+      <div class="page-content-block content-full">
+        <p>Prof. Wil van der Aalst will use the following datasets in his lectures:</p>
+      </div>
+      <div class="download-grid">
+        <a class="download-card" href="https://www.vdaalst.com/courses/pmdata2026.zip" target="_blank" rel="noopener">
+          <span class="download-icon" aria-hidden="true">🗂️</span>
+          <span>
+            <span class="download-name">pmdata2026.zip</span>
+            <span class="download-meta">Day 1 datasets &middot; vdaalst.com</span>
+          </span>
+        </a>
+      </div>
+
+      <h3 class="subsection-title prep-substep">Datasets for the Celonis hands-on session</h3>
+      <div class="page-content-block content-full">
+        <p>The Celonis hands-on session will use the two Excel datasets for the Pizzeria example below. Please download both files in advance.</p>
+      </div>
+      <div class="download-grid">
+        <a class="download-card" href="datasets/Pizzeria_Event.xlsx" download>
+          <span class="download-icon" aria-hidden="true">📊</span>
+          <span>
+            <span class="download-name">Pizzeria_Event.xlsx</span>
+            <span class="download-meta">Event log &middot; Excel &middot; 501 KB</span>
+          </span>
+        </a>
+        <a class="download-card" href="datasets/Pizzeria_Case_enriched.xlsx" download>
+          <span class="download-icon" aria-hidden="true">📊</span>
+          <span>
+            <span class="download-name">Pizzeria_Case_enriched.xlsx</span>
+            <span class="download-meta">Case table (enriched) &middot; Excel &middot; 180 KB</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="page-content-block content-full">
+        <p>More instructions may follow over the next few days, so please stay tuned. 🙂</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Questions?</h3>
+        <p>For questions about the preparation or the lectures, please contact <a href="mailto:mcomuzzi@unist.ac.kr">mcomuzzi@unist.ac.kr</a> (Marco Comuzzi, UNIST). For general Summer School enquiries, please contact <a href="mailto:eon7777@postech.ac.kr">eon7777@postech.ac.kr</a>.</p>
+        <p>Thank you, and see you in Pohang!</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="conference.html">Program</a>
+        <a href="summer-school.html">Summer School</a>
+        <a href="faq.html">FAQs</a>
+        <a href="mailto:eon7777@postech.ac.kr">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 ASPAI 2026 – 2nd Asia-Pacific Symposium on Process and Artificial Intelligence. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () { document.body.classList.toggle('nav-open'); });
+    document.querySelectorAll('.nav-menu a').forEach(function (a) { a.addEventListener('click', function () { document.body.classList.remove('nav-open'); }); });
+    document.querySelectorAll('.has-dropdown').forEach(function (item) {
+      item.addEventListener('mouseenter', function () { this.classList.add('dropdown-open'); });
+      item.addEventListener('mouseleave', function () { this.classList.remove('dropdown-open'); });
+    });
+  </script>
+</body>
+</html>
