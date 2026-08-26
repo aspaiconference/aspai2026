@@ -48,7 +48,7 @@
       url: 'conference.html',
       title: 'Conference Program',
       keywords: 'conference program schedule keynote speakers sessions presentations Predictive Analytics Anomaly Detection Process Intelligence Practical Application Case Studies APPI-NET Pohang August 25 26 Changeup Ground POSCO International Center venue',
-      content: 'ASPAI 2026 detailed schedule (Pohang, August 25-26). Aug 25 at Changeup Ground (Event Hall): Registration, Lunch, Opening, Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML). Aug 25 at POSCO International Center: Predictive Analytics session, Anomaly Detection session, APPI-NET Meeting, Dinner. Aug 26: Case Studies I and II, Process Intelligence session, Practical Application session, Closing, Tour and Dinner in Gyeongju.'
+      content: 'ASPAI 2026 detailed schedule (Pohang, August 25-26). Aug 25 at Changeup Ground (Event Hall): Registration, Lunch, Opening, Keynote by Wil van der Aalst (Using Object-Centric Process Mining to Unravel Complexity and Enable Enterprise-Level AI/ML). Aug 25 at POSCO International Center: Predictive Analytics session, Anomaly Detection session, APPI-NET Meeting, Dinner. Aug 26: Case Studies I, Practical Application session, Process Intelligence session, Closing, Tour and Dinner in Gyeongju.'
     },
     {
       url: 'industry-day.html#program-seoul',
