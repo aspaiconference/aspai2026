@@ -2039,6 +2039,29 @@ a:hover {
   margin-top: 2px;
 }
 
+/* Tour itinerary list */
+.program-table ul.itinerary {
+  list-style: none;
+  margin: var(--space-sm) 0 0;
+  padding: 0;
+}
+.program-table ul.itinerary li {
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--color-accent-muted);
+  margin-bottom: var(--space-sm);
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+.program-table ul.itinerary li:last-child {
+  margin-bottom: 0;
+}
+.program-table .it-time {
+  font-weight: 700;
+  color: var(--color-accent-hover);
+  margin-right: var(--space-sm);
+}
+
 @media (max-width: 600px) {
   .program-table td.time {
     width: 96px;
