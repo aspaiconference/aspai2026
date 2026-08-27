@@ -2004,8 +2004,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: var(--space-sm);
-  padding: 6px 12px;
+  margin-top: var(--space-lg);
+  padding: 9px 16px;
   border: 1px solid var(--color-accent-muted);
   border-radius: var(--radius);
   background: var(--color-accent-soft);
