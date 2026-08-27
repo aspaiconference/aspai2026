@@ -2019,10 +2019,6 @@ a:hover {
   border-color: var(--color-accent);
   text-decoration: none;
 }
-.program-table .slides-link .slides-meta {
-  font-weight: 500;
-  color: var(--color-text-muted);
-}
 .program-table .slides-link::before {
   content: "\2193";
   font-weight: 700;
