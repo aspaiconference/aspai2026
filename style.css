@@ -1999,6 +1999,35 @@ a:hover {
   line-height: 1.6;
 }
 
+/* Downloadable lecture slides link inside a program row */
+.program-table .slides-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--space-sm);
+  padding: 6px 12px;
+  border: 1px solid var(--color-accent-muted);
+  border-radius: var(--radius);
+  background: var(--color-accent-soft);
+  color: var(--color-accent-hover);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background var(--transition), border-color var(--transition);
+}
+.program-table .slides-link:hover {
+  background: var(--color-accent-muted);
+  border-color: var(--color-accent);
+  text-decoration: none;
+}
+.program-table .slides-link .slides-meta {
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+.program-table .slides-link::before {
+  content: "\2193";
+  font-weight: 700;
+}
+
 /* Session name chip */
 .program-table .session {
   display: inline-block;
